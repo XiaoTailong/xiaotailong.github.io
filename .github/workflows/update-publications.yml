@@ -3,7 +3,8 @@ name: Update publications.json (Semantic Scholar Author)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 3 * * *"  # daily
+    - cron: "0 3 * * *"  # daily (UTC)
+
 permissions:
   contents: write
 
@@ -12,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -23,9 +25,8 @@ jobs:
 
       - name: Build publications.json
         env:
-          # API key is optional. If not set, the script should proceed without auth and may be rate-limited.
+          # API key is optional. If not set, the script will proceed without auth and may be rate-limited.
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
-          S2_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
           S2_AUTHOR_ID: ${{ vars.S2_AUTHOR_ID }}
         run: |
           set -euo pipefail
