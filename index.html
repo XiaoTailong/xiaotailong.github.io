@@ -383,21 +383,22 @@
       </section>
 
       <section class="card anchor" id="news">
-        <h2>Recent News</h2>
+        <h2>News</h2>
         <div class="list" id="newsList">
           <div class="item"><div class="top"><div class="name">2025 Quantum Technology Frontier Summit</div><div class="meta2">Oral · Sep. 21, 2025</div></div><div class="meta2">Academic Committee</div></div>
           <div class="item"><div class="top"><div class="name">The 4th Youth Symposium on Quantum Computing</div><div class="meta2">Oral · Aug. 12, 2025</div></div></div>
           <div class="item"><div class="top"><div class="name">CCF Quantum Computing Conference 2025</div><div class="meta2">Invited · Jul. 22, 2025</div></div></div>
-          <div class="item"><div class="top"><div class="name">Global Artificial Intelligence Technology Conference 2025</div><div class="meta2">Invited · Jun. 6, 2025</div></div></div>
-          <div class="item"><div class="top"><div class="name">Fourth National Conference on Electronic Information Materials and Devices</div><div class="meta2">Oral · Apr. 19, 2025</div></div></div>
+
           <details style="margin-top:6px">
-            <summary>More news</summary>
+            <summary>News archive</summary>
             <div class="list" style="margin-top:10px">
-          <div class="item"><div class="top"><div class="name">CCF Quantum Computing Doctoral Forum + “Rising Star” Young Scholars Forum</div><div class="meta2">Oral · Nov. 27, 2024</div></div></div>
-          <div class="item"><div class="top"><div class="name">Advanced Photonics Forum: Intelligent Photonics</div><div class="meta2">Invited · Nov. 2024</div></div></div>
-          <div class="item"><div class="top"><div class="name">Shandong University — Baoqing Sun Group</div><div class="meta2">Invited · Sep. 2024</div></div><div class="meta2">“Research on Quantum Machine Learning Algorithms and Their Advantages”</div></div>
-          <div class="item"><div class="top"><div class="name">Hangzhou Fuyang First International Conf. on Optoelectronic Integration Tech</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Machine Learning Ghost Imaging and Practical Advantages”</div></div>
-          <div class="item"><div class="top"><div class="name">Nanjing University of Information Science & Technology — Wenjie Liu Group</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Quantum Machine Learning Algorithms and Applications”</div></div>
+              <div class="item"><div class="top"><div class="name">Global Artificial Intelligence Technology Conference 2025</div><div class="meta2">Invited · Jun. 6, 2025</div></div></div>
+              <div class="item"><div class="top"><div class="name">Fourth National Conference on Electronic Information Materials and Devices</div><div class="meta2">Oral · Apr. 19, 2025</div></div></div>
+              <div class="item"><div class="top"><div class="name">CCF Quantum Computing Doctoral Forum + “Rising Star” Young Scholars Forum</div><div class="meta2">Oral · Nov. 27, 2024</div></div></div>
+              <div class="item"><div class="top"><div class="name">Advanced Photonics Forum: Intelligent Photonics</div><div class="meta2">Invited · Nov. 2024</div></div></div>
+              <div class="item"><div class="top"><div class="name">Shandong University — Baoqing Sun Group</div><div class="meta2">Invited · Sep. 2024</div></div><div class="meta2">“Research on Quantum Machine Learning Algorithms and Their Advantages”</div></div>
+              <div class="item"><div class="top"><div class="name">Hangzhou Fuyang First International Conf. on Optoelectronic Integration Tech</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Machine Learning Ghost Imaging and Practical Advantages”</div></div>
+              <div class="item"><div class="top"><div class="name">Nanjing University of Information Science & Technology — Wenjie Liu Group</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Quantum Machine Learning Algorithms and Applications”</div></div>
             </div>
           </details>
         </div>
@@ -621,8 +622,8 @@
         if (!box || !Array.isArray(items) || items.length === 0) return;
 
         const sorted = [...items].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
-        const head = sorted.slice(0, 5);
-        const rest = sorted.slice(5);
+        const head = sorted.slice(0, 3);
+        const rest = sorted.slice(3);
 
         const renderOne = (it) => {
           const title = escapeHtml(it.title || '');
@@ -640,7 +641,7 @@
         if (rest.length > 0) {
           html += `
             <details style="margin-top:6px">
-              <summary>More news</summary>
+              <summary>News archive</summary>
               <div class="list" style="margin-top:10px">
                 ${rest.map(renderOne).join('')}
               </div>
