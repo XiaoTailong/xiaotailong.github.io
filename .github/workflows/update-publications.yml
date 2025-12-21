@@ -23,10 +23,32 @@ jobs:
 
       - name: Build publications.json
         env:
+          # API key is optional. If not set, the script should proceed without auth and may be rate-limited.
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+          S2_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
           S2_AUTHOR_ID: ${{ vars.S2_AUTHOR_ID }}
         run: |
-          python tools/s2_author_to_publications_json.py --author-id "$S2_AUTHOR_ID" --out data/publications.json
+          set -euo pipefail
+
+          if [ -z "${S2_AUTHOR_ID:-}" ]; then
+            echo "ERROR: S2_AUTHOR_ID is not set. Add it in: Settings → Secrets and variables → Actions → Variables" >&2
+            exit 1
+          fi
+
+          # Simple retry for transient 429/5xx
+          for i in 1 2 3; do
+            echo "[Attempt $i] Updating publications.json for author: $S2_AUTHOR_ID"
+            if python tools/s2_author_to_publications_json.py --author-id "$S2_AUTHOR_ID" --out data/publications.json; then
+              break
+            fi
+            if [ "$i" -lt 3 ]; then
+              echo "Retrying in $((i*20))s..."
+              sleep $((i*20))
+            else
+              echo "Failed after 3 attempts." >&2
+              exit 1
+            fi
+          done
 
       - name: Commit & push if changed
         run: |
