@@ -1,211 +1,502 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="bookmark" href="favicon.ico" type="image/x-icon"　/>
-<title>Xiao, Tailong (肖太龙) | SJTU</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Xiao, Tailong (肖太龙) | SJTU</title>
+  <meta name="description" content="Xiao, Tailong (肖太龙) — Assistant Professor at Shanghai Jiao Tong University. Quantum Artificial Intelligence, Intelligent Quantum Sensing, AI-enhanced optical computing and imaging." />
+
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <style>
+    :root{
+      --bg: #0b1020;
+      --panel: #111a33;
+      --panel2: rgba(17,26,51,.7);
+      --text: #e9edff;
+      --muted: #b2bbdc;
+      --line: #253058;
+      --brand: #5b8cff;
+      --brand2:#9b7bff;
+      --shadow: 0 12px 34px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1080px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    /* Light theme overrides */
+    [data-theme="light"]{
+      --bg:#f6f8ff;
+      --panel:#ffffff;
+      --panel2: rgba(255,255,255,.75);
+      --text:#121527;
+      --muted:#4b5476;
+      --line:#dbe1ff;
+      --shadow: 0 12px 28px rgba(18,21,39,.10);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background:
+        radial-gradient(1200px 700px at 10% -10%, rgba(91,140,255,.24), transparent 60%),
+        radial-gradient(900px 600px at 100% 10%, rgba(155,123,255,.22), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit}
+
+    .wrap{max-width:var(--max); margin:0 auto; padding:22px 16px 70px;}
+
+    /* Top bar */
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(11,16,32,.85), rgba(11,16,32,.55));
+      border-bottom:1px solid rgba(37,48,88,.55);
+    }
+    [data-theme="light"] .topbar{
+      background: linear-gradient(to bottom, rgba(246,248,255,.92), rgba(246,248,255,.65));
+      border-bottom:1px solid rgba(219,225,255,.9);
+    }
+
+    .topbar-inner{max-width:var(--max); margin:0 auto; padding:10px 16px; display:flex; align-items:center; justify-content:space-between; gap:10px;}
+
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      min-width: 240px;
+    }
+    .mark{
+      width:40px;height:40px;border-radius:14px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: var(--shadow);
+      display:flex; align-items:center; justify-content:center;
+      font-weight:900;
+      letter-spacing:.5px;
+    }
+    .brand .t{display:flex; flex-direction:column; line-height:1.2}
+    .brand .t b{font-size:14px}
+    .brand .t span{font-size:12px; color:var(--muted)}
+
+    .nav{
+      display:flex; gap:8px; flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .chip{
+      text-decoration:none;
+      padding:8px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      color:var(--muted);
+      font-size:13px;
+      background: rgba(17,26,51,.35);
+    }
+    [data-theme="light"] .chip{background: rgba(255,255,255,.55)}
+    .chip:hover{color:var(--text); border-color: rgba(91,140,255,.7)}
+
+    .actions{display:flex; align-items:center; gap:8px;}
+    .iconbtn{
+      width:38px; height:38px;
+      display:inline-flex;
+      align-items:center; justify-content:center;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background: rgba(17,26,51,.35);
+      cursor:pointer;
+    }
+    [data-theme="light"] .iconbtn{background: rgba(255,255,255,.55)}
+    .iconbtn:hover{border-color: rgba(91,140,255,.7)}
+    .icon{width:18px;height:18px; fill: currentColor; color: var(--muted)}
+    .iconbtn:hover .icon{color: var(--text)}
+
+    /* Hero */
+    .hero{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:14px;
+    }
+    @media (max-width: 860px){
+      .hero{grid-template-columns:1fr;}
+      .brand{min-width:auto}
+    }
+
+    .card{
+      background: linear-gradient(180deg, var(--panel), rgba(17,26,51,.86));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:16px;
+    }
+    [data-theme="light"] .card{background: linear-gradient(180deg, var(--panel), rgba(255,255,255,.92));}
+
+    .hero-left{display:flex; gap:16px; align-items:flex-start}
+    .photo{
+      width:110px; height:160px;
+      border-radius: 16px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      flex: 0 0 auto;
+      background: rgba(0,0,0,.12);
+    }
+    .photo img{width:100%; height:100%; object-fit:cover; display:block;}
+
+    .hgroup h1{margin:0; font-size:20px}
+    .subtitle{margin:6px 0 10px; color:var(--muted); font-size:14px}
+    .meta{color:var(--muted); font-size:14px; margin:0}
+    .meta a{color:var(--text); text-decoration:none; border-bottom:1px dashed rgba(178,187,220,.55)}
+    .meta a:hover{border-bottom-color: rgba(91,140,255,.8)}
+
+    .btnrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      text-decoration:none;
+      padding:10px 12px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(17,26,51,.35);
+      color: var(--text);
+      font-size:13px;
+      display:inline-flex; align-items:center; gap:8px;
+    }
+    [data-theme="light"] .btn{background: rgba(255,255,255,.55)}
+    .btn.primary{background: linear-gradient(135deg, var(--brand), var(--brand2)); border-color: transparent;}
+    .btn:hover{border-color: rgba(91,140,255,.7)}
+
+    .section{margin-top:14px}
+    .section h2{
+      margin:0 0 10px;
+      font-size:16px;
+      letter-spacing:.2px;
+    }
+
+    .grid{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 860px){ .grid{grid-template-columns:1fr;} }
+
+    .list{display:flex; flex-direction:column; gap:10px;}
+    .item{
+      border:1px solid var(--line);
+      border-radius: 16px;
+      padding:12px;
+      background: rgba(17,26,51,.25);
+    }
+    [data-theme="light"] .item{background: rgba(255,255,255,.55)}
+    .item .top{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
+    .item .name{font-weight:700}
+    .item .meta2{color:var(--muted); font-size:13px}
+
+    ul.clean, ol.clean{margin:8px 0 0; padding-left:18px; color:var(--muted)}
+    ul.clean li, ol.clean li{margin:6px 0}
+
+    details{border:1px solid var(--line); border-radius:16px; padding:10px 12px; background: rgba(17,26,51,.20)}
+    [data-theme="light"] details{background: rgba(255,255,255,.55)}
+    details summary{cursor:pointer; color:var(--text); font-weight:700}
+    details summary::marker{color:var(--muted)}
+
+    .kvs{display:grid; grid-template-columns: 110px 1fr; gap:6px 10px; font-size:14px; color:var(--muted)}
+    .kvs b{color:var(--muted)}
+
+    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .pill{
+      font-size:12px;
+      padding:4px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--muted);
+      background: rgba(17,26,51,.22);
+      font-family: var(--mono);
+    }
+    [data-theme="light"] .pill{background: rgba(255,255,255,.55)}
+
+    .divider{height:1px; background: var(--line); opacity:.8; margin:10px 0}
+
+    footer{margin-top:18px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
+
+    .mono{font-family:var(--mono)}
+    .badge{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:6px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      color:var(--muted);
+      background: rgba(17,26,51,.20);
+      font-size:12px;
+    }
+    [data-theme="light"] .badge{background: rgba(255,255,255,.55)}
+
+    /* Anchor offset so sections don't hide under sticky topbar */
+    .anchor{scroll-margin-top:72px;}
+  </style>
 </head>
+
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN">Google Scholar</a></div>
-<div class="menu-item"><a href="https://www.researchgate.net/profile/Tailong-Xiao-2">ResearchGate</a></div>
-<div class="menu-item"><a href="https://github.com/XiaoTailong">GitHub</a></div>
-<div class="menu-item"><a href="https://www.zhihu.com/people/xiao-tai-long-16">知乎</a></div>
-<div class="menu-item"><a href="https://qsip.sjtu.edu.cn/index.htm">QSIP</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Xiao, Tailong (肖太龙) </h1>
-</div>
-<table class="imgtable"><tr><td>
-<a href="https://xiaotailong.github.io/"><img src="photos/bio.jpg" alt="alt text" width="115px" height="165px" /></a>&nbsp;</td>
-<td align="left"><p><b>Assistant Professor </b> <br />
-School of Automation and Intelligent Sensing, <b>Shanghai Jiao Tong University</b> <br />
-Institute for Quantum Sensing and Information Processing (QSIP) <br /> 
-State Key Laboratory of Photonics and Communications <br />
-Hefei National Laboratory, Shanghai Research Center for Quantum Sciences <br />
-E-mail: <a href="mailto:tailong_shaw@sjtu.edu.cn">tailong_shaw@sjtu.edu.cn</a> <br /> 
-Address: SJTU SEIEE building (电院) 5-205 </p>
-</td></tr></table>
-<h2>About me</h2>
-<p>I received the B.E. degree from Central South University in 2018, and the Doctor degree from Shanghai Jiao Tong University under the supervision of Prof. Guihua Zeng (曾贵华), in 2023. <br />
-From 2023.10, I have joined Shanghai Jiao Tong University as an Assistant Professor. </p>
-<p>As a researcher in Quantum Artificial Intelligence (QAI), I am committed to leveraging advanced AI technologies to address frontier quantum problems such as <b>how to efficiently learn quantum systems</b>, how to acclerate quantum circuit optimization, error mitigation and correction. Besides, I am also conducting research on quantum computing based AI algorithms and their applications in quantum sensing and image processing. </p>
-<p>Seeking self-motivated Master's/PhD candidates! Research areas align with the above-mentioned directions. CVs welcome!</p>
-  <span style="color:red; font-weight:bold">招募有自驱力的本科生、硕士和博士生，研究方向以上述方向为主，欢迎简历投递！</span></p>
-<h2>Research</h2>
-<h3>Research interests</h3>
-<ul>
-<li><p>Quantum Artificial Intelligence (QAI)</p>
-</li>
-<li><p>Machine Learning</p>
-</li>
-<li><p>Intelligent Quantum Sensing</p>
-</li>
-<li><p>AI-enhanced optical computing and imaging</p>
-</li>
-</ul>
-<h3>Recent News</h3>
-<ul>
-  <li><p>2025 Quantum Technology Frontier Summit | Academic Committee | Oral Presentation | Sep. 21, 2025 </p>
-  </li>
-  <li><p>The 4th Youth Symposium on Quantum Computing | Oral Presentation | Aug. 12, 2025 </p>
-  </li>
-  <li><p>CCF Quantum Computing Conference 2025 |
-    Invited Presentation | Jul. 22, 2025 </p>
-  </li>
-<li><p>Global Artificial Intelligence Technology Conference 2025 |
-  Invited Presentation | Jun. 6, 2025 </p>
-</li>
-<li><p>Fourth National Conference on Electronic Information Materials and Devices |
-  Oral Presentation | Apr. 19, 2025   </p>
-</li>
-<li><p>CCF Quantum Computing Doctoral Forum Combined with the Third "Rising Star" Young Scholars Forum |
-  Oral Presentation | Nov. 27, 2024</p>
-</li>
-<li><p>Advanced Photonics Forum: Intelligent Photonics |
-  Invited Presentation | Nov. 2024</p>
-</li>
-<li><p>Shandong University |
-  Invited Presentation to the Baoqing Sun Group: "Research on Quantum Machine Learning Algorithms and Their Advantages" | Sep. 2024</p>
-</li>
-<li><p>Hangzhou Fuyang First International Conference on Optoelectronic Integration Technology |
-  Invited Presentation: "Research on Machine Learning Ghost Imaging and Practical Advantages" | May 2024</p>
-</li>
-<li><p>Nanjing University of Information Science & Technology |
-  Invited Presentation to the Wenjie Liu Group: "Research on Quantum Machine Learning Algorithms and Applications" | May 2024</p>
-</li>
-</ul>
+  <div class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" style="text-decoration:none">
+        <div class="mark">XT</div>
+        <div class="t">
+          <b>Xiao Tailong</b>
+          <span>Quantum AI · Sensing · Photonics</span>
+        </div>
+      </a>
 
-<h3>Publications </h3>
-<ol>
-<li><p>Xu H, <b>Xiao T*</b>, Huang J, et al. Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning[J]. Physical Review Letters, 2025, 134(12): 120803. </p>
-</li>
-<li><p><b>Xiao, T</b>, Zhai, X., Huang, J. et al. Quantum deep generative prior with programmable quantum circuits. Commun Phys 7, 276 (2024). https://doi.org/10.1038/s42005-024-01765-9. </p>
-</li>
-<li><p>Zhai, X., <b>Xiao, T*</b>, Huang, J., Fan, J. & Zeng, G. Quantum neural compressive sensing for ghost imaging. Phys. Rev. Appl. 23, 014018 (2025). https://doi.org/10.1103/PhysRevApplied.23.014018. </p>
-</li> 
-<li><p><b>Xiao, T</b>, Zhai, X., Wu, X. et al. Practical advantage of quantum machine learning in ghost imaging. Commun Phys 6, 171 (2023). https://doi.org/10.1038/s42005-023-01290-1. </p>
-</li> 
-<li><p><b>Xiao, T</b>, Huang, J., Li, H., Fan, J., Zeng, G. Quantum generative adversarial imitation learning. New Journal of Physics, 2023, 25(3): 033034. </p>
-</li>   
-<li><p> <b>Xiao, T</b>, Fan, J. & Zeng, G. Parameter estimation in quantum sensing based on deep reinforcement learning. npj Quantum Inf 8, 2 (2022). https://doi.org/10.1038/s41534-021-00513-z. </p>
-</li>
-<li><p> <b>Xiao, T</b>, Huang, J., Li, H. et al. Intelligent certification for quantum simulators via machine learning. npj Quantum Inf 8, 138 (2022). https://doi.org/10.1038/s41534-022-00649-6.</p>
-</li>
-<li><p> <b>Xiao, T</b>, Bai, D., Fan, J., Zeng, G. Quantum Boltzmann machine algorithm with dimension-expanded equivalent Hamiltonian[J]. Physical Review A, 2020, 101(3): 032304.</p>
-</li>
-<li><p> <b>Xiao, T</b>, Huang, J., Fan, J. et al. Continuous-variable Quantum Phase Estimation based on Machine Learning. Sci Rep 9, 12410 (2019). https://doi.org/10.1038/s41598-019-48551-0.</p>
-</li>
-<li><p>Li Y, Song Q, <b>Xiao T*</b>, et al. Neural network enhanced time-varying parameter estimation via weak measurement[J]. Optics Express, 2024, 32(16): 27358-27372.</p>
-</li>
-<li><p> <b>Li Z* </b>, <b> Xiao T*</b>, Deng X, et al. Optimizing Variational Quantum Neural Networks Based on Collective Intelligence[J]. Mathematics, 2024, 12(11): 1627.</p>
-</li>
-<li><p>Zhu Y, <b>Xiao T*</b>, Zeng G, et al. Controlling Unknown Quantum States via Data-Driven State Representations[J]. arXiv preprint arXiv:2406.05711, 2024.</p>
-</li>
-<li><p>Tang Y, Xiong H, Yang N, <b>Xiao T</b>, et al. Towards LLM4QPE: Unsupervised pretraining of quantum property estimation and a benchmark[C]//The Twelfth International Conference on Learning Representations. 2024.</p>
-</li>
-<li><p>Zhai X, Wu X, <b>Xiao T</b>, et al. Robust superresolution computational imaging with diffuser-refined illumination[J]. Physical Review Applied, 2023, 20(6): 064002.</p>
-</li>
-<li><p>Tan X, Li H, Song Q, <b>Xiao T</b>, et al. Enhanced sensitivity via polarization switching in fiber-based quantum sensing[J]. Physical Review Applied, 2023, 20(4): 044020.</p>
-</li>
-<li><p>Xia B, Huang J, Li H, Liu M, <b>Xiao T</b>, et al. Ultrasensitive measurement of angular rotations via a Hermite-Gaussian pointer[J]. Photonics Research, 2022, 10(12): 2816-2827.</p>
-</li>
-<li><p>Song Q, Li H, Huang J, <b>Xiao T</b>, et al. Adaptive time-varying parameter estimation via weak measurement[J]. Physical Review Applied, 2022, 18(4): 044031.</p>
-</li>
-<li><p>Song Q, Xia B, Huang J, <b>Xiao T</b>, et al. Surpassing the nyquist sampling limit via postmodulation[J]. Physical Review Applied, 2022, 18(3): 034077.</p>
-</li>
-<li><p>Zhao D, Huang J Z,  <b>Xiao T</b>, et al. Type of non-reciprocity in a fiber Sagnac interferometer induced by geometric phases[J]. Optics Express, 2021, 30(1): 12-21.</p>
-</li>
-<li><p>Wang G, Li H,  <b>Xiao T</b>, et al. Adaptive correction of phase estimation with time based on weak measurement[J]. Optics Express, 2021, 29(24): 39150-39158.</p>
-</li>
-<li><p>Fang C, Xia B, Huang J Z, <b> Xiao T</b>, et al. Hamiltonian estimation based on adaptive weak value amplification[J]. Journal of Physics B: Atomic, Molecular and Optical Physics, 2021, 54(7): 075501.</p>
-</li>
-<li><p>Bai D, Huang P, Zhu Y, ... <b> Xiao T</b>, et al. Unidimensional continuous-variable measurement-device-independent quantum key distribution[J]. Quantum Information Processing, 2020, 19: 1-21.</p>
-</li>
-<li><p>Qi H, Liu F, <b>Xiao T*</b>, et al. A robust and energy-efficient weighted clustering algorithm on mobile ad hoc sensor networks[J]. Algorithms, 2018, 11(8): 116.</p>
-</li>
-</ol>
-<p><b>Note</b>: * indicates the corresponding author.</p>
-<p><a href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN">Full list of publications in Google Scholar</a>.</p>
-<h3>Academic service</h3>
+      <nav class="nav" aria-label="Primary">
+        <a class="chip" href="#about">About</a>
+        <a class="chip" href="#research">Research</a>
+        <a class="chip" href="#news">News</a>
+        <a class="chip" href="#publications">Publications</a>
+        <a class="chip" href="#projects">Projects</a>
+        <a class="chip" href="#teaching">Teaching</a>
+        <a class="chip" href="#education">Education</a>
+        <a class="chip" href="#service">Service</a>
+      </nav>
 
-<p>Executive Committee Member, CCF Technical Committee on Quantum Computing</p> 
+      <div class="actions" aria-label="Actions">
+        <button class="iconbtn" id="themeBtn" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0 4a1 1 0 0 1-1-1v-1.1a1 1 0 1 1 2 0V21a1 1 0 0 1-1 1ZM12 3.1a1 1 0 0 1-1-1V1a1 1 0 1 1 2 0v1.1a1 1 0 0 1-1 1ZM4.22 5.64a1 1 0 0 1-1.41 0L2.03 4.86a1 1 0 0 1 1.41-1.41l.78.78a1 1 0 0 1 0 1.41Zm17.75 0a1 1 0 0 1 0-1.41l.78-.78a1 1 0 1 1 1.41 1.41l-.78.78a1 1 0 0 1-1.41 0ZM3.1 12a1 1 0 0 1-1 1H1a1 1 0 1 1 0-2h1.1a1 1 0 0 1 1 1Zm19.9 0a1 1 0 0 1 1-1H23a1 1 0 1 1 0 2h-1.1a1 1 0 0 1-1-1ZM4.22 18.36a1 1 0 0 1 0-1.41l.78-.78a1 1 0 1 1 1.41 1.41l-.78.78a1 1 0 0 1-1.41 0Zm15.56 0a1 1 0 0 1-1.41 0l-.78-.78a1 1 0 1 1 1.41-1.41l.78.78a1 1 0 0 1 0 1.41Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
 
-<p><b>Editorial Work</b></p>
-<ul>
-  <li><p>Guest Editor of the Special Issue: Quantum Computing and Quantum Information Processing. 
-    <p> <a href="https://www.mdpi.com/journal/entropy/special_issues/Quantum_Computing_Quantum_Information"> See Special Issue. </a> </p>
-  </p>
-  </li>
-  <li>
-    <p>Editorial Board Member of Scientific Reports.</p> 
-    <!-- <p> <a href="https://www.mdpi.com/journal/entropy/special_issues/Quantum_Computing_Quantum_Information_Processing"> See Special Issue. </a> </p> -->
-  </li>
-</ul>
-<p><b>Reviewer</b></p>
-<ul>
-<li><p>Physical Review Letters/Applied/Research/A</p>
-</li>  
-<li><p>PRX Quantum</p>
-</li>  
-<li><p>New Journal of Physics/Quantum Science and Technology/JPA/Machine Learning: Science and Technology/European Journal of Physics</p>
-</li>
-<li><p>npj Quantum Information/Scientific Data/Scientific Reports</p>
-</li>
-<li><p>Quantum Information Processing</p>
-</li>
-<li><p>Optica Quantum/Optics Express/Optics Letters</p>
-</li>
-</ul>
-<!-- <p><a href="https://publons.com/researcher/3034188/xiuze-zhou/">More details in Publons</a></p> -->
+  <main class="wrap" id="top">
+    <section class="hero">
+      <div class="card">
+        <div class="hero-left">
+          <div class="photo" aria-label="Profile photo">
+            <img src="photos/bio.jpg" alt="Xiao Tailong" />
+          </div>
+          <div class="hgroup">
+            <h1>Xiao, Tailong (肖太龙)</h1>
+            <div class="subtitle">Assistant Professor · School of Automation and Intelligent Sensing, Shanghai Jiao Tong University</div>
+            <p class="meta">Institute for Quantum Sensing and Information Processing (QSIP) · State Key Laboratory of Photonics and Communications · Hefei National Laboratory (Shanghai Research Center for Quantum Sciences)</p>
+            <p class="meta">Email: <a href="mailto:tailong_shaw@sjtu.edu.cn">tailong_shaw@sjtu.edu.cn</a> · Address: SJTU SEIEE building (电院) 5-205</p>
+            <div class="btnrow" aria-label="Quick links">
+              <a class="btn primary" href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
+              <a class="btn" href="https://github.com/XiaoTailong" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn" href="https://www.researchgate.net/profile/Tailong-Xiao-2" target="_blank" rel="noreferrer">ResearchGate</a>
+              <a class="btn" href="https://www.zhihu.com/people/xiao-tai-long-16" target="_blank" rel="noreferrer">知乎</a>
+              <a class="btn" href="https://qsip.sjtu.edu.cn/index.htm" target="_blank" rel="noreferrer">QSIP</a>
+            </div>
+            <div class="pillrow" aria-label="Keywords">
+              <span class="pill">Quantum AI</span>
+              <span class="pill">Quantum ML</span>
+              <span class="pill">Quantum Sensing</span>
+              <span class="pill">Optical Computing</span>
+              <span class="pill">Imaging</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<h2>Projects</h2>
-<ol>
-  <li><p>National Natural Science Foundation of China (NSFC) Young Scientists Fund Project, 2025-2027, 300,000 CNY.</p>
-  <li><p>Lenovo-SJTU Joint Lab Project, 2024-2025, 600,000 CNY.</p>
-  <li><p>Shanghai Jiao Tong University Young Scholars Project, 2023-2026, 50,000 CNY.</p>
-  <li><p>CCF-Boson Quantum Innovation Fund for Quantum Computing Applications, 2025.03-2025.08, 150,000 CNY.</p>
-  <li><p>National Key Laboratory Open Research Program, 2025-2026, 100,000 CNY.</p>
-</ul>
-</ol>
+      <aside class="card" aria-label="Highlights">
+        <div class="badge"><span class="mono">Now</span> Recruiting motivated students (BSc/MSc/PhD)</div>
+        <p style="margin:10px 0 0; color: var(--muted)">Seeking self-motivated Master's/PhD candidates! Research areas align with the directions below. CVs welcome!</p>
+        <p style="margin:10px 0 0; color:var(--text)"><span style="color:#ff4d6d; font-weight:800">招募有自驱力的本科生、硕士和博士生</span>，研究方向以上述方向为主，欢迎简历投递！</p>
+        <div class="divider"></div>
+        <div class="kvs">
+          <b>Focus</b><span>Quantum Artificial Intelligence (QAI), Intelligent Quantum Sensing, AI-enhanced optical computing & imaging</span>
+          <b>Base</b><span>Shanghai, China</span>
+          <b>Office</b><span>SEIEE 5-205</span>
+        </div>
+      </aside>
+    </section>
 
-<h2>Teaching</h2>
-<ol>
-  <li><p>Engineering Practice and Technological Innovation II (EE0503), An Introduction to Quantum Artificial Intelligence, Undergraduate (grade two), Spring 2025.</p>
-</ol>
-<br />
-<a href="LM/Understanding Quantum Information and Computation.pdf">Learning materials of quantum information and computation</a>.
+    <section class="section card anchor" id="about">
+      <h2>About</h2>
+      <p style="margin:0; color:var(--muted)">
+        I received the B.E. degree from Central South University in 2018, and the Ph.D. degree from Shanghai Jiao Tong University under the supervision of Prof. Guihua Zeng (曾贵华), in 2023.
+        From Oct. 2023, I have joined Shanghai Jiao Tong University as an Assistant Professor.
+      </p>
+      <p style="margin:10px 0 0; color:var(--muted)">
+        As a researcher in Quantum Artificial Intelligence (QAI), I am committed to leveraging advanced AI technologies to address frontier quantum problems such as <b style="color:var(--text)">efficient learning of quantum systems</b>, quantum circuit optimization, error mitigation and correction.
+        I also work on quantum computing based AI algorithms and their applications in quantum sensing and image processing.
+      </p>
+    </section>
 
-<h2>Education</h2>
-<p>B.E., Communication Engineering, <a href="https://www.csu.edu.cn/"> Central South University</a>, 06.2018</p>
-<ul>
-  <li><p>National Scholarship, 2017 </p>
-  <li><p>Exemplary Outstanding Student, 2017 </p>
-  <li><p>Hunan Provincial Outstanding Graduate, 2018 </p>
-</ul>
+    <section class="grid">
+      <section class="card anchor" id="research">
+        <h2>Research</h2>
+        <div class="item" style="margin-top:8px">
+          <div class="top"><div class="name">Research interests</div><div class="meta2">Areas</div></div>
+          <ul class="clean">
+            <li>Quantum Artificial Intelligence (QAI)</li>
+            <li>Machine Learning</li>
+            <li>Intelligent Quantum Sensing</li>
+            <li>AI-enhanced optical computing and imaging</li>
+          </ul>
+        </div>
+      </section>
 
-<p>Ph.D., Information and Communication Engineering, <a href="https://www.sjtu.edu.cn/"> Shanghai Jiao Tong University</a>, 06.2023</p>
-<ul>
-  <li><p>Yangjiachi Scholarship, 2019 </p>
-  <li><p>National Second Prize, CCF Sinan Cup, 2021 </p>
-  <li><p>First-class Scholarship of SKL (Photonics and communications), 2022 </p>
-  <li><p>National First Prize, CCF Sinan Cup, 2022 </p>
-  <li><p>Outstanding Graduate, 2023 </p>
-  <li><p>CCF Outstanding Doctoral Dissertation in Quantum Computing, 2024</p>
-</ul>
-<!-- <p><br />
-<a href="cv/cv.pdf">A brief cv</a>.</p> -->
-</td>
-</tr>
-</table>
+      <section class="card anchor" id="news">
+        <h2>Recent News</h2>
+        <div class="list">
+          <div class="item"><div class="top"><div class="name">2025 Quantum Technology Frontier Summit</div><div class="meta2">Oral · Sep. 21, 2025</div></div><div class="meta2">Academic Committee</div></div>
+          <div class="item"><div class="top"><div class="name">The 4th Youth Symposium on Quantum Computing</div><div class="meta2">Oral · Aug. 12, 2025</div></div></div>
+          <div class="item"><div class="top"><div class="name">CCF Quantum Computing Conference 2025</div><div class="meta2">Invited · Jul. 22, 2025</div></div></div>
+          <div class="item"><div class="top"><div class="name">Global Artificial Intelligence Technology Conference 2025</div><div class="meta2">Invited · Jun. 6, 2025</div></div></div>
+          <div class="item"><div class="top"><div class="name">Fourth National Conference on Electronic Information Materials and Devices</div><div class="meta2">Oral · Apr. 19, 2025</div></div></div>
+          <div class="item"><div class="top"><div class="name">CCF Quantum Computing Doctoral Forum + “Rising Star” Young Scholars Forum</div><div class="meta2">Oral · Nov. 27, 2024</div></div></div>
+          <div class="item"><div class="top"><div class="name">Advanced Photonics Forum: Intelligent Photonics</div><div class="meta2">Invited · Nov. 2024</div></div></div>
+          <div class="item"><div class="top"><div class="name">Shandong University — Baoqing Sun Group</div><div class="meta2">Invited · Sep. 2024</div></div><div class="meta2">“Research on Quantum Machine Learning Algorithms and Their Advantages”</div></div>
+          <div class="item"><div class="top"><div class="name">Hangzhou Fuyang First International Conf. on Optoelectronic Integration Tech</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Machine Learning Ghost Imaging and Practical Advantages”</div></div>
+          <div class="item"><div class="top"><div class="name">Nanjing University of Information Science & Technology — Wenjie Liu Group</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Quantum Machine Learning Algorithms and Applications”</div></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="section card anchor" id="publications">
+      <h2>Publications</h2>
+      <p style="margin:0; color:var(--muted)">* indicates the corresponding author. Full list available on <a href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>.</p>
+
+      <details open style="margin-top:10px">
+        <summary>Show / hide publication list</summary>
+        <ol class="clean" style="color:var(--muted)">
+          <li>Xu H, <b style="color:var(--text)">Xiao T*</b>, Huang J, et al. Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning. <i>Physical Review Letters</i>, 2025, 134(12): 120803.</li>
+          <li><b style="color:var(--text)">Xiao, T</b>, Zhai, X., Huang, J. et al. Quantum deep generative prior with programmable quantum circuits. <i>Commun Phys</i> 7, 276 (2024). https://doi.org/10.1038/s42005-024-01765-9.</li>
+          <li>Zhai, X., <b style="color:var(--text)">Xiao, T*</b>, Huang, J., Fan, J. & Zeng, G. Quantum neural compressive sensing for ghost imaging. <i>Phys. Rev. Appl.</i> 23, 014018 (2025). https://doi.org/10.1103/PhysRevApplied.23.014018.</li>
+          <li><b style="color:var(--text)">Xiao, T</b>, Zhai, X., Wu, X. et al. Practical advantage of quantum machine learning in ghost imaging. <i>Commun Phys</i> 6, 171 (2023). https://doi.org/10.1038/s42005-023-01290-1.</li>
+          <li><b style="color:var(--text)">Xiao, T</b>, Huang, J., Li, H., Fan, J., Zeng, G. Quantum generative adversarial imitation learning. <i>New Journal of Physics</i>, 2023, 25(3): 033034.</li>
+          <li><b style="color:var(--text)">Xiao, T</b>, Fan, J. & Zeng, G. Parameter estimation in quantum sensing based on deep reinforcement learning. <i>npj Quantum Inf</i> 8, 2 (2022). https://doi.org/10.1038/s41534-021-00513-z.</li>
+          <li><b style="color:var(--text)">Xiao, T</b>, Huang, J., Li, H. et al. Intelligent certification for quantum simulators via machine learning. <i>npj Quantum Inf</i> 8, 138 (2022). https://doi.org/10.1038/s41534-022-00649-6.</li>
+          <li><b style="color:var(--text)">Xiao, T</b>, Bai, D., Fan, J., Zeng, G. Quantum Boltzmann machine algorithm with dimension-expanded equivalent Hamiltonian. <i>Physical Review A</i>, 2020, 101(3): 032304.</li>
+          <li><b style="color:var(--text)">Xiao, T</b>, Huang, J., Fan, J. et al. Continuous-variable Quantum Phase Estimation based on Machine Learning. <i>Sci Rep</i> 9, 12410 (2019). https://doi.org/10.1038/s41598-019-48551-0.</li>
+          <li>Li Y, Song Q, <b style="color:var(--text)">Xiao T*</b>, et al. Neural network enhanced time-varying parameter estimation via weak measurement. <i>Optics Express</i>, 2024, 32(16): 27358-27372.</li>
+          <li><b style="color:var(--text)">Li Z*</b>, <b style="color:var(--text)">Xiao T*</b>, Deng X, et al. Optimizing Variational Quantum Neural Networks Based on Collective Intelligence. <i>Mathematics</i>, 2024, 12(11): 1627.</li>
+          <li>Zhu Y, <b style="color:var(--text)">Xiao T*</b>, Zeng G, et al. Controlling Unknown Quantum States via Data-Driven State Representations. <i>arXiv</i>:2406.05711, 2024.</li>
+          <li>Tang Y, Xiong H, Yang N, <b style="color:var(--text)">Xiao T</b>, et al. Towards LLM4QPE: Unsupervised pretraining of quantum property estimation and a benchmark. <i>ICLR</i>, 2024.</li>
+          <li>Zhai X, Wu X, <b style="color:var(--text)">Xiao T</b>, et al. Robust superresolution computational imaging with diffuser-refined illumination. <i>Phys. Rev. Applied</i>, 2023, 20(6): 064002.</li>
+          <li>Tan X, Li H, Song Q, <b style="color:var(--text)">Xiao T</b>, et al. Enhanced sensitivity via polarization switching in fiber-based quantum sensing. <i>Phys. Rev. Applied</i>, 2023, 20(4): 044020.</li>
+          <li>Xia B, Huang J, Li H, Liu M, <b style="color:var(--text)">Xiao T</b>, et al. Ultrasensitive measurement of angular rotations via a Hermite-Gaussian pointer. <i>Photonics Research</i>, 2022, 10(12): 2816-2827.</li>
+          <li>Song Q, Li H, Huang J, <b style="color:var(--text)">Xiao T</b>, et al. Adaptive time-varying parameter estimation via weak measurement. <i>Phys. Rev. Applied</i>, 2022, 18(4): 044031.</li>
+          <li>Song Q, Xia B, Huang J, <b style="color:var(--text)">Xiao T</b>, et al. Surpassing the nyquist sampling limit via postmodulation. <i>Phys. Rev. Applied</i>, 2022, 18(3): 034077.</li>
+          <li>Zhao D, Huang J Z, <b style="color:var(--text)">Xiao T</b>, et al. Type of non-reciprocity in a fiber Sagnac interferometer induced by geometric phases. <i>Optics Express</i>, 2021, 30(1): 12-21.</li>
+          <li>Wang G, Li H, <b style="color:var(--text)">Xiao T</b>, et al. Adaptive correction of phase estimation with time based on weak measurement. <i>Optics Express</i>, 2021, 29(24): 39150-39158.</li>
+          <li>Fang C, Xia B, Huang J Z, <b style="color:var(--text)">Xiao T</b>, et al. Hamiltonian estimation based on adaptive weak value amplification. <i>J. Phys. B</i>, 2021, 54(7): 075501.</li>
+          <li>Bai D, Huang P, Zhu Y, ... <b style="color:var(--text)">Xiao T</b>, et al. Unidimensional continuous-variable measurement-device-independent quantum key distribution. <i>Quantum Information Processing</i>, 2020, 19: 1-21.</li>
+          <li>Qi H, Liu F, <b style="color:var(--text)">Xiao T*</b>, et al. A robust and energy-efficient weighted clustering algorithm on mobile ad hoc sensor networks. <i>Algorithms</i>, 2018, 11(8): 116.</li>
+        </ol>
+      </details>
+    </section>
+
+    <section class="grid">
+      <section class="card anchor" id="service">
+        <h2>Academic Service</h2>
+        <div class="item">
+          <div class="top"><div class="name">Roles</div><div class="meta2">Community</div></div>
+          <ul class="clean">
+            <li>Executive Committee Member, CCF Technical Committee on Quantum Computing</li>
+          </ul>
+        </div>
+
+        <div class="item" style="margin-top:10px">
+          <div class="top"><div class="name">Editorial Work</div><div class="meta2">Journals</div></div>
+          <ul class="clean">
+            <li>Guest Editor — Special Issue: Quantum Computing and Quantum Information Processing. <a href="https://www.mdpi.com/journal/entropy/special_issues/Quantum_Computing_Quantum_Information" target="_blank" rel="noreferrer">See Special Issue</a>.</li>
+            <li>Editorial Board Member — Scientific Reports.</li>
+          </ul>
+        </div>
+
+        <div class="item" style="margin-top:10px">
+          <div class="top"><div class="name">Reviewer</div><div class="meta2">Venues</div></div>
+          <ul class="clean">
+            <li>Physical Review Letters/Applied/Research/A</li>
+            <li>PRX Quantum</li>
+            <li>New Journal of Physics; Quantum Science and Technology; JPA; Machine Learning: Science and Technology; European Journal of Physics</li>
+            <li>npj Quantum Information; Scientific Data; Scientific Reports</li>
+            <li>Quantum Information Processing</li>
+            <li>Optica Quantum; Optics Express; Optics Letters</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card anchor" id="projects">
+        <h2>Projects</h2>
+        <div class="list">
+          <div class="item"><div class="top"><div class="name">NSFC Young Scientists Fund</div><div class="meta2">2025–2027 · 300,000 CNY</div></div></div>
+          <div class="item"><div class="top"><div class="name">Lenovo–SJTU Joint Lab Project</div><div class="meta2">2024–2025 · 600,000 CNY</div></div></div>
+          <div class="item"><div class="top"><div class="name">SJTU Young Scholars Project</div><div class="meta2">2023–2026 · 50,000 CNY</div></div></div>
+          <div class="item"><div class="top"><div class="name">CCF–Boson Quantum Innovation Fund</div><div class="meta2">2025.03–2025.08 · 150,000 CNY</div></div></div>
+          <div class="item"><div class="top"><div class="name">National Key Laboratory Open Research Program</div><div class="meta2">2025–2026 · 100,000 CNY</div></div></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="grid">
+      <section class="card anchor" id="teaching">
+        <h2>Teaching</h2>
+        <div class="item">
+          <div class="top"><div class="name">Engineering Practice and Technological Innovation II (EE0503)</div><div class="meta2">Spring 2025</div></div>
+          <div class="meta2">An Introduction to Quantum Artificial Intelligence · Undergraduate (grade two)</div>
+        </div>
+        <p style="margin:10px 0 0; color:var(--muted)">Learning materials: <a href="LM/Understanding Quantum Information and Computation.pdf">Understanding Quantum Information and Computation (PDF)</a>.</p>
+      </section>
+
+      <section class="card anchor" id="education">
+        <h2>Education</h2>
+        <div class="item">
+          <div class="top"><div class="name">B.E., Communication Engineering</div><div class="meta2">Central South University · 06.2018</div></div>
+          <ul class="clean">
+            <li>National Scholarship, 2017</li>
+            <li>Exemplary Outstanding Student, 2017</li>
+            <li>Hunan Provincial Outstanding Graduate, 2018</li>
+          </ul>
+        </div>
+        <div class="item" style="margin-top:10px">
+          <div class="top"><div class="name">Ph.D., Information and Communication Engineering</div><div class="meta2">Shanghai Jiao Tong University · 06.2023</div></div>
+          <ul class="clean">
+            <li>Yangjiachi Scholarship, 2019</li>
+            <li>National Second Prize, CCF Sinan Cup, 2021</li>
+            <li>First-class Scholarship of SKL (Photonics and communications), 2022</li>
+            <li>National First Prize, CCF Sinan Cup, 2022</li>
+            <li>Outstanding Graduate, 2023</li>
+            <li>CCF Outstanding Doctoral Dissertation in Quantum Computing, 2024</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Xiao Tailong · Built on GitHub Pages</div>
+      <div class="badge"><span class="mono">Tip</span> Add <span class="mono">CV.pdf</span> to repo root to enable a CV button</div>
+    </footer>
+  </main>
+
+  <script>
+    (function(){
+      const root = document.documentElement;
+      const saved = localStorage.getItem('theme');
+      const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      const initial = saved || (prefersLight ? 'light' : 'dark');
+      root.setAttribute('data-theme', initial);
+
+      const btn = document.getElementById('themeBtn');
+      if (btn){
+        btn.addEventListener('click', () => {
+          const cur = root.getAttribute('data-theme') || 'dark';
+          const next = (cur === 'dark') ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+        });
+      }
+
+      const y = document.getElementById('y');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
