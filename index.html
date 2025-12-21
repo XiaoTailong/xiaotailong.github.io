@@ -6,6 +6,12 @@
   <meta name="color-scheme" content="light dark" />
   <title>Xiao, Tailong (肖太龙) | SJTU</title>
   <meta name="description" content="Xiao, Tailong (肖太龙) — Assistant Professor at Shanghai Jiao Tong University. Quantum Artificial Intelligence, Intelligent Quantum Sensing, AI-enhanced optical computing and imaging." />
+  <meta property="og:title" content="Xiao, Tailong (肖太龙) | SJTU" />
+  <meta property="og:description" content="Quantum Artificial Intelligence, Intelligent Quantum Sensing, AI-enhanced optical computing and imaging." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="photos/bio.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0b1020" />
 
   <link rel="shortcut icon" href="favicon.ico" />
 
@@ -51,6 +57,20 @@
     }
     a{color:inherit}
 
+    .skip-link{
+      position:absolute;
+      left:-999px;
+      top:8px;
+      padding:10px 12px;
+      border-radius:12px;
+      background: var(--panel);
+      border:1px solid var(--line);
+      color: var(--text);
+      z-index: 9999;
+      text-decoration:none;
+    }
+    .skip-link:focus{left:12px}
+
     .wrap{max-width:var(--max); margin:0 auto; padding:22px 16px 70px;}
 
     /* Top bar */
@@ -89,6 +109,27 @@
     .nav{
       display:flex; gap:8px; flex-wrap:wrap;
       justify-content:flex-end;
+      align-items:center;
+    }
+
+    /* Mobile nav */
+    .navtoggle{display:none}
+    @media (max-width: 860px){
+      .nav{display:none}
+      .navtoggle{display:inline-flex}
+      .nav.open{
+        display:flex;
+        position:absolute;
+        left:16px;
+        right:16px;
+        top:62px;
+        padding:10px;
+        border-radius:16px;
+        border:1px solid var(--line);
+        background: rgba(17,26,51,.88);
+        box-shadow: var(--shadow);
+      }
+      [data-theme="light"] .nav.open{background: rgba(255,255,255,.92)}
     }
     .chip{
       text-decoration:none;
@@ -244,6 +285,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#content">Skip to content</a>
   <div class="topbar" role="banner">
     <div class="topbar-inner">
       <a class="brand" href="#top" style="text-decoration:none">
@@ -254,7 +296,7 @@
         </div>
       </a>
 
-      <nav class="nav" aria-label="Primary">
+      <nav class="nav" id="navMenu" aria-label="Primary">
         <a class="chip" href="#about">About</a>
         <a class="chip" href="#research">Research</a>
         <a class="chip" href="#news">News</a>
@@ -266,6 +308,9 @@
       </nav>
 
       <div class="actions" aria-label="Actions">
+        <button class="iconbtn navtoggle" id="navBtn" type="button" aria-label="Toggle menu" title="Menu">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 1 0 0-2H4a1 1 0 1 0 0 2Zm16 5H4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2Zm0 7H4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2Z"/></svg>
+        </button>
         <button class="iconbtn" id="themeBtn" type="button" aria-label="Toggle theme" title="Toggle theme">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0 4a1 1 0 0 1-1-1v-1.1a1 1 0 1 1 2 0V21a1 1 0 0 1-1 1ZM12 3.1a1 1 0 0 1-1-1V1a1 1 0 1 1 2 0v1.1a1 1 0 0 1-1 1ZM4.22 5.64a1 1 0 0 1-1.41 0L2.03 4.86a1 1 0 0 1 1.41-1.41l.78.78a1 1 0 0 1 0 1.41Zm17.75 0a1 1 0 0 1 0-1.41l.78-.78a1 1 0 1 1 1.41 1.41l-.78.78a1 1 0 0 1-1.41 0ZM3.1 12a1 1 0 0 1-1 1H1a1 1 0 1 1 0-2h1.1a1 1 0 0 1 1 1Zm19.9 0a1 1 0 0 1 1-1H23a1 1 0 1 1 0 2h-1.1a1 1 0 0 1-1-1ZM4.22 18.36a1 1 0 0 1 0-1.41l.78-.78a1 1 0 1 1 1.41 1.41l-.78.78a1 1 0 0 1-1.41 0Zm15.56 0a1 1 0 0 1-1.41 0l-.78-.78a1 1 0 1 1 1.41-1.41l.78.78a1 1 0 0 1 0 1.41Z"/></svg>
         </button>
@@ -274,6 +319,7 @@
   </div>
 
   <main class="wrap" id="top">
+    <div id="content" style="position:absolute; top:-80px"></div>
     <section class="hero">
       <div class="card">
         <div class="hero-left">
@@ -291,6 +337,7 @@
               <a class="btn" href="https://www.researchgate.net/profile/Tailong-Xiao-2" target="_blank" rel="noreferrer">ResearchGate</a>
               <a class="btn" href="https://www.zhihu.com/people/xiao-tai-long-16" target="_blank" rel="noreferrer">知乎</a>
               <a class="btn" href="https://qsip.sjtu.edu.cn/index.htm" target="_blank" rel="noreferrer">QSIP</a>
+              <a class="btn" href="CV.pdf" target="_blank" rel="noreferrer">CV</a>
             </div>
             <div class="pillrow" aria-label="Keywords">
               <span class="pill">Quantum AI</span>
@@ -319,7 +366,7 @@
     <section class="section card anchor" id="about">
       <h2>About</h2>
       <p style="margin:0; color:var(--muted)">
-        I received the B.E. degree from Central South University in 2018, and the Ph.D. degree from Shanghai Jiao Tong University in 2023.
+        I received the B.E. degree from Central South University in 2018, and the Ph.D. degree from Shanghai Jiao Tong University under the supervision of Prof. Guihua Zeng (曾贵华), in 2023.
         From Oct. 2023, I have joined Shanghai Jiao Tong University as an Assistant Professor.
       </p>
       <p style="margin:10px 0 0; color:var(--muted)">
@@ -350,11 +397,16 @@
           <div class="item"><div class="top"><div class="name">CCF Quantum Computing Conference 2025</div><div class="meta2">Invited · Jul. 22, 2025</div></div></div>
           <div class="item"><div class="top"><div class="name">Global Artificial Intelligence Technology Conference 2025</div><div class="meta2">Invited · Jun. 6, 2025</div></div></div>
           <div class="item"><div class="top"><div class="name">Fourth National Conference on Electronic Information Materials and Devices</div><div class="meta2">Oral · Apr. 19, 2025</div></div></div>
+          <details style="margin-top:6px">
+            <summary>More news</summary>
+            <div class="list" style="margin-top:10px">
           <div class="item"><div class="top"><div class="name">CCF Quantum Computing Doctoral Forum + “Rising Star” Young Scholars Forum</div><div class="meta2">Oral · Nov. 27, 2024</div></div></div>
           <div class="item"><div class="top"><div class="name">Advanced Photonics Forum: Intelligent Photonics</div><div class="meta2">Invited · Nov. 2024</div></div></div>
           <div class="item"><div class="top"><div class="name">Shandong University — Baoqing Sun Group</div><div class="meta2">Invited · Sep. 2024</div></div><div class="meta2">“Research on Quantum Machine Learning Algorithms and Their Advantages”</div></div>
           <div class="item"><div class="top"><div class="name">Hangzhou Fuyang First International Conf. on Optoelectronic Integration Tech</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Machine Learning Ghost Imaging and Practical Advantages”</div></div>
           <div class="item"><div class="top"><div class="name">Nanjing University of Information Science & Technology — Wenjie Liu Group</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Quantum Machine Learning Algorithms and Applications”</div></div>
+            </div>
+          </details>
         </div>
       </section>
     </section>
@@ -362,6 +414,15 @@
     <section class="section card anchor" id="publications">
       <h2>Publications</h2>
       <p style="margin:0; color:var(--muted)">* indicates the corresponding author. Full list available on <a href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>.</p>
+
+      <div class="item" style="margin-top:10px">
+        <div class="top"><div class="name">Selected</div><div class="meta2">Highlights</div></div>
+        <ul class="clean">
+          <li>Xu H, <b style="color:var(--text)">Xiao T*</b>, Huang J, et al. Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning. <i>Physical Review Letters</i>, 2025.</li>
+          <li><b style="color:var(--text)">Xiao, T</b>, Zhai, X., Huang, J. et al. Quantum deep generative prior with programmable quantum circuits. <i>Communications Physics</i>, 2024.</li>
+          <li>Zhai, X., <b style="color:var(--text)">Xiao, T*</b>, Huang, J., Fan, J. & Zeng, G. Quantum neural compressive sensing for ghost imaging. <i>Physical Review Applied</i>, 2025.</li>
+        </ul>
+      </div>
 
       <details open style="margin-top:10px">
         <summary>Show / hide publication list</summary>
@@ -472,7 +533,7 @@
 
     <footer>
       <div>© <span id="y"></span> Xiao Tailong · Built on GitHub Pages</div>
-      <div class="badge"><span class="mono">Tip</span> Add <span class="mono">CV.pdf</span> to repo root to enable a CV button</div>
+      <div class="badge"><span class="mono">Updated</span> <span id="updatedAt" class="mono"></span> · <a href="#top" style="text-decoration:none">Back to top</a></div>
     </footer>
   </main>
 
@@ -494,8 +555,39 @@
         });
       }
 
+      // Mobile menu
+      const navBtn = document.getElementById('navBtn');
+      const navMenu = document.getElementById('navMenu');
+      const toggleMenu = () => {
+        if (!navMenu) return;
+        navMenu.classList.toggle('open');
+      };
+      if (navBtn){
+        navBtn.addEventListener('click', toggleMenu);
+      }
+      if (navMenu){
+        navMenu.addEventListener('click', (e) => {
+          const t = e.target;
+          if (t && t.tagName === 'A' && navMenu.classList.contains('open')) {
+            navMenu.classList.remove('open');
+          }
+        });
+      }
+      document.addEventListener('click', (e) => {
+        if (!navMenu || !navMenu.classList.contains('open')) return;
+        const within = navMenu.contains(e.target) || (navBtn && navBtn.contains(e.target));
+        if (!within) navMenu.classList.remove('open');
+      });
+
       const y = document.getElementById('y');
       if (y) y.textContent = new Date().getFullYear();
+
+      const updatedAt = document.getElementById('updatedAt');
+      if (updatedAt){
+        const d = new Date();
+        const pad = (n) => String(n).padStart(2, '0');
+        updatedAt.textContent = `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+      }
     })();
   </script>
 </body>
