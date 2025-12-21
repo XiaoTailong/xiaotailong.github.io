@@ -9,6 +9,13 @@ from typing import Any, Dict, Iterable, List, Optional
 
 from semanticscholar import SemanticScholar
 
+def json_default(o: Any):
+    """JSON serializer for objects not serializable by default json code."""
+    # Semantic Scholar client may return datetime/date objects in some fields.
+    if isinstance(o, (dt.datetime, dt.date)):
+        return o.isoformat()
+    return str(o)
+
 FIELDS = [
     "title","year","authors","venue","publicationTypes","publicationDate",
     "citationCount","externalIds","url","paperId",
@@ -137,7 +144,7 @@ def main() -> None:
 
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
+        json.dump(out, f, ensure_ascii=False, indent=2, default=json_default)
 
     print(f"Wrote {args.out}: {len(items)} item(s).")
 
