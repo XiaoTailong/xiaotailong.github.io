@@ -1,0 +1,393 @@
+{
+  "updatedAt": "2025-12-21",
+  "source": {
+    "name": "Semantic Scholar",
+    "via": "author:30425271"
+  },
+  "counts": {
+    "total": 29
+  },
+  "items": [
+    {
+      "doi": "10.1103/physrevlett.134.120803",
+      "title": "Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning.",
+      "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Ming He, Jianping Fan, G. Zeng",
+      "venue": "Physical Review Letters",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/261bcda05757a972c224571a75f7c8a06f5d7c88",
+      "citationCount": 11,
+      "publicationDate": "2025-03-27T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1103/PhysRevApplied.23.014018",
+      "title": "Quantum neural compressive sensing for ghost imaging",
+      "authors": "Xinliang Zhai, Tailong Xiao, Jingzheng Huang, Jianping Fan, G. Zeng",
+      "venue": "Physical Review Applied",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/87c61c52175bb197989f859c9cc015af9322decf",
+      "citationCount": 2,
+      "publicationDate": "2025-01-07T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.48550/arXiv.2503.02210",
+      "title": "Towards Heisenberg limit without critical slowing down via quantum reinforcement learning",
+      "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Ming He, Jianpin Fan, G. Zeng",
+      "venue": "arXiv.org",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/103894acbdbfdb8bb58070d3de570b834d42fc81",
+      "citationCount": 1,
+      "publicationDate": "2025-03-04T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "",
+      "title": "Real-time imaging through dynamic scattering media enabled by fixed optical modulations",
+      "authors": "Y. Li, Junjie Wang, Tailong Xiao, Ze Zheng, Jingzheng Huang, Ming He, Jianping Fan, G. Zeng",
+      "venue": "",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/0ac7178f21216c487bd2d30cc3503b50a68c7776",
+      "citationCount": 1,
+      "publicationDate": "2025-08-21T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "",
+      "title": "Optical diffraction neural networks assisted computational ghost imaging through dynamic scattering media",
+      "authors": "Y. Li, Ze Zheng, Junjie Wang, Ming He, Jianping Fan, Tailong Xiao, Guihua Zeng",
+      "venue": "",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/afe7d77313126fb310ec39322dc895e2a5d385be",
+      "citationCount": 0,
+      "publicationDate": "2025-11-28T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "",
+      "title": "Learning to Restore Heisenberg Limit in Noisy Quantum Sensing via Quantum Digital Twin",
+      "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Jianping Fan, G. Zeng",
+      "venue": "",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/69aad9b479dc07b8df5eee5117a639ea6ffa6b72",
+      "citationCount": 0,
+      "publicationDate": "2025-08-15T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1103/rgy3-z928",
+      "title": "Discovering autonomous quantum error correction via deep reinforcement learning",
+      "authors": "Yue Yin, Tailong Xiao, Xiaoyang Deng, Ming He, Jianping Fan, Guihua Zeng",
+      "venue": "",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/4f0d4a13e871c22347ccc0d6ea0fc77e88e13e85",
+      "citationCount": 0,
+      "publicationDate": "2025-11-16T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1038/s42005-024-01765-9",
+      "title": "Quantum deep generative prior with programmable quantum circuits",
+      "authors": "Tailong Xiao, Xinliang Zhai, Jingzheng Huang, Jianping Fan, G. Zeng",
+      "venue": "Communications Physics",
+      "year": 2024,
+      "url": "https://www.semanticscholar.org/paper/f7addbb67ad073ce79f7dc078379f479c246bb60",
+      "citationCount": 8,
+      "publicationDate": "2024-08-15T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.3390/math12111627",
+      "title": "Optimizing Variational Quantum Neural Networks Based on Collective Intelligence",
+      "authors": "Zitong Li, Tailong Xiao, Xiaoyang Deng, G. Zeng, Weimin Li",
+      "venue": "Mathematics",
+      "year": 2024,
+      "url": "https://www.semanticscholar.org/paper/88eaa3b0dc4150a1ae30ceb8ba153ea174672aa3",
+      "citationCount": 2,
+      "publicationDate": "2024-05-22T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "",
+      "title": "Controlling Unknown Quantum States via Data-Driven State Representations",
+      "authors": "Yan Zhu, Tailong Xiao, G. Zeng, G. Chiribella, Yadong Wu",
+      "venue": "",
+      "year": 2024,
+      "url": "https://www.semanticscholar.org/paper/e143eec5f62158668d9a1686dc40f57be11eba7f",
+      "citationCount": 2,
+      "publicationDate": "2024-06-09T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1364/oe.529480",
+      "title": "Neural network enhanced time-varying parameter estimation via weak measurement.",
+      "authors": "Y. Li, Qi Song, Tailong Xiao, Hongjing Li, Jianping Fan, G. Zeng",
+      "venue": "Optics Express",
+      "year": 2024,
+      "url": "https://www.semanticscholar.org/paper/010f7715182911c27c4a58c7953e93ac6d9f16db",
+      "citationCount": 1,
+      "publicationDate": "2024-07-03T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1038/s42005-023-01290-1",
+      "title": "Practical advantage of quantum machine learning in ghost imaging",
+      "authors": "Tailong Xiao, Xinliang Zhai, Xiaoyan Wu, Jianping Fan, G. Zeng",
+      "venue": "Communications Physics",
+      "year": 2023,
+      "url": "https://www.semanticscholar.org/paper/69514c02e9e7fc80409c5d42911ac6e821b8cd48",
+      "citationCount": 25,
+      "publicationDate": "2023-07-10T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1088/1367-2630/acc605",
+      "title": "Quantum generative adversarial imitation learning",
+      "authors": "Tailong Xiao, Jingzheng Huang, Hongjing Li, Jianping Fan, G. Zeng",
+      "venue": "New Journal of Physics",
+      "year": 2023,
+      "url": "https://www.semanticscholar.org/paper/e537bc614b5a01b088c38d1cb1d153bcba92eb23",
+      "citationCount": 8,
+      "publicationDate": "2023-03-21T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1103/physrevapplied.20.044020",
+      "title": "Enhanced sensitivity via polarization switching in fiber-based quantum sensing",
+      "authors": "Xiaorui Tan, Hongjing Li, Qi Song, Binke Xia, Tailong Xiao, Shurong Wei, Jingzheng Huang, G. Zeng",
+      "venue": "Physical Review Applied",
+      "year": 2023,
+      "url": "https://www.semanticscholar.org/paper/da7508196c0b0bef18f9c652160fcc3d786390eb",
+      "citationCount": 2,
+      "publicationDate": "2023-10-06T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1103/physrevapplied.20.064002",
+      "title": "Robust superresolution computational imaging with diffuser-refined illumination",
+      "authors": "Xinliang Zhai, Xiaoyan Wu, Tailong Xiao, Jianohng Shi, G. Zeng",
+      "venue": "Physical Review Applied",
+      "year": 2023,
+      "url": "https://www.semanticscholar.org/paper/8e38d6208aac0acd0b22566bf0f000b903639549",
+      "citationCount": 0,
+      "publicationDate": "2023-12-01T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1038/s41534-021-00513-z",
+      "title": "Parameter estimation in quantum sensing based on deep reinforcement learning",
+      "authors": "Tailong Xiao, Jianping Fan, Guihua Zeng",
+      "venue": "npj Quantum Information",
+      "year": 2022,
+      "url": "https://www.semanticscholar.org/paper/d9f217cc5a58bdb614c4b4b52f3c50e107d2a1e1",
+      "citationCount": 51,
+      "publicationDate": "2022-01-10T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1038/s41534-022-00649-6",
+      "title": "Intelligent certification for quantum simulators via machine learning",
+      "authors": "Tailong Xiao, Jingzheng Huang, Hongjing Li, Jianping Fan, G. Zeng",
+      "venue": "npj Quantum Information",
+      "year": 2022,
+      "url": "https://www.semanticscholar.org/paper/6867b8e0439c11277e84f0d3fb651dcc8fd5745d",
+      "citationCount": 21,
+      "publicationDate": "2022-11-28T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1364/PRJ.473699",
+      "title": "Ultrasensitive Measurement of Angular Rotations via Hermite-Gaussian Pointer",
+      "authors": "Binke Xia, Jingzheng Huang, Hongjing Li, Miaomiao Liu, Tailong Xiao, Chen Fang, G. Zeng",
+      "venue": "Photonics Research",
+      "year": 2022,
+      "url": "https://www.semanticscholar.org/paper/9e69c14a7de172b636e632c9a8c0c2ffce5ddb83",
+      "citationCount": 7,
+      "publicationDate": "2022-10-14T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1103/physrevapplied.18.044031",
+      "title": "Adaptive Time-Varying Parameter Estimation via Weak Measurement",
+      "authors": "Qi Song, Hongjing Li, Jingzheng Huang, Tailong Xiao, Xiaorui Tan, Binke Xia, G. Zeng",
+      "venue": "Physical Review Applied",
+      "year": 2022,
+      "url": "https://www.semanticscholar.org/paper/3044e569fa03d463bfd99159c71f68d7168c0e0b",
+      "citationCount": 6,
+      "publicationDate": "2022-10-13T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1103/physrevapplied.18.034077",
+      "title": "Surpassing the Nyquist Sampling Limit via Postmodulation",
+      "authors": "Qi Song, Binke Xia, Jingzheng Huang, Tailong Xiao, Hongjing Li, G. Zeng",
+      "venue": "Physical Review Applied",
+      "year": 2022,
+      "url": "https://www.semanticscholar.org/paper/3146b376a89fc86da329850571ec4ab0de6c499a",
+      "citationCount": 1,
+      "publicationDate": "2022-09-28T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1364/oe.438658",
+      "title": "Adaptive correction of phase estimation with time based on weak measurement.",
+      "authors": "Gongling Wang, Hongjing Li, Tailong Xiao, Jingzheng Huang, Guihua Zeng",
+      "venue": "Optics Express",
+      "year": 2021,
+      "url": "https://www.semanticscholar.org/paper/2c4eb8d2e43571a71d30dfd36a6fe0d8e85e83e0",
+      "citationCount": 5,
+      "publicationDate": "2021-11-02T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1364/OE.441981",
+      "title": "Type of non-reciprocity in a fiber Sagnac interferometer induced by geometric phases.",
+      "authors": "Dongzi Zhao, Jingzheng Huang, Tailong Xiao, Hongjing Li, Xiaoyan Wu, G. Zeng",
+      "venue": "Optics Express",
+      "year": 2021,
+      "url": "https://www.semanticscholar.org/paper/1e870b35578c60865c5f4440c966ad0a49f38b54",
+      "citationCount": 3,
+      "publicationDate": "2021-11-26T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1088/1361-6455/abe5c7",
+      "title": "Hamiltonian estimation based on adaptive weak value amplification",
+      "authors": "Chen Fang, Binke Xia, Jingzheng Huang, Tailong Xiao, Yang Yu, Hongjing Li, G. Zeng",
+      "venue": "Journal of Physics B: Atomic, Molecular and Optical Physics",
+      "year": 2021,
+      "url": "https://www.semanticscholar.org/paper/38e8645696a9be6333a42b467d9b0ce2aef8e159",
+      "citationCount": 3,
+      "publicationDate": "2021-02-12T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1103/physreva.101.032304",
+      "title": "Quantum Boltzmann machine algorithm with dimension-expanded equivalent Hamiltonian",
+      "authors": "Tailong Xiao, Dongyun Bai, Jianping Fan, Guihua Zeng",
+      "venue": "",
+      "year": 2020,
+      "url": "https://www.semanticscholar.org/paper/093e6b07dcb970e26d3abda797a3a348398ba1ed",
+      "citationCount": 10,
+      "publicationDate": "2020-03-05T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.1088/1361-6455/ab0b2a",
+      "title": "Passive-state preparation in continuous-variable measurement-device-independent quantum key distribution",
+      "authors": "Dongyun Bai, Peng Huang, Yiqun Zhu, Hongxin Ma, Tailong Xiao, Tao Wang, Guihua Zeng",
+      "venue": "Quantum Information Processing",
+      "year": 2019,
+      "url": "https://www.semanticscholar.org/paper/f475fc9df65a9e36380e9eaa41c92b20fc5da846",
+      "citationCount": 35,
+      "publicationDate": "2019-05-22T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1038/s41598-019-48551-0",
+      "title": "Continuous-variable Quantum Phase Estimation based on Machine Learning",
+      "authors": "Tailong Xiao, Jingzheng Huang, Jianping Fan, Guihua Zeng",
+      "venue": "Scientific Reports",
+      "year": 2019,
+      "url": "https://www.semanticscholar.org/paper/68b9527a6a08586914e5d3452610f126af27fc0a",
+      "citationCount": 16,
+      "publicationDate": "2019-08-27T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.3390/A11080116",
+      "title": "A Robust and Energy-Efficient Weighted Clustering Algorithm on Mobile Ad Hoc Sensor Networks",
+      "authors": "Huamei Qi, Fengqi Liu, Tailong Xiao, Jiang Su",
+      "venue": "Algorithms",
+      "year": 2018,
+      "url": "https://www.semanticscholar.org/paper/1d41ffb613325adeda266d12dad1fca5927435b5",
+      "citationCount": 12,
+      "publicationDate": "2018-08-01T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1109/ISPA/IUCC.2017.00216",
+      "title": "Graph-Based Quantum Parallel Teleportation in Quantum Wireless Multi-Hop Networks",
+      "authors": "Huamei Qi, Tailong Xiao, Ying Guo",
+      "venue": "2017 IEEE International Symposium on Parallel and Distributed Processing with Applications and 2017 IEEE International Conference on Ubiquitous Computing and Communications (ISPA/IUCC)",
+      "year": 2017,
+      "url": "https://www.semanticscholar.org/paper/49ad1794ee305e7f76172a60e144c6e88e23d74b",
+      "citationCount": 2,
+      "publicationDate": "2017-12-01T00:00:00",
+      "publicationTypes": [
+        "JournalArticle",
+        "Conference"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.1007/978-3-319-71147-8_13",
+      "title": "Toward Energy-Efficient and Robust Clustering Algorithm on Mobile Ad Hoc Sensor Networks",
+      "authors": "Huamei Qi, Tailong Xiao, Anfeng Liu, Jiang Su",
+      "venue": "International Conference on Combinatorial Optimization and Applications",
+      "year": 2017,
+      "url": "https://www.semanticscholar.org/paper/f85b58caf35b162f170f94fc09c13c44282bf6a6",
+      "citationCount": 1,
+      "publicationDate": "2017-12-16T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    }
+  ]
+}
