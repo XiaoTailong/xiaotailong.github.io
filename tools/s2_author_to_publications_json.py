@@ -83,8 +83,10 @@ def main() -> None:
     ap.add_argument("--author-id", required=True)
     ap.add_argument("--out", default="data/publications.json")
     ap.add_argument("--selected-dois", default="data/selected_dois.txt")
-    ap.add_argument("--limit", type=int, default=2000)
+    ap.add_argument("--limit", type=int, default=1000)
     args = ap.parse_args()
+
+    args.limit = max(1, min(1000, int(args.limit)))
 
     api_key = os.getenv("SEMANTIC_SCHOLAR_API_KEY") or None
     client = SemanticScholar(api_key=api_key) if api_key else SemanticScholar()
