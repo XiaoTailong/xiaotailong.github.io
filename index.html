@@ -339,13 +339,6 @@
               <a class="btn" href="https://qsip.sjtu.edu.cn/index.htm" target="_blank" rel="noreferrer">QSIP</a>
               <a class="btn" href="CV.pdf" target="_blank" rel="noreferrer">CV</a>
             </div>
-<!--            <div class="pillrow" aria-label="Keywords">-->
-<!--              <span class="pill">Quantum AI</span>-->
-<!--              <span class="pill">Quantum ML</span>-->
-<!--              <span class="pill">Quantum Sensing</span>-->
-<!--              <span class="pill">Optical Computing</span>-->
-<!--              <span class="pill">Imaging</span>-->
-<!--            </div>-->
           </div>
         </div>
       </div>
@@ -391,7 +384,7 @@
 
       <section class="card anchor" id="news">
         <h2>Recent News</h2>
-        <div class="list">
+        <div class="list" id="newsList">
           <div class="item"><div class="top"><div class="name">2025 Quantum Technology Frontier Summit</div><div class="meta2">Oral · Sep. 21, 2025</div></div><div class="meta2">Academic Committee</div></div>
           <div class="item"><div class="top"><div class="name">The 4th Youth Symposium on Quantum Computing</div><div class="meta2">Oral · Aug. 12, 2025</div></div></div>
           <div class="item"><div class="top"><div class="name">CCF Quantum Computing Conference 2025</div><div class="meta2">Invited · Jul. 22, 2025</div></div></div>
@@ -417,7 +410,7 @@
 
       <div class="item" style="margin-top:10px">
         <div class="top"><div class="name">Selected</div><div class="meta2">Highlights</div></div>
-        <ul class="clean">
+        <ul class="clean" id="pubSelected">
           <li>Xu H, <b style="color:var(--text)">Xiao T*</b>, Huang J, et al. Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning. <i>Physical Review Letters</i>, 2025.</li>
           <li><b style="color:var(--text)">Xiao, T</b>, Zhai, X., Huang, J. et al. Quantum deep generative prior with programmable quantum circuits. <i>Communications Physics</i>, 2024.</li>
           <li>Zhai, X., <b style="color:var(--text)">Xiao, T*</b>, Huang, J., Fan, J. & Zeng, G. Quantum neural compressive sensing for ghost imaging. <i>Physical Review Applied</i>, 2025.</li>
@@ -426,7 +419,7 @@
 
       <details open style="margin-top:10px">
         <summary>Show / hide publication list</summary>
-        <ol class="clean" style="color:var(--muted)">
+        <ol class="clean" id="pubAll" style="color:var(--muted)">
           <li>Xu H, <b style="color:var(--text)">Xiao T*</b>, Huang J, et al. Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning. <i>Physical Review Letters</i>, 2025, 134(12): 120803.</li>
           <li><b style="color:var(--text)">Xiao, T</b>, Zhai, X., Huang, J. et al. Quantum deep generative prior with programmable quantum circuits. <i>Commun Phys</i> 7, 276 (2024). https://doi.org/10.1038/s42005-024-01765-9.</li>
           <li>Zhai, X., <b style="color:var(--text)">Xiao, T*</b>, Huang, J., Fan, J. & Zeng, G. Quantum neural compressive sensing for ghost imaging. <i>Phys. Rev. Appl.</i> 23, 014018 (2025). https://doi.org/10.1103/PhysRevApplied.23.014018.</li>
@@ -582,12 +575,129 @@
       const y = document.getElementById('y');
       if (y) y.textContent = new Date().getFullYear();
 
-      const updatedAt = document.getElementById('updatedAt');
-      if (updatedAt){
+      const updatedAtEl = document.getElementById('updatedAt');
+      const pad = (n) => String(n).padStart(2, '0');
+      const todayStr = () => {
         const d = new Date();
-        const pad = (n) => String(n).padStart(2, '0');
-        updatedAt.textContent = `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+        return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+      };
+      const setUpdatedAt = (s) => {
+        if (updatedAtEl) updatedAtEl.textContent = s || todayStr();
+      };
+      setUpdatedAt(todayStr());
+
+      const escapeHtml = (s) => String(s || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+
+      const isISODate = (s) => (typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s));
+      const maxDate = (a, b) => (a && (!b || a > b)) ? a : b;
+
+      async function fetchJson(path){
+        try {
+          const r = await fetch(path, { cache: 'no-store' });
+          if (!r.ok) return null;
+          return await r.json();
+        } catch (e) {
+          return null;
+        }
       }
+
+      const fmtDate = (iso) => {
+        if (!isISODate(iso)) return '';
+        const d = new Date(`${iso}T00:00:00`);
+        try {
+          return d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+        } catch (e) {
+          return iso;
+        }
+      };
+
+      function renderNews(items){
+        const box = document.getElementById('newsList');
+        if (!box || !Array.isArray(items) || items.length === 0) return;
+
+        const sorted = [...items].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+        const head = sorted.slice(0, 5);
+        const rest = sorted.slice(5);
+
+        const renderOne = (it) => {
+          const title = escapeHtml(it.title || '');
+          const type = escapeHtml(it.type || '');
+          const date = fmtDate(it.date);
+          const note = escapeHtml(it.note || '');
+          const link = it.url ? `<a href="${escapeHtml(it.url)}" target="_blank" rel="noreferrer" style="text-decoration:none">${title}</a>` : title;
+          const meta = [type, date].filter(Boolean).join(' · ');
+          return `
+            <div class="item"><div class="top"><div class="name">${link}</div><div class="meta2">${escapeHtml(meta)}</div></div>${note ? `<div class=\"meta2\">${note}</div>` : ''}</div>
+          `;
+        };
+
+        let html = head.map(renderOne).join('');
+        if (rest.length > 0) {
+          html += `
+            <details style="margin-top:6px">
+              <summary>More news</summary>
+              <div class="list" style="margin-top:10px">
+                ${rest.map(renderOne).join('')}
+              </div>
+            </details>
+          `;
+        }
+        box.innerHTML = html;
+      }
+
+      function renderPubs(items){
+        const selectedEl = document.getElementById('pubSelected');
+        const allEl = document.getElementById('pubAll');
+        if (!selectedEl || !allEl || !Array.isArray(items) || items.length === 0) return;
+
+        const sorted = [...items].sort((a, b) => {
+          const ay = Number(a.year || 0);
+          const by = Number(b.year || 0);
+          if (by !== ay) return by - ay;
+          const ac = Number(a.citationCount || 0);
+          const bc = Number(b.citationCount || 0);
+          return bc - ac;
+        });
+
+        const chosen = sorted.filter(p => p.selected === true).slice(0, 6);
+        const selected = chosen.length ? chosen : sorted.slice(0, 3);
+
+        const renderLi = (p) => {
+          const title = escapeHtml(p.title || '');
+          const authors = escapeHtml(p.authors || '');
+          const venue = escapeHtml(p.venue || '');
+          const year = escapeHtml(p.year || '');
+          const doi = escapeHtml(p.doi || '');
+          const url = p.url || '';
+          const cite = (p.citationCount != null) ? ` · cites: ${escapeHtml(p.citationCount)}` : '';
+          const titleHtml = url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${title}</a>` : title;
+          const tail = [venue, year].filter(Boolean).join(', ');
+          const doiHtml = doi ? ` · DOI: ${doi}` : '';
+          return `<li>${authors}. ${titleHtml}. <i>${escapeHtml(tail)}</i>${cite}${doiHtml}.</li>`;
+        };
+
+        selectedEl.innerHTML = selected.map(renderLi).join('');
+        allEl.innerHTML = sorted.map(renderLi).join('');
+      }
+
+      (async () => {
+        const [pub, news] = await Promise.all([
+          fetchJson('data/publications.json'),
+          fetchJson('data/news.json')
+        ]);
+
+        const pubUpdated = (pub && isISODate(pub.updatedAt)) ? pub.updatedAt : '';
+        const newsUpdated = (news && isISODate(news.updatedAt)) ? news.updatedAt : '';
+        setUpdatedAt(maxDate(pubUpdated, newsUpdated) || todayStr());
+
+        if (news && Array.isArray(news.items)) renderNews(news.items);
+        if (pub && Array.isArray(pub.items)) renderPubs(pub.items);
+      })();
     })();
   </script>
 </body>
