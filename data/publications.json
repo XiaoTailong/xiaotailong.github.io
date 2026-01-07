@@ -1,13 +1,39 @@
 {
-  "updatedAt": "2026-01-06",
+  "updatedAt": "2026-01-07",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 30
+    "total": 32
   },
   "items": [
+    {
+      "doi": "10.1364/prj.581675",
+      "title": "Research Article Photonics Research 1 Real-time imaging through moving scattering media enabled by fixed optical modulations",
+      "authors": "Y. Li, Junjie Wang, Tailong Xiao, Ze Zheng, Jing-zheng Huang, Ming He, Jianping Fan, Guihua Zeng",
+      "venue": "Photonics Research",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/0467b201117cea020ffef3271751ebc5da229f66",
+      "citationCount": 0,
+      "publicationDate": "2026-01-02T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "",
+      "title": "Noise-Resilient Heisenberg-limited Quantum Sensing via Indefinite-Causal-Order Error Correction",
+      "authors": "Hang Xu, Xiaoyang Deng, Ze Zheng, Tailong Xiao, Guihua Zeng",
+      "venue": "",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/073091b3a49e531866a6012780e88d8caf34c2ca",
+      "citationCount": 0,
+      "publicationDate": "2026-01-04T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
     {
       "doi": "10.1103/physrevlett.134.120803",
       "title": "Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning.",
@@ -15,7 +41,7 @@
       "venue": "Physical Review Letters",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/261bcda05757a972c224571a75f7c8a06f5d7c88",
-      "citationCount": 12,
+      "citationCount": 13,
       "publicationDate": "2025-03-27T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -64,6 +90,18 @@
     },
     {
       "doi": "",
+      "title": "Learning to Restore Heisenberg Limit in Noisy Quantum Sensing via Quantum Digital Twin",
+      "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Jianping Fan, G. Zeng",
+      "venue": "",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/69aad9b479dc07b8df5eee5117a639ea6ffa6b72",
+      "citationCount": 1,
+      "publicationDate": "2025-08-15T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "",
       "title": "Optical diffraction neural networks assisted computational ghost imaging through dynamic scattering media",
       "authors": "Y. Li, Ze Zheng, Junjie Wang, Ming He, Jianping Fan, Tailong Xiao, Guihua Zeng",
       "venue": "",
@@ -71,18 +109,6 @@
       "url": "https://www.semanticscholar.org/paper/afe7d77313126fb310ec39322dc895e2a5d385be",
       "citationCount": 0,
       "publicationDate": "2025-11-28T00:00:00",
-      "publicationTypes": [],
-      "selected": false
-    },
-    {
-      "doi": "",
-      "title": "Learning to Restore Heisenberg Limit in Noisy Quantum Sensing via Quantum Digital Twin",
-      "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Jianping Fan, G. Zeng",
-      "venue": "",
-      "year": 2025,
-      "url": "https://www.semanticscholar.org/paper/69aad9b479dc07b8df5eee5117a639ea6ffa6b72",
-      "citationCount": 0,
-      "publicationDate": "2025-08-15T00:00:00",
       "publicationTypes": [],
       "selected": false
     },
@@ -225,7 +251,7 @@
       "venue": "npj Quantum Information",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/d9f217cc5a58bdb614c4b4b52f3c50e107d2a1e1",
-      "citationCount": 51,
+      "citationCount": 52,
       "publicationDate": "2022-01-10T00:00:00",
       "publicationTypes": [],
       "selected": false
