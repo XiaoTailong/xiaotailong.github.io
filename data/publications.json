@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-01-07",
+  "updatedAt": "2026-01-08",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -251,7 +251,7 @@
       "venue": "npj Quantum Information",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/d9f217cc5a58bdb614c4b4b52f3c50e107d2a1e1",
-      "citationCount": 52,
+      "citationCount": 53,
       "publicationDate": "2022-01-10T00:00:00",
       "publicationTypes": [],
       "selected": false
