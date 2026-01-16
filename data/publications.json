@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-01-15",
+  "updatedAt": "2026-01-16",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -101,15 +101,17 @@
       "selected": false
     },
     {
-      "doi": "",
+      "doi": "10.48550/arXiv.2511.22913",
       "title": "Optical diffraction neural networks assisted computational ghost imaging through dynamic scattering media",
       "authors": "Y. Li, Ze Zheng, Junjie Wang, Ming He, Jianping Fan, Tailong Xiao, Guihua Zeng",
-      "venue": "",
+      "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/afe7d77313126fb310ec39322dc895e2a5d385be",
       "citationCount": 0,
       "publicationDate": "2025-11-28T00:00:00",
-      "publicationTypes": [],
+      "publicationTypes": [
+        "JournalArticle"
+      ],
       "selected": false
     },
     {
@@ -128,12 +130,14 @@
       "doi": "10.1103/rgy3-z928",
       "title": "Discovering autonomous quantum error correction via deep reinforcement learning",
       "authors": "Yue Yin, Tailong Xiao, Xiaoyang Deng, Ming He, Jianping Fan, Guihua Zeng",
-      "venue": "",
+      "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/4f0d4a13e871c22347ccc0d6ea0fc77e88e13e85",
       "citationCount": 0,
       "publicationDate": "2025-11-16T00:00:00",
-      "publicationTypes": [],
+      "publicationTypes": [
+        "JournalArticle"
+      ],
       "selected": false
     },
     {
