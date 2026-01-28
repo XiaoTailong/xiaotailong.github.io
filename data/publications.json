@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-01-27",
+  "updatedAt": "2026-01-28",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -115,15 +115,17 @@
       "selected": false
     },
     {
-      "doi": "",
+      "doi": "10.48550/arXiv.2512.21587",
       "title": "Incorporating rank-free coupling and external field via an amplitude-only modulated spatial photonic Ising machine",
       "authors": "Ze Zheng, Y. Li, Hang Xu, Jingzheng Huang, Tailong Xiao, G. Zeng",
-      "venue": "",
+      "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/de2cfb3c240622bf63db639919f08fa7504a1d14",
       "citationCount": 0,
       "publicationDate": "2025-12-25T00:00:00",
-      "publicationTypes": [],
+      "publicationTypes": [
+        "JournalArticle"
+      ],
       "selected": false
     },
     {
