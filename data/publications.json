@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-01-28",
+  "updatedAt": "2026-01-29",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -41,7 +41,7 @@
       "venue": "Physical Review Letters",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/261bcda05757a972c224571a75f7c8a06f5d7c88",
-      "citationCount": 15,
+      "citationCount": 16,
       "publicationDate": "2025-03-27T00:00:00",
       "publicationTypes": [
         "JournalArticle"
