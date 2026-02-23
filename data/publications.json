@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-02-22",
+  "updatedAt": "2026-02-23",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 32
+    "total": 33
   },
   "items": [
     {
@@ -151,6 +151,20 @@
       "url": "https://www.semanticscholar.org/paper/f7addbb67ad073ce79f7dc078379f479c246bb60",
       "citationCount": 10,
       "publicationDate": "2024-08-15T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "",
+      "title": "Towards LLM4QPE: Unsupervised Pretraining of Quantum Property Estimation and A Benchmark",
+      "authors": "Yehui Tang, Hao Xiong, Nianzu Yang, Tailong Xiao, Junchi Yan",
+      "venue": "International Conference on Learning Representations",
+      "year": 2024,
+      "url": "https://www.semanticscholar.org/paper/4b523a1a888297054e14daf813aa852f5b9437fd",
+      "citationCount": 7,
+      "publicationDate": "",
       "publicationTypes": [
         "JournalArticle"
       ],
