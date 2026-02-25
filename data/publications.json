@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-24",
+  "updatedAt": "2026-02-25",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -253,7 +253,7 @@
     {
       "doi": "10.1103/physrevapplied.20.064002",
       "title": "Robust superresolution computational imaging with diffuser-refined illumination",
-      "authors": "Xinliang Zhai, Xiaoyan Wu, Tailong Xiao, Jianohng Shi, G. Zeng",
+      "authors": "Xinliang Zhai, Xiaoyan Wu, Tailong Xiao, Jian-Qing Shi, G. Zeng",
       "venue": "Physical Review Applied",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/8e38d6208aac0acd0b22566bf0f000b903639549",
@@ -271,7 +271,7 @@
       "venue": "npj Quantum Information",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/d9f217cc5a58bdb614c4b4b52f3c50e107d2a1e1",
-      "citationCount": 54,
+      "citationCount": 55,
       "publicationDate": "2022-01-10T00:00:00",
       "publicationTypes": [],
       "selected": false
