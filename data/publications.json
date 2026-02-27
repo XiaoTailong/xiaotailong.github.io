@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-26",
+  "updatedAt": "2026-02-27",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -149,7 +149,7 @@
       "venue": "Communications Physics",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/f7addbb67ad073ce79f7dc078379f479c246bb60",
-      "citationCount": 10,
+      "citationCount": 11,
       "publicationDate": "2024-08-15T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -217,7 +217,7 @@
       "venue": "Communications Physics",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/69514c02e9e7fc80409c5d42911ac6e821b8cd48",
-      "citationCount": 33,
+      "citationCount": 35,
       "publicationDate": "2023-07-10T00:00:00",
       "publicationTypes": [
         "JournalArticle"
