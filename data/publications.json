@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-11",
+  "updatedAt": "2026-03-12",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -41,7 +41,7 @@
       "venue": "Physical Review Letters",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/261bcda05757a972c224571a75f7c8a06f5d7c88",
-      "citationCount": 19,
+      "citationCount": 20,
       "publicationDate": "2025-03-27T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -171,6 +171,18 @@
       "selected": false
     },
     {
+      "doi": "",
+      "title": "Controlling Unknown Quantum States via Data-Driven State Representations",
+      "authors": "Yan Zhu, Tailong Xiao, G. Zeng, G. Chiribella, Yadong Wu",
+      "venue": "",
+      "year": 2024,
+      "url": "https://www.semanticscholar.org/paper/e143eec5f62158668d9a1686dc40f57be11eba7f",
+      "citationCount": 3,
+      "publicationDate": "2024-06-09T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
       "doi": "10.3390/math12111627",
       "title": "Optimizing Variational Quantum Neural Networks Based on Collective Intelligence",
       "authors": "Zitong Li, Tailong Xiao, Xiaoyang Deng, G. Zeng, Weimin Li",
@@ -182,18 +194,6 @@
       "publicationTypes": [
         "JournalArticle"
       ],
-      "selected": false
-    },
-    {
-      "doi": "",
-      "title": "Controlling Unknown Quantum States via Data-Driven State Representations",
-      "authors": "Yan Zhu, Tailong Xiao, G. Zeng, G. Chiribella, Yadong Wu",
-      "venue": "",
-      "year": 2024,
-      "url": "https://www.semanticscholar.org/paper/e143eec5f62158668d9a1686dc40f57be11eba7f",
-      "citationCount": 2,
-      "publicationDate": "2024-06-09T00:00:00",
-      "publicationTypes": [],
       "selected": false
     },
     {
