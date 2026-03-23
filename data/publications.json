@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-03-22",
+  "updatedAt": "2026-03-23",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 33
+    "total": 34
   },
   "items": [
     {
@@ -17,6 +17,20 @@
       "url": "https://www.semanticscholar.org/paper/0467b201117cea020ffef3271751ebc5da229f66",
       "citationCount": 0,
       "publicationDate": "2026-01-02T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.3788/col202624.041103",
+      "title": "Optical diffraction neural network assisted computational ghost imaging through dynamic scattering media",
+      "authors": "Yuegang Li, Ze Zheng, Junjie Wang, Ming He, Jianping Fan, Tailong Xiao, Guihua Zeng",
+      "venue": "Chinese Optics Letters (COL)",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/74015ac97420ff12a8e2b0bd633ec21fff5aac6e",
+      "citationCount": 0,
+      "publicationDate": "",
       "publicationTypes": [
         "JournalArticle"
       ],
@@ -63,6 +77,18 @@
       "selected": false
     },
     {
+      "doi": "",
+      "title": "Real-time imaging through dynamic scattering media enabled by fixed optical modulations",
+      "authors": "Y. Li, Junjie Wang, Tailong Xiao, Ze Zheng, Jingzheng Huang, Ming He, Jianping Fan, G. Zeng",
+      "venue": "",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/0ac7178f21216c487bd2d30cc3503b50a68c7776",
+      "citationCount": 2,
+      "publicationDate": "2025-08-21T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
       "doi": "10.48550/arXiv.2503.02210",
       "title": "Towards Heisenberg limit without critical slowing down via quantum reinforcement learning",
       "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Ming He, Jianpin Fan, G. Zeng",
@@ -74,18 +100,6 @@
       "publicationTypes": [
         "JournalArticle"
       ],
-      "selected": false
-    },
-    {
-      "doi": "",
-      "title": "Real-time imaging through dynamic scattering media enabled by fixed optical modulations",
-      "authors": "Y. Li, Junjie Wang, Tailong Xiao, Ze Zheng, Jingzheng Huang, Ming He, Jianping Fan, G. Zeng",
-      "venue": "",
-      "year": 2025,
-      "url": "https://www.semanticscholar.org/paper/0ac7178f21216c487bd2d30cc3503b50a68c7776",
-      "citationCount": 1,
-      "publicationDate": "2025-08-21T00:00:00",
-      "publicationTypes": [],
       "selected": false
     },
     {
@@ -149,7 +163,7 @@
       "venue": "Communications Physics",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/f7addbb67ad073ce79f7dc078379f479c246bb60",
-      "citationCount": 11,
+      "citationCount": 12,
       "publicationDate": "2024-08-15T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -397,7 +411,7 @@
       "venue": "Scientific Reports",
       "year": 2019,
       "url": "https://www.semanticscholar.org/paper/68b9527a6a08586914e5d3452610f126af27fc0a",
-      "citationCount": 15,
+      "citationCount": 16,
       "publicationDate": "2019-08-27T00:00:00",
       "publicationTypes": [
         "JournalArticle"
