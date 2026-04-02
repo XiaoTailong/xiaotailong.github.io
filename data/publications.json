@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-01",
+  "updatedAt": "2026-04-02",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -321,7 +321,7 @@
       "venue": "Physical Review Applied",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/3044e569fa03d463bfd99159c71f68d7168c0e0b",
-      "citationCount": 6,
+      "citationCount": 7,
       "publicationDate": "2022-10-13T00:00:00",
       "publicationTypes": [],
       "selected": false
@@ -345,7 +345,7 @@
       "venue": "Optics Express",
       "year": 2021,
       "url": "https://www.semanticscholar.org/paper/2c4eb8d2e43571a71d30dfd36a6fe0d8e85e83e0",
-      "citationCount": 5,
+      "citationCount": 6,
       "publicationDate": "2021-11-02T00:00:00",
       "publicationTypes": [
         "JournalArticle"
