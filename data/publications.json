@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-01",
+  "updatedAt": "2026-05-02",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -393,7 +393,7 @@
     {
       "doi": "10.1088/1361-6455/ab0b2a",
       "title": "Passive-state preparation in continuous-variable measurement-device-independent quantum key distribution",
-      "authors": "Dongyun Bai, Peng Huang, Yiqun Zhu, Hongxin Ma, Tailong Xiao, Tao Wang, Guihua Zeng",
+      "authors": "Dongyun Bai, P. Huang, Yiqun Zhu, Hongxin Ma, Tailong Xiao, Tao Wang, Guihua Zeng",
       "venue": "Quantum Information Processing",
       "year": 2019,
       "url": "https://www.semanticscholar.org/paper/f475fc9df65a9e36380e9eaa41c92b20fc5da846",
