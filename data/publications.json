@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07",
+  "updatedAt": "2026-05-08",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -89,27 +89,13 @@
       "selected": false
     },
     {
-      "doi": "10.48550/arXiv.2503.02210",
-      "title": "Towards Heisenberg limit without critical slowing down via quantum reinforcement learning",
-      "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Ming He, Jianpin Fan, G. Zeng",
-      "venue": "arXiv.org",
-      "year": 2025,
-      "url": "https://www.semanticscholar.org/paper/103894acbdbfdb8bb58070d3de570b834d42fc81",
-      "citationCount": 1,
-      "publicationDate": "2025-03-04T00:00:00",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "selected": false
-    },
-    {
       "doi": "",
       "title": "Learning to Restore Heisenberg Limit in Noisy Quantum Sensing via Quantum Digital Twin",
       "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Jianping Fan, G. Zeng",
       "venue": "",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/69aad9b479dc07b8df5eee5117a639ea6ffa6b72",
-      "citationCount": 1,
+      "citationCount": 2,
       "publicationDate": "2025-08-15T00:00:00",
       "publicationTypes": [],
       "selected": false
@@ -121,8 +107,22 @@
       "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/4f0d4a13e871c22347ccc0d6ea0fc77e88e13e85",
-      "citationCount": 1,
+      "citationCount": 2,
       "publicationDate": "2025-11-16T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.48550/arXiv.2503.02210",
+      "title": "Towards Heisenberg limit without critical slowing down via quantum reinforcement learning",
+      "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Ming He, Jianpin Fan, G. Zeng",
+      "venue": "arXiv.org",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/103894acbdbfdb8bb58070d3de570b834d42fc81",
+      "citationCount": 1,
+      "publicationDate": "2025-03-04T00:00:00",
       "publicationTypes": [
         "JournalArticle"
       ],
