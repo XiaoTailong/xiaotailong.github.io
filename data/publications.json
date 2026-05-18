@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-17",
+  "updatedAt": "2026-05-18",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 34
+    "total": 35
   },
   "items": [
     {
@@ -143,6 +143,18 @@
       "selected": false
     },
     {
+      "doi": "",
+      "title": "Incorporating rank-free coupling and external field via an incoherent modulated spatial photonic Ising machine",
+      "authors": "Ze Zheng, Yuegang Li, Hang Xu, Jingzheng Huang, Tailong Xiao, G. Zeng",
+      "venue": "",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/0704841f5719997738b3f69e59d54621d979ce58",
+      "citationCount": 0,
+      "publicationDate": "2025-12-25T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
       "doi": "10.48550/arXiv.2512.21587",
       "title": "Incorporating rank-free coupling and external field via an amplitude-only modulated spatial photonic Ising machine",
       "authors": "Ze Zheng, Y. Li, Hang Xu, Jingzheng Huang, Tailong Xiao, G. Zeng",
@@ -150,7 +162,7 @@
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/de2cfb3c240622bf63db639919f08fa7504a1d14",
       "citationCount": 0,
-      "publicationDate": "2025-12-25T00:00:00",
+      "publicationDate": "",
       "publicationTypes": [
         "JournalArticle"
       ],
