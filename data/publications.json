@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19",
+  "updatedAt": "2026-05-20",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -229,7 +229,7 @@
       "venue": "Optics Express",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/010f7715182911c27c4a58c7953e93ac6d9f16db",
-      "citationCount": 1,
+      "citationCount": 2,
       "publicationDate": "2024-07-03T00:00:00",
       "publicationTypes": [
         "JournalArticle"
