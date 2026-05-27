@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-26",
+  "updatedAt": "2026-05-27",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 35
+    "total": 36
   },
   "items": [
     {
@@ -49,13 +49,25 @@
       "selected": false
     },
     {
+      "doi": "",
+      "title": "Accelerating ground state search of spatial photonic Ising machines with genetic-simulated annealing hybrid algorithm",
+      "authors": "Ze Zheng, Ruhui Ni, Jingyi Zhao, Xiaojian Hu, Wenle Jiang, Yuegang Li, Hang Xu, Tailong Xiao, G. Zeng",
+      "venue": "",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/339388de85072710b8b45c7dbd2b17e884c35710",
+      "citationCount": 0,
+      "publicationDate": "2026-05-22T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
       "doi": "10.1103/physrevlett.134.120803",
       "title": "Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning.",
       "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Ming He, Jianping Fan, G. Zeng",
       "venue": "Physical Review Letters",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/261bcda05757a972c224571a75f7c8a06f5d7c88",
-      "citationCount": 23,
+      "citationCount": 24,
       "publicationDate": "2025-03-27T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -148,7 +160,7 @@
       "authors": "Ze Zheng, Y. Li, Hang Xu, Jingzheng Huang, Tailong Xiao, G. Zeng",
       "venue": "",
       "year": 2025,
-      "url": "https://www.semanticscholar.org/paper/0704841f5719997738b3f69e59d54621d979ce58",
+      "url": "https://www.semanticscholar.org/paper/6ea438ede0c739b074b8ee247623052163aa46f1",
       "citationCount": 0,
       "publicationDate": "2025-12-25T00:00:00",
       "publicationTypes": [],
@@ -189,7 +201,7 @@
       "venue": "International Conference on Learning Representations",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/4b523a1a888297054e14daf813aa852f5b9437fd",
-      "citationCount": 8,
+      "citationCount": 9,
       "publicationDate": "",
       "publicationTypes": [
         "JournalArticle"
