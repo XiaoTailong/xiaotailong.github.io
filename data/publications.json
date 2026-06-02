@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-01",
+  "updatedAt": "2026-06-02",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -223,15 +223,17 @@
       "selected": false
     },
     {
-      "doi": "",
-      "title": "Controlling Unknown Quantum States via Data-Driven State Representations",
+      "doi": "10.1038/s41534-026-01269-0",
+      "title": "Controlling unknown quantum states via data-driven state representations",
       "authors": "Yan Zhu, Tailong Xiao, G. Zeng, G. Chiribella, Yadong Wu",
-      "venue": "",
+      "venue": "npj Quantum Information",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/e143eec5f62158668d9a1686dc40f57be11eba7f",
       "citationCount": 3,
       "publicationDate": "2024-06-09T00:00:00",
-      "publicationTypes": [],
+      "publicationTypes": [
+        "JournalArticle"
+      ],
       "selected": false
     },
     {
