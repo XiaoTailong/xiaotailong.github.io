@@ -106,6 +106,7 @@ def main() -> int:
     expect("radial-gradient" not in combined and "#9b7bff" not in combined and "#5b8cff" not in combined, "remove portfolio-style gradients and purple/blue brand colors", failures)
     expect(not re.search(r"border-radius\s*:\s*(1[0-9]|[2-9][0-9])px", css), "card radii should stay 8px or below", failures)
     expect("Open positions" in visible_text or "Prospective students" in visible_text, "hero should include a clear academic recruiting/contact signal", failures)
+    expect("every spring semester" in visible_text.lower(), "teaching section should state that the course is offered every spring", failures)
     expect("data/selected_dois.txt" in html, "homepage should read representative-paper DOIs from data/selected_dois.txt instead of relying on manual edits to generated JSON", failures)
     expect("For the complete and automatically updated publication list" in visible_text and "Google Scholar" in visible_text, "Selected Publications should include a Google Scholar note for the full publication list", failures)
     expect('id="newsList"' in html and 'class="timeline feed-scroll"' in html, "news and talks should render as one compact scrollable timeline", failures)
@@ -135,6 +136,11 @@ def main() -> int:
         expect(isinstance(news.get("updatedAt"), str) and bool(news.get("updatedAt")), "news should have updatedAt", failures)
         expect(isinstance(news_items, list) and len(news_items) >= 5, "news should contain at least five dated academic updates", failures)
         if isinstance(news_items, list):
+            expect(
+                any("Yuegang Li" in str(item.get("title", "")) and "PhD graduation" in str(item.get("title", "")) for item in news_items if isinstance(item, dict)),
+                "news should include Dr. Yuegang Li's PhD graduation",
+                failures,
+            )
             for index, item in enumerate(news_items[:5], start=1):
                 expect(isinstance(item, dict) and all(item.get(key) for key in ("date", "title", "type")), f"news item {index} should have date, title, and type", failures)
 
