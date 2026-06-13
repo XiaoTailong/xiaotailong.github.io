@@ -95,7 +95,7 @@ def main() -> int:
         "education",
     ]
 
-    expect("jemdoc.css" in parser.stylesheets, "index.html should load jemdoc.css", failures)
+    expect(any(href.split("?", 1)[0] == "jemdoc.css" for href in parser.stylesheets), "index.html should load jemdoc.css", failures)
     expect(parser.inline_styles == 0, "site styling should live in jemdoc.css, not a large inline style block", failures)
     expect(section_order_contains(parser.section_ids, expected_sections), f"sections should appear in academic order: {expected_sections}", failures)
     expect("projects" not in parser.section_ids and 'href="#projects"' not in html, "projects should be removed from the homepage navigation and sections", failures)
@@ -108,6 +108,15 @@ def main() -> int:
     expect("Open positions" in visible_text or "Prospective students" in visible_text, "hero should include a clear academic recruiting/contact signal", failures)
     expect("data/selected_dois.txt" in html, "homepage should read representative-paper DOIs from data/selected_dois.txt instead of relying on manual edits to generated JSON", failures)
     expect("For the complete and automatically updated publication list" in visible_text and "Google Scholar" in visible_text, "Selected Publications should include a Google Scholar note for the full publication list", failures)
+    expect(
+        ".publication-list li > .paper-title" in css
+        and ".publication-list li > .paper-meta" in css
+        and ".publication-list li > .paper-tags" in css
+        and "grid-column: 2" in css,
+        "publication title, metadata, and links should stay in the wide content column",
+        failures,
+    )
+    expect("Cited by" in html and "citations > 0" in html, "selected publications should only show positive citation counts in a compact action row", failures)
 
     try:
         news = load_json(NEWS)

@@ -268,6 +268,11 @@ h3 {
   gap: 42px;
 }
 
+#selected-publications .section-grid {
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 48px;
+}
+
 .section-note {
   color: var(--muted);
   font-size: 0.95rem;
@@ -315,10 +320,10 @@ h3 {
 
 .publication-list li {
   display: grid;
-  grid-template-columns: 3.2rem minmax(0, 1fr);
-  gap: 18px;
+  grid-template-columns: 2.9rem minmax(0, 1fr);
+  gap: 4px 20px;
   border-top: 1px solid var(--line);
-  padding: 16px 0;
+  padding: 17px 0;
   counter-increment: publication;
 }
 
@@ -328,6 +333,14 @@ h3 {
   font-family: var(--sans);
   font-size: 0.8rem;
   font-weight: 700;
+  grid-row: 1 / span 3;
+  padding-top: 0.16rem;
+}
+
+.publication-list li > .paper-title,
+.publication-list li > .paper-meta,
+.publication-list li > .paper-tags {
+  grid-column: 2;
 }
 
 .selected-list li:first-child,
@@ -339,10 +352,10 @@ h3 {
 }
 
 .paper-title {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-size: 1.04rem;
   font-weight: 700;
-  line-height: 1.42;
+  line-height: 1.35;
 }
 
 .paper-title a {
@@ -357,20 +370,27 @@ h3 {
 }
 
 .paper-tags {
-  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 12px;
+  margin-top: 6px;
   font-family: var(--sans);
 }
 
 .paper-tags span:not(:empty) {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 1px 8px;
   background: var(--paper);
+  font-size: 0.82rem;
+  line-height: 1.45;
 }
 
 .paper-link {
-  margin-left: 6px;
+  margin-left: 0;
   font-family: var(--sans);
   font-size: 0.84rem;
   font-weight: 700;
@@ -456,6 +476,11 @@ h3 {
     gap: 24px;
   }
 
+  #selected-publications .section-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
   .hero-grid {
     padding: 38px 0 34px;
   }
@@ -517,6 +542,12 @@ h3 {
     gap: 6px;
   }
 
+  .publication-list li > .paper-title,
+  .publication-list li > .paper-meta,
+  .publication-list li > .paper-tags {
+    grid-column: 1;
+  }
+
   .profile-panel {
     grid-template-columns: 96px minmax(0, 1fr);
     gap: 12px;
@@ -534,6 +565,7 @@ h3 {
   }
 
   .publication-list li::before {
+    grid-row: auto;
     margin-bottom: -4px;
   }
 

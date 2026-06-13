@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#ffffff" />
 
   <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="jemdoc.css" />
+  <link rel="stylesheet" href="jemdoc.css?v=20260613-selected-layout" />
 </head>
 
 <body>
@@ -305,14 +305,15 @@
         const doi = publication.doi ? escapeHtml(publication.doi) : '';
         const citations = Number.isFinite(Number(publication.citationCount)) ? Number(publication.citationCount) : null;
         const linkedTitle = url ? `<a href="${url}" target="_blank" rel="noreferrer">${title}</a>` : title;
-        const doiHtml = doi ? ` <a class="paper-link" href="https://doi.org/${doi}" target="_blank" rel="noreferrer">DOI</a>` : '';
-        const citationHtml = citations !== null ? `<span>${citations} citations</span>` : '';
+        const doiHtml = doi ? `<a class="paper-link" href="https://doi.org/${doi}" target="_blank" rel="noreferrer">DOI</a>` : '';
+        const citationHtml = citations > 0 ? `<span>Cited by ${citations}</span>` : '';
+        const actionHtml = [citationHtml, doiHtml].filter(Boolean).join('');
 
         return `
           <li>
             <p class="paper-title">${linkedTitle}</p>
-            <p class="paper-meta">${authors}. <em>${venue}</em>${year ? `, ${year}` : ''}.${doiHtml}</p>
-            <p class="paper-tags">${citationHtml}</p>
+            <p class="paper-meta">${authors}. <em>${venue}</em>${year ? `, ${year}` : ''}.</p>
+            ${actionHtml ? `<p class="paper-tags">${actionHtml}</p>` : ''}
           </li>
         `;
       }
