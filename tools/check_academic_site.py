@@ -108,6 +108,12 @@ def main() -> int:
     expect("Open positions" in visible_text or "Prospective students" in visible_text, "hero should include a clear academic recruiting/contact signal", failures)
     expect("data/selected_dois.txt" in html, "homepage should read representative-paper DOIs from data/selected_dois.txt instead of relying on manual edits to generated JSON", failures)
     expect("For the complete and automatically updated publication list" in visible_text and "Google Scholar" in visible_text, "Selected Publications should include a Google Scholar note for the full publication list", failures)
+    expect('id="newsList"' in html and 'class="timeline feed-scroll"' in html, "news and talks should render as one compact scrollable timeline", failures)
+    expect("const NEWS_TALK_LIMIT = 20" in html and ".slice(0, NEWS_TALK_LIMIT)" in html, "news and talks feeds should be limited to 20 latest items", failures)
+    expect("function renderTalkSentence" in html and "I presented" in html, "talk entries should render as complete first-person sentences", failures)
+    expect("Intl.DateTimeFormat('en-US'" in html, "news and talks dates should use a stable English date format", failures)
+    expect("String(b.date || '').localeCompare(String(a.date || ''))" in html, "news and talks should be sorted newest first", failures)
+    expect(".feed-scroll" in css and "overflow-y: auto" in css and "max-height" in css, "news and talks feeds should use compact scrollable containers", failures)
     expect(
         ".publication-list li > .paper-title" in css
         and ".publication-list li > .paper-meta" in css

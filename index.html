@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#ffffff" />
 
   <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="jemdoc.css?v=20260613-selected-layout" />
+  <link rel="stylesheet" href="jemdoc.css?v=20260613-news-talks" />
 </head>
 
 <body>
@@ -116,13 +116,16 @@
       </div>
     </section>
 
-    <section class="section section-muted" id="news" aria-labelledby="news-title">
-      <div class="layout section-grid">
-        <h2 id="news-title">News & Talks</h2>
-        <ol class="timeline" id="newsList">
+    <section class="section section-muted news-section" id="news" aria-labelledby="news-title">
+      <div class="layout section-grid news-grid">
+        <div>
+          <h2 id="news-title">News & Talks</h2>
+          <p class="section-note">Latest 20 updates, newest first.</p>
+        </div>
+        <ol class="timeline feed-scroll" id="newsList">
           <li>
             <time datetime="2025-09-21">Sep. 21, 2025</time>
-            <p><strong>2025 Quantum Technology Frontier Summit</strong><span>Academic Committee · Oral</span></p>
+            <p><strong>I presented a talk at the 2025 Quantum Technology Frontier Summit on Sep. 21, 2025.</strong><span>Academic Committee · Oral presentation</span></p>
           </li>
         </ol>
       </div>
@@ -253,8 +256,10 @@
       const formatDate = (value) => {
         if (!isISODate(value)) return '';
         const date = new Date(value.slice(0, 10) + 'T00:00:00');
-        return new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'short', day: 'numeric' }).format(date);
+        return new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: 'numeric' }).format(date);
       };
+
+      const NEWS_TALK_LIMIT = 20;
 
       const highlightAuthor = (authors) => escapeHtml(authors)
         .replace(/Tailong Xiao/g, '<strong>Tailong Xiao</strong>')
@@ -339,7 +344,9 @@
       function renderNews(data){
         if (!data || !Array.isArray(data.items) || data.items.length === 0) return;
 
-        const items = [...data.items].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+        const items = [...data.items]
+          .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')))
+          .slice(0, NEWS_TALK_LIMIT);
         const newsEl = document.getElementById('newsList');
         if (!newsEl) return;
 
@@ -350,14 +357,29 @@
           const note = escapeHtml(item.note || '');
           const url = item.url ? escapeHtml(item.url) : '';
           const titleHtml = url ? `<a href="${url}" target="_blank" rel="noreferrer">${title}</a>` : title;
+          const textHtml = isTalkItem(item) ? renderTalkSentence(titleHtml, item) : `<strong>${titleHtml}</strong>`;
+          const meta = [type, note].filter(Boolean).join(' · ');
 
           return `
             <li>
               <time datetime="${date}">${formatDate(date) || date}</time>
-              <p><strong>${titleHtml}</strong><span>${[type, note].filter(Boolean).join(' · ')}</span></p>
+              <p>${textHtml}<span>${meta}</span></p>
             </li>
           `;
         }).join('');
+      }
+
+      function isTalkItem(item){
+        const type = String(item.type || '').toLowerCase();
+        const note = String(item.note || '').toLowerCase();
+        return type.includes('talk') || note.includes('oral presentation');
+      }
+
+      function renderTalkSentence(titleHtml, item){
+        const date = formatDate(item.date || '') || escapeHtml(item.date || '');
+        const type = String(item.type || '').toLowerCase();
+        const talkType = type.includes('invited') ? 'an invited talk' : 'a talk';
+        return `<strong>I presented ${talkType} at ${titleHtml} on ${date}.</strong>`;
       }
 
       Promise.all([
