@@ -1,11 +1,23 @@
 {
-  "updatedAt": "2026-06-13",
+  "updatedAt": "2026-06-14",
   "items": [
     {
       "date": "2026-06-13",
       "title": "Congratulations to Dr. Yuegang Li on his PhD graduation",
       "type": "News",
       "note": "PhD graduation"
+    },
+    {
+      "date": "2026-01-17",
+      "title": "Quantum Artificial Intelligence Academic Workshop 2026 (Fudan University)",
+      "type": "Invited talk",
+      "note": "Invited presentation"
+    },
+    {
+      "date": "2025-10",
+      "title": "The 19th Challenge Cup Special Competition",
+      "type": "Award",
+      "note": "National Second Prize (two projects)"
     },
     {
       "date": "2025-09-21",
@@ -22,14 +34,20 @@
     {
       "date": "2025-07-22",
       "title": "CCF Quantum Computing Conference 2025",
-      "type": "Invited talk",
-      "note": ""
+      "type": "Talk",
+      "note": "Oral presentation"
+    },
+    {
+      "date": "2025-07",
+      "title": "The 4th CCF Quantum Computing Conference Outstanding Achievement Award",
+      "type": "Award",
+      "note": "Outstanding Achievement Award"
     },
     {
       "date": "2025-06-06",
       "title": "Global Artificial Intelligence Technology Conference 2025",
-      "type": "Invited talk",
-      "note": ""
+      "type": "Talk",
+      "note": "Oral presentation"
     },
     {
       "date": "2025-04-19",
@@ -44,28 +62,70 @@
       "note": "Oral presentation"
     },
     {
-      "date": "2024-11-01",
+      "date": "2024-11",
+      "title": "Undergraduate students won the National Third Prize in the 19th Challenge Cup Special Competition",
+      "type": "Award",
+      "note": "Supervised undergraduate students"
+    },
+    {
+      "date": "2024-11",
       "title": "Advanced Photonics Forum: Intelligent Photonics",
       "type": "Invited talk",
-      "note": ""
+      "note": "Ghost imaging algorithms based on variational quantum circuits"
     },
     {
-      "date": "2024-09-01",
+      "date": "2024-09",
       "title": "Shandong University, Baoqing Sun Group",
       "type": "Invited talk",
-      "note": "Research on Quantum Machine Learning Algorithms and Their Advantages"
+      "note": "Research on quantum machine learning algorithms and their advantages"
     },
     {
-      "date": "2024-05-20",
+      "date": "2024-08",
+      "title": "The First CCF Quantum Computing Doctoral Dissertation Incentive Program",
+      "type": "Award",
+      "note": "Doctoral dissertation recognition"
+    },
+    {
+      "date": "2024-07",
+      "title": "CCF Sinan Cup Quantum Programming Challenge 2024",
+      "type": "Award",
+      "note": "Supervised undergraduate students; National Second Prize (two projects); Apr-Jul 2024"
+    },
+    {
+      "date": "2024-05",
       "title": "Hangzhou Fuyang First International Conference on Optoelectronic Integration Technology",
       "type": "Invited talk",
-      "note": "Machine Learning Ghost Imaging and Practical Advantages"
+      "note": "Machine learning ghost imaging and practical advantages"
     },
     {
-      "date": "2024-05-01",
+      "date": "2024-05",
       "title": "Nanjing University of Information Science and Technology, Wenjie Liu Group",
       "type": "Invited talk",
-      "note": "Quantum Machine Learning Algorithms and Applications"
+      "note": "Quantum machine learning algorithms and applications"
+    },
+    {
+      "date": "2023-08",
+      "title": "CCF Sinan Cup Quantum Programming Challenge 2023",
+      "type": "Award",
+      "note": "National First Prize; Apr-Aug 2023"
+    },
+    {
+      "date": "2022-08",
+      "title": "The 20th National Conference on Quantum Optics",
+      "type": "Talk",
+      "note": "Oral presentation; Time-varying quantum parameter estimation based on deep reinforcement learning"
+    },
+    {
+      "date": "2022-08",
+      "title": "CCF Sinan Cup Quantum Programming Challenge 2022",
+      "type": "Award",
+      "note": "National Second Prize"
+    },
+    {
+      "date": "2021-08",
+      "title": "The 19th National Conference on Quantum Optics",
+      "type": "Talk",
+      "note": "Oral presentation; Quantum Boltzmann machine algorithm based on dimension expansion"
     }
   ]
 }

@@ -112,6 +112,7 @@ def main() -> int:
     expect('id="newsList"' in html and 'class="timeline feed-scroll"' in html, "news and talks should render as one compact scrollable timeline", failures)
     expect("const NEWS_TALK_LIMIT = 20" in html and ".slice(0, NEWS_TALK_LIMIT)" in html, "news and talks feeds should be limited to 20 latest items", failures)
     expect("function renderTalkSentence" in html and "I presented" in html, "talk entries should render as complete first-person sentences", failures)
+    expect("const isISOYearMonth" in html and "month: 'short'" in html, "news and talks should support month-level dates without inventing a day", failures)
     expect("Intl.DateTimeFormat('en-US'" in html, "news and talks dates should use a stable English date format", failures)
     expect("String(b.date || '').localeCompare(String(a.date || ''))" in html, "news and talks should be sorted newest first", failures)
     expect(".feed-scroll" in css and "overflow-y: auto" in css and "max-height" in css, "news and talks feeds should use compact scrollable containers", failures)
@@ -134,13 +135,28 @@ def main() -> int:
     if isinstance(news, dict):
         news_items = news.get("items", [])
         expect(isinstance(news.get("updatedAt"), str) and bool(news.get("updatedAt")), "news should have updatedAt", failures)
-        expect(isinstance(news_items, list) and len(news_items) >= 5, "news should contain at least five dated academic updates", failures)
+        expect(isinstance(news_items, list) and len(news_items) >= 20, "news should contain at least twenty dated academic updates", failures)
         if isinstance(news_items, list):
+            titles = [str(item.get("title", "")) for item in news_items if isinstance(item, dict)]
+            dates = [str(item.get("date", "")) for item in news_items if isinstance(item, dict)]
+            expect(len(titles) == len(set(titles)), "news should not contain duplicate titles", failures)
+            expect(dates == sorted(dates, reverse=True), "news data should be ordered newest first", failures)
             expect(
                 any("Yuegang Li" in str(item.get("title", "")) and "PhD graduation" in str(item.get("title", "")) for item in news_items if isinstance(item, dict)),
                 "news should include Dr. Yuegang Li's PhD graduation",
                 failures,
             )
+            required_news = [
+                "Quantum Artificial Intelligence Academic Workshop 2026",
+                "19th Challenge Cup Special Competition",
+                "Outstanding Achievement Award",
+                "Advanced Photonics Forum",
+                "20th National Conference on Quantum Optics",
+                "19th National Conference on Quantum Optics",
+                "CCF Sinan Cup Quantum Programming Challenge",
+            ]
+            for required in required_news:
+                expect(any(required in title for title in titles), f"news should include {required}", failures)
             for index, item in enumerate(news_items[:5], start=1):
                 expect(isinstance(item, dict) and all(item.get(key) for key in ("date", "title", "type")), f"news item {index} should have date, title, and type", failures)
 
