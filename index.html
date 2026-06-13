@@ -3,702 +3,399 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <title>Xiao, Tailong (肖太龙) | SJTU</title>
-  <meta name="description" content="Xiao, Tailong (肖太龙) — Assistant Professor at Shanghai Jiao Tong University. Quantum Artificial Intelligence, Intelligent Quantum Sensing, AI-enhanced optical computing and imaging." />
-  <meta property="og:title" content="Xiao, Tailong (肖太龙) | SJTU" />
-  <meta property="og:description" content="Quantum Artificial Intelligence, Intelligent Quantum Sensing, AI-enhanced optical computing and imaging." />
+  <meta name="color-scheme" content="light" />
+  <title>Xiao, Tailong (肖太龙) | Shanghai Jiao Tong University</title>
+  <meta name="description" content="Academic homepage of Xiao, Tailong (肖太龙), Assistant Professor at Shanghai Jiao Tong University. Research in quantum artificial intelligence, intelligent quantum sensing, and AI-enhanced optical computing and imaging." />
+  <meta property="og:title" content="Xiao, Tailong (肖太龙) | Shanghai Jiao Tong University" />
+  <meta property="og:description" content="Quantum Artificial Intelligence, Intelligent Quantum Sensing, and AI-enhanced optical computing and imaging." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="photos/bio.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#ffffff" />
 
   <link rel="shortcut icon" href="favicon.ico" />
-
-  <style>
-    :root{
-      --bg: #0b1020;
-      --panel: #111a33;
-      --panel2: rgba(17,26,51,.7);
-      --text: #e9edff;
-      --muted: #b2bbdc;
-      --line: #253058;
-      --brand: #5b8cff;
-      --brand2:#9b7bff;
-      --shadow: 0 12px 34px rgba(0,0,0,.35);
-      --radius: 18px;
-      --max: 1080px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    }
-
-    /* Light theme overrides */
-    [data-theme="light"]{
-      --bg:#f6f8ff;
-      --panel:#ffffff;
-      --panel2: rgba(255,255,255,.75);
-      --text:#121527;
-      --muted:#4b5476;
-      --line:#dbe1ff;
-      --shadow: 0 12px 28px rgba(18,21,39,.10);
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:var(--sans);
-      background:
-        radial-gradient(1200px 700px at 10% -10%, rgba(91,140,255,.24), transparent 60%),
-        radial-gradient(900px 600px at 100% 10%, rgba(155,123,255,.22), transparent 55%),
-        var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-    a{color:inherit}
-
-    .skip-link{
-      position:absolute;
-      left:-999px;
-      top:8px;
-      padding:10px 12px;
-      border-radius:12px;
-      background: var(--panel);
-      border:1px solid var(--line);
-      color: var(--text);
-      z-index: 9999;
-      text-decoration:none;
-    }
-    .skip-link:focus{left:12px}
-
-    .wrap{max-width:var(--max); margin:0 auto; padding:22px 16px 70px;}
-
-    /* Top bar */
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:50;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      background: linear-gradient(to bottom, rgba(11,16,32,.85), rgba(11,16,32,.55));
-      border-bottom:1px solid rgba(37,48,88,.55);
-    }
-    [data-theme="light"] .topbar{
-      background: linear-gradient(to bottom, rgba(246,248,255,.92), rgba(246,248,255,.65));
-      border-bottom:1px solid rgba(219,225,255,.9);
-    }
-
-    .topbar-inner{max-width:var(--max); margin:0 auto; padding:10px 16px; display:flex; align-items:center; justify-content:space-between; gap:10px;}
-
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      min-width: 240px;
-    }
-    .mark{
-      width:40px;height:40px;border-radius:14px;
-      background: linear-gradient(135deg, var(--brand), var(--brand2));
-      box-shadow: var(--shadow);
-      display:flex; align-items:center; justify-content:center;
-      font-weight:900;
-      letter-spacing:.5px;
-    }
-    .brand .t{display:flex; flex-direction:column; line-height:1.2}
-    .brand .t b{font-size:14px}
-    .brand .t span{font-size:12px; color:var(--muted)}
-
-    .nav{
-      display:flex; gap:8px; flex-wrap:wrap;
-      justify-content:flex-end;
-      align-items:center;
-    }
-
-    /* Mobile nav */
-    .navtoggle{display:none}
-    @media (max-width: 860px){
-      .nav{display:none}
-      .navtoggle{display:inline-flex}
-      .nav.open{
-        display:flex;
-        position:absolute;
-        left:16px;
-        right:16px;
-        top:62px;
-        padding:10px;
-        border-radius:16px;
-        border:1px solid var(--line);
-        background: rgba(17,26,51,.88);
-        box-shadow: var(--shadow);
-      }
-      [data-theme="light"] .nav.open{background: rgba(255,255,255,.92)}
-    }
-    .chip{
-      text-decoration:none;
-      padding:8px 10px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      color:var(--muted);
-      font-size:13px;
-      background: rgba(17,26,51,.35);
-    }
-    [data-theme="light"] .chip{background: rgba(255,255,255,.55)}
-    .chip:hover{color:var(--text); border-color: rgba(91,140,255,.7)}
-
-    .actions{display:flex; align-items:center; gap:8px;}
-    .iconbtn{
-      width:38px; height:38px;
-      display:inline-flex;
-      align-items:center; justify-content:center;
-      border-radius:12px;
-      border:1px solid var(--line);
-      background: rgba(17,26,51,.35);
-      cursor:pointer;
-    }
-    [data-theme="light"] .iconbtn{background: rgba(255,255,255,.55)}
-    .iconbtn:hover{border-color: rgba(91,140,255,.7)}
-    .icon{width:18px;height:18px; fill: currentColor; color: var(--muted)}
-    .iconbtn:hover .icon{color: var(--text)}
-
-    /* Hero */
-    .hero{
-      margin-top:18px;
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:14px;
-    }
-    @media (max-width: 860px){
-      .hero{grid-template-columns:1fr;}
-      .brand{min-width:auto}
-    }
-
-    .card{
-      background: linear-gradient(180deg, var(--panel), rgba(17,26,51,.86));
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding:16px;
-    }
-    [data-theme="light"] .card{background: linear-gradient(180deg, var(--panel), rgba(255,255,255,.92));}
-
-    .hero-left{display:flex; gap:16px; align-items:flex-start}
-    .photo{
-      width:110px; height:160px;
-      border-radius: 16px;
-      overflow:hidden;
-      border:1px solid var(--line);
-      flex: 0 0 auto;
-      background: rgba(0,0,0,.12);
-    }
-    .photo img{width:100%; height:100%; object-fit:cover; display:block;}
-
-    .hgroup h1{margin:0; font-size:20px}
-    .subtitle{margin:6px 0 10px; color:var(--muted); font-size:14px}
-    .meta{color:var(--muted); font-size:14px; margin:0}
-    .meta a{color:var(--text); text-decoration:none; border-bottom:1px dashed rgba(178,187,220,.55)}
-    .meta a:hover{border-bottom-color: rgba(91,140,255,.8)}
-
-    .btnrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
-    .btn{
-      text-decoration:none;
-      padding:10px 12px;
-      border-radius: 14px;
-      border:1px solid var(--line);
-      background: rgba(17,26,51,.35);
-      color: var(--text);
-      font-size:13px;
-      display:inline-flex; align-items:center; gap:8px;
-    }
-    [data-theme="light"] .btn{background: rgba(255,255,255,.55)}
-    .btn.primary{background: linear-gradient(135deg, var(--brand), var(--brand2)); border-color: transparent;}
-    .btn:hover{border-color: rgba(91,140,255,.7)}
-
-    .section{margin-top:14px}
-    .section h2{
-      margin:0 0 10px;
-      font-size:16px;
-      letter-spacing:.2px;
-    }
-
-    .grid{
-      margin-top:14px;
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:14px;
-    }
-    @media (max-width: 860px){ .grid{grid-template-columns:1fr;} }
-
-    .list{display:flex; flex-direction:column; gap:10px;}
-    .item{
-      border:1px solid var(--line);
-      border-radius: 16px;
-      padding:12px;
-      background: rgba(17,26,51,.25);
-    }
-    [data-theme="light"] .item{background: rgba(255,255,255,.55)}
-    .item .top{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
-    .item .name{font-weight:700}
-    .item .meta2{color:var(--muted); font-size:13px}
-
-    ul.clean, ol.clean{margin:8px 0 0; padding-left:18px; color:var(--muted)}
-    ul.clean li, ol.clean li{margin:6px 0}
-
-    details{border:1px solid var(--line); border-radius:16px; padding:10px 12px; background: rgba(17,26,51,.20)}
-    [data-theme="light"] details{background: rgba(255,255,255,.55)}
-    details summary{cursor:pointer; color:var(--text); font-weight:700}
-    details summary::marker{color:var(--muted)}
-
-    .kvs{display:grid; grid-template-columns: 110px 1fr; gap:6px 10px; font-size:14px; color:var(--muted)}
-    .kvs b{color:var(--muted)}
-
-    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .pill{
-      font-size:12px;
-      padding:4px 10px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      color:var(--muted);
-      background: rgba(17,26,51,.22);
-      font-family: var(--mono);
-    }
-    [data-theme="light"] .pill{background: rgba(255,255,255,.55)}
-
-    .divider{height:1px; background: var(--line); opacity:.8; margin:10px 0}
-
-    footer{margin-top:18px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
-
-    .mono{font-family:var(--mono)}
-    .badge{
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      padding:6px 10px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      color:var(--muted);
-      background: rgba(17,26,51,.20);
-      font-size:12px;
-    }
-    [data-theme="light"] .badge{background: rgba(255,255,255,.55)}
-
-    /* Anchor offset so sections don't hide under sticky topbar */
-    .anchor{scroll-margin-top:72px;}
-  </style>
+  <link rel="stylesheet" href="jemdoc.css" />
 </head>
 
 <body>
-  <a class="skip-link" href="#content">Skip to content</a>
-  <div class="topbar" role="banner">
-    <div class="topbar-inner">
-      <a class="brand" href="#top" style="text-decoration:none">
-        <div class="mark">XT</div>
-        <div class="t">
-          <b>Xiao Tailong</b>
-          <span>Quantum AI · Sensing · Photonics</span>
-        </div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="layout header-inner">
+      <a class="wordmark" href="#top" aria-label="Xiao Tailong homepage">
+        <span>Xiao Tailong</span>
+        <small>肖太龙</small>
       </a>
 
-      <nav class="nav" id="navMenu" aria-label="Primary">
-        <a class="chip" href="#about">About</a>
-        <a class="chip" href="#research">Research</a>
-        <a class="chip" href="#news">News</a>
-        <a class="chip" href="#publications">Publications</a>
-        <a class="chip" href="#projects">Projects</a>
-        <a class="chip" href="#teaching">Teaching</a>
-        <a class="chip" href="#education">Education</a>
-        <a class="chip" href="#service">Service</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#selected-publications">Selected</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#service">Service</a>
       </nav>
-
-      <div class="actions" aria-label="Actions">
-        <button class="iconbtn navtoggle" id="navBtn" type="button" aria-label="Toggle menu" title="Menu">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 1 0 0-2H4a1 1 0 1 0 0 2Zm16 5H4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2Zm0 7H4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2Z"/></svg>
-        </button>
-        <button class="iconbtn" id="themeBtn" type="button" aria-label="Toggle theme" title="Toggle theme">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0 4a1 1 0 0 1-1-1v-1.1a1 1 0 1 1 2 0V21a1 1 0 0 1-1 1ZM12 3.1a1 1 0 0 1-1-1V1a1 1 0 1 1 2 0v1.1a1 1 0 0 1-1 1ZM4.22 5.64a1 1 0 0 1-1.41 0L2.03 4.86a1 1 0 0 1 1.41-1.41l.78.78a1 1 0 0 1 0 1.41Zm17.75 0a1 1 0 0 1 0-1.41l.78-.78a1 1 0 1 1 1.41 1.41l-.78.78a1 1 0 0 1-1.41 0ZM3.1 12a1 1 0 0 1-1 1H1a1 1 0 1 1 0-2h1.1a1 1 0 0 1 1 1Zm19.9 0a1 1 0 0 1 1-1H23a1 1 0 1 1 0 2h-1.1a1 1 0 0 1-1-1ZM4.22 18.36a1 1 0 0 1 0-1.41l.78-.78a1 1 0 1 1 1.41 1.41l-.78.78a1 1 0 0 1-1.41 0Zm15.56 0a1 1 0 0 1-1.41 0l-.78-.78a1 1 0 1 1 1.41-1.41l.78.78a1 1 0 0 1 0 1.41Z"/></svg>
-        </button>
-      </div>
     </div>
-  </div>
+  </header>
 
-  <main class="wrap" id="top">
-    <div id="content" style="position:absolute; top:-80px"></div>
-    <section class="hero">
-      <div class="card">
-        <div class="hero-left">
-          <div class="photo" aria-label="Profile photo">
-            <img src="photos/bio.jpg" alt="Xiao Tailong" />
-          </div>
-          <div class="hgroup">
-            <h1>Xiao, Tailong (肖太龙)</h1>
-            <div class="subtitle">Assistant Professor · School of Automation and Intelligent Sensing, Shanghai Jiao Tong University</div>
-            <p class="meta">Institute for Quantum Sensing and Information Processing (QSIP) · State Key Laboratory of Photonics and Communications · Hefei National Laboratory (Shanghai Research Center for Quantum Sciences)</p>
-            <p class="meta">Email: <a href="mailto:tailong_shaw@sjtu.edu.cn">tailong_shaw@sjtu.edu.cn</a> · Address: SJTU SEIEE building (电院) 5-205</p>
-            <div class="btnrow" aria-label="Quick links">
-              <a class="btn primary" href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
-              <a class="btn" href="https://github.com/XiaoTailong" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn" href="https://www.researchgate.net/profile/Tailong-Xiao-2" target="_blank" rel="noreferrer">ResearchGate</a>
-              <a class="btn" href="https://www.zhihu.com/people/xiao-tai-long-16" target="_blank" rel="noreferrer">知乎</a>
-              <a class="btn" href="https://qsip.sjtu.edu.cn/index.htm" target="_blank" rel="noreferrer">QSIP</a>
-              <a class="btn" href="./cv/CV.pdf" target="_blank" rel="noreferrer">CV</a>
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="page-title">
+      <div class="layout hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Assistant Professor · Shanghai Jiao Tong University</p>
+          <h1 id="page-title">Xiao, Tailong <span>(肖太龙)</span></h1>
+          <p class="lead">
+            I study quantum artificial intelligence for efficient quantum-system learning,
+            intelligent quantum sensing, and AI-enhanced optical computing and imaging.
+          </p>
+
+          <dl class="identity-list" aria-label="Academic identity">
+            <div>
+              <dt>Affiliation</dt>
+              <dd>School of Automation and Intelligent Sensing, Shanghai Jiao Tong University</dd>
             </div>
+            <div>
+              <dt>Institute</dt>
+              <dd>Institute for Quantum Sensing and Information Processing (QSIP)</dd>
+            </div>
+            <div>
+              <dt>Laboratory</dt>
+              <dd>State Key Laboratory of Photonics and Communications · Hefei National Laboratory (Shanghai Research Center for Quantum Sciences)</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:tailong_shaw@sjtu.edu.cn">tailong_shaw@sjtu.edu.cn</a></dd>
+            </div>
+            <div>
+              <dt>Office</dt>
+              <dd>SJTU SEIEE building (电院) 5-205</dd>
+            </div>
+          </dl>
+
+          <div class="quick-links" aria-label="Academic links">
+            <a href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a href="./cv/CV.pdf" target="_blank" rel="noreferrer">CV</a>
+            <a href="https://github.com/XiaoTailong" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.researchgate.net/profile/Tailong-Xiao-2" target="_blank" rel="noreferrer">ResearchGate</a>
+            <a href="https://qsip.sjtu.edu.cn/index.htm" target="_blank" rel="noreferrer">QSIP</a>
           </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Profile and open positions">
+          <img src="photos/bio.jpg" alt="Xiao Tailong" />
+          <div class="profile-note">
+            <h2>Open positions</h2>
+            <p>
+              Motivated BSc, MSc, and PhD students are welcome to contact me.
+              Current topics include quantum AI, quantum sensing, optical computing,
+              and machine-learning methods for quantum systems.
+            </p>
+            <p class="cn-note">欢迎有自驱力的本科生、硕士生和博士生联系，欢迎简历投递。</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="layout section-grid">
+        <h2 id="about-title">About</h2>
+        <div class="prose">
+          <p>
+            I received the B.E. degree from Central South University in 2018 and the
+            Ph.D. degree from Shanghai Jiao Tong University under the supervision of
+            Prof. Guihua Zeng (曾贵华) in 2023. From Oct. 2023, I have joined
+            Shanghai Jiao Tong University as an Assistant Professor.
+          </p>
+          <p>
+            My work focuses on using modern AI techniques to address frontier problems
+            in quantum science, including efficient learning of quantum systems,
+            quantum circuit optimization, error mitigation and correction, and
+            quantum-computing-based AI algorithms for sensing and imaging.
+          </p>
         </div>
       </div>
-
-      <aside class="card" aria-label="Highlights">
-        <div class="badge"><span class="mono">Now</span> Recruiting motivated students (BSc/MSc/PhD)</div>
-        <p style="margin:10px 0 0; color: var(--muted)">Seeking self-motivated Master's/PhD candidates! Research areas align with the directions below. CVs welcome!</p>
-        <p style="margin:10px 0 0; color:var(--text)"><span style="color:#ff4d6d; font-weight:800">招募有自驱力的本科生、硕士和博士生</span>，研究方向以上述方向为主，欢迎简历投递！</p>
-        <div class="divider"></div>
-        <div class="kvs">
-          <b>Focus</b><span>Quantum Artificial Intelligence (QAI), Intelligent Quantum Sensing, AI-enhanced optical computing & imaging</span>
-          <b>Base</b><span>Shanghai, China</span>
-          <b>Office</b><span>SEIEE 5-205</span>
-        </div>
-      </aside>
     </section>
 
-    <section class="section card anchor" id="about">
-      <h2>About</h2>
-      <p style="margin:0; color:var(--muted)">
-        I received the B.E. degree from Central South University in 2018, and the Ph.D. degree from Shanghai Jiao Tong University under the supervision of Prof. Guihua Zeng (曾贵华), in 2023.
-        From Oct. 2023, I have joined Shanghai Jiao Tong University as an Assistant Professor.
-      </p>
-      <p style="margin:10px 0 0; color:var(--muted)">
-        As a researcher in Quantum Artificial Intelligence (QAI), I am committed to leveraging advanced AI technologies to address frontier quantum problems such as <b style="color:var(--text)">efficient learning of quantum systems</b>, quantum circuit optimization, error mitigation and correction.
-        I also work on quantum computing based AI algorithms and their applications in quantum sensing and image processing.
-      </p>
-    </section>
-
-    <section class="grid">
-      <section class="card anchor" id="research">
-        <h2>Research</h2>
-        <div class="item" style="margin-top:8px">
-          <div class="top"><div class="name">Research interests</div><div class="meta2">Areas</div></div>
-          <ul class="clean">
-            <li>Quantum Artificial Intelligence (QAI)</li>
-            <li>Machine Learning</li>
-            <li>Intelligent Quantum Sensing</li>
-            <li>AI-enhanced optical computing and imaging</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card anchor" id="news">
-        <h2>News</h2>
-        <div class="list" id="newsList">
-          <div class="item"><div class="top"><div class="name">2025 Quantum Technology Frontier Summit</div><div class="meta2">Oral · Sep. 21, 2025</div></div><div class="meta2">Academic Committee</div></div>
-          <div class="item"><div class="top"><div class="name">The 4th Youth Symposium on Quantum Computing</div><div class="meta2">Oral · Aug. 12, 2025</div></div></div>
-          <div class="item"><div class="top"><div class="name">CCF Quantum Computing Conference 2025</div><div class="meta2">Invited · Jul. 22, 2025</div></div></div>
-
-          <details style="margin-top:6px">
-            <summary>News archive</summary>
-            <div class="list" style="margin-top:10px">
-              <div class="item"><div class="top"><div class="name">Global Artificial Intelligence Technology Conference 2025</div><div class="meta2">Invited · Jun. 6, 2025</div></div></div>
-              <div class="item"><div class="top"><div class="name">Fourth National Conference on Electronic Information Materials and Devices</div><div class="meta2">Oral · Apr. 19, 2025</div></div></div>
-              <div class="item"><div class="top"><div class="name">CCF Quantum Computing Doctoral Forum + “Rising Star” Young Scholars Forum</div><div class="meta2">Oral · Nov. 27, 2024</div></div></div>
-              <div class="item"><div class="top"><div class="name">Advanced Photonics Forum: Intelligent Photonics</div><div class="meta2">Invited · Nov. 2024</div></div></div>
-              <div class="item"><div class="top"><div class="name">Shandong University — Baoqing Sun Group</div><div class="meta2">Invited · Sep. 2024</div></div><div class="meta2">“Research on Quantum Machine Learning Algorithms and Their Advantages”</div></div>
-              <div class="item"><div class="top"><div class="name">Hangzhou Fuyang First International Conf. on Optoelectronic Integration Tech</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Machine Learning Ghost Imaging and Practical Advantages”</div></div>
-              <div class="item"><div class="top"><div class="name">Nanjing University of Information Science & Technology — Wenjie Liu Group</div><div class="meta2">Invited · May 2024</div></div><div class="meta2">“Quantum Machine Learning Algorithms and Applications”</div></div>
-            </div>
-          </details>
-        </div>
-      </section>
-    </section>
-
-    <section class="section card anchor" id="publications">
-      <h2>Publications</h2>
-      <p style="margin:0; color:var(--muted)">* indicates the corresponding author. Full list available on <a href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>.</p>
-
-      <div class="item" style="margin-top:10px">
-        <div class="top"><div class="name">Selected</div><div class="meta2">Highlights</div></div>
-        <ul class="clean" id="pubSelected">
-          <li>Xu H, <b style="color:var(--text)">Xiao T*</b>, Huang J, et al. Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning. <i>Physical Review Letters</i>, 2025.</li>
-          <li><b style="color:var(--text)">Xiao, T</b>, Zhai, X., Huang, J. et al. Quantum deep generative prior with programmable quantum circuits. <i>Communications Physics</i>, 2024.</li>
-          <li>Zhai, X., <b style="color:var(--text)">Xiao, T*</b>, Huang, J., Fan, J. & Zeng, G. Quantum neural compressive sensing for ghost imaging. <i>Physical Review Applied</i>, 2025.</li>
-        </ul>
-      </div>
-
-      <details open style="margin-top:10px">
-        <summary>Show / hide publication list</summary>
-        <ol class="clean" id="pubAll" style="color:var(--muted)">
-          <li>Xu H, <b style="color:var(--text)">Xiao T*</b>, Huang J, et al. Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning. <i>Physical Review Letters</i>, 2025, 134(12): 120803.</li>
-          <li><b style="color:var(--text)">Xiao, T</b>, Zhai, X., Huang, J. et al. Quantum deep generative prior with programmable quantum circuits. <i>Commun Phys</i> 7, 276 (2024). https://doi.org/10.1038/s42005-024-01765-9.</li>
-          <li>Zhai, X., <b style="color:var(--text)">Xiao, T*</b>, Huang, J., Fan, J. & Zeng, G. Quantum neural compressive sensing for ghost imaging. <i>Phys. Rev. Appl.</i> 23, 014018 (2025). https://doi.org/10.1103/PhysRevApplied.23.014018.</li>
-          <li><b style="color:var(--text)">Xiao, T</b>, Zhai, X., Wu, X. et al. Practical advantage of quantum machine learning in ghost imaging. <i>Commun Phys</i> 6, 171 (2023). https://doi.org/10.1038/s42005-023-01290-1.</li>
-          <li><b style="color:var(--text)">Xiao, T</b>, Huang, J., Li, H., Fan, J., Zeng, G. Quantum generative adversarial imitation learning. <i>New Journal of Physics</i>, 2023, 25(3): 033034.</li>
-          <li><b style="color:var(--text)">Xiao, T</b>, Fan, J. & Zeng, G. Parameter estimation in quantum sensing based on deep reinforcement learning. <i>npj Quantum Inf</i> 8, 2 (2022). https://doi.org/10.1038/s41534-021-00513-z.</li>
-          <li><b style="color:var(--text)">Xiao, T</b>, Huang, J., Li, H. et al. Intelligent certification for quantum simulators via machine learning. <i>npj Quantum Inf</i> 8, 138 (2022). https://doi.org/10.1038/s41534-022-00649-6.</li>
-          <li><b style="color:var(--text)">Xiao, T</b>, Bai, D., Fan, J., Zeng, G. Quantum Boltzmann machine algorithm with dimension-expanded equivalent Hamiltonian. <i>Physical Review A</i>, 2020, 101(3): 032304.</li>
-          <li><b style="color:var(--text)">Xiao, T</b>, Huang, J., Fan, J. et al. Continuous-variable Quantum Phase Estimation based on Machine Learning. <i>Sci Rep</i> 9, 12410 (2019). https://doi.org/10.1038/s41598-019-48551-0.</li>
-          <li>Li Y, Song Q, <b style="color:var(--text)">Xiao T*</b>, et al. Neural network enhanced time-varying parameter estimation via weak measurement. <i>Optics Express</i>, 2024, 32(16): 27358-27372.</li>
-          <li><b style="color:var(--text)">Li Z*</b>, <b style="color:var(--text)">Xiao T*</b>, Deng X, et al. Optimizing Variational Quantum Neural Networks Based on Collective Intelligence. <i>Mathematics</i>, 2024, 12(11): 1627.</li>
-          <li>Zhu Y, <b style="color:var(--text)">Xiao T*</b>, Zeng G, et al. Controlling Unknown Quantum States via Data-Driven State Representations. <i>arXiv</i>:2406.05711, 2024.</li>
-          <li>Tang Y, Xiong H, Yang N, <b style="color:var(--text)">Xiao T</b>, et al. Towards LLM4QPE: Unsupervised pretraining of quantum property estimation and a benchmark. <i>ICLR</i>, 2024.</li>
-          <li>Zhai X, Wu X, <b style="color:var(--text)">Xiao T</b>, et al. Robust superresolution computational imaging with diffuser-refined illumination. <i>Phys. Rev. Applied</i>, 2023, 20(6): 064002.</li>
-          <li>Tan X, Li H, Song Q, <b style="color:var(--text)">Xiao T</b>, et al. Enhanced sensitivity via polarization switching in fiber-based quantum sensing. <i>Phys. Rev. Applied</i>, 2023, 20(4): 044020.</li>
-          <li>Xia B, Huang J, Li H, Liu M, <b style="color:var(--text)">Xiao T</b>, et al. Ultrasensitive measurement of angular rotations via a Hermite-Gaussian pointer. <i>Photonics Research</i>, 2022, 10(12): 2816-2827.</li>
-          <li>Song Q, Li H, Huang J, <b style="color:var(--text)">Xiao T</b>, et al. Adaptive time-varying parameter estimation via weak measurement. <i>Phys. Rev. Applied</i>, 2022, 18(4): 044031.</li>
-          <li>Song Q, Xia B, Huang J, <b style="color:var(--text)">Xiao T</b>, et al. Surpassing the nyquist sampling limit via postmodulation. <i>Phys. Rev. Applied</i>, 2022, 18(3): 034077.</li>
-          <li>Zhao D, Huang J Z, <b style="color:var(--text)">Xiao T</b>, et al. Type of non-reciprocity in a fiber Sagnac interferometer induced by geometric phases. <i>Optics Express</i>, 2021, 30(1): 12-21.</li>
-          <li>Wang G, Li H, <b style="color:var(--text)">Xiao T</b>, et al. Adaptive correction of phase estimation with time based on weak measurement. <i>Optics Express</i>, 2021, 29(24): 39150-39158.</li>
-          <li>Fang C, Xia B, Huang J Z, <b style="color:var(--text)">Xiao T</b>, et al. Hamiltonian estimation based on adaptive weak value amplification. <i>J. Phys. B</i>, 2021, 54(7): 075501.</li>
-          <li>Bai D, Huang P, Zhu Y, ... <b style="color:var(--text)">Xiao T</b>, et al. Unidimensional continuous-variable measurement-device-independent quantum key distribution. <i>Quantum Information Processing</i>, 2020, 19: 1-21.</li>
-          <li>Qi H, Liu F, <b style="color:var(--text)">Xiao T*</b>, et al. A robust and energy-efficient weighted clustering algorithm on mobile ad hoc sensor networks. <i>Algorithms</i>, 2018, 11(8): 116.</li>
+    <section class="section section-muted" id="news" aria-labelledby="news-title">
+      <div class="layout section-grid">
+        <h2 id="news-title">News & Talks</h2>
+        <ol class="timeline" id="newsList">
+          <li>
+            <time datetime="2025-09-21">Sep. 21, 2025</time>
+            <p><strong>2025 Quantum Technology Frontier Summit</strong><span>Academic Committee · Oral</span></p>
+          </li>
         </ol>
-      </details>
+      </div>
     </section>
 
-    <section class="grid">
-      <section class="card anchor" id="service">
-        <h2>Academic Service</h2>
-        <div class="item">
-          <div class="top"><div class="name">Roles</div><div class="meta2">Community</div></div>
-          <ul class="clean">
-            <li>Executive Committee Member, CCF Technical Committee on Quantum Computing</li>
-          </ul>
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="layout section-grid">
+        <h2 id="research-title">Research</h2>
+        <div class="research-list">
+          <article>
+            <h3>Quantum Artificial Intelligence</h3>
+            <p>Learning, control, optimization, and generative modeling for quantum systems and programmable quantum circuits.</p>
+          </article>
+          <article>
+            <h3>Intelligent Quantum Sensing</h3>
+            <p>Machine-learning-assisted parameter estimation, adaptive sensing, and reinforcement-learning strategies near fundamental limits.</p>
+          </article>
+          <article>
+            <h3>AI-Enhanced Optical Computing and Imaging</h3>
+            <p>Quantum and neural approaches to ghost imaging, optical modulation, computational imaging, and scattering-media reconstruction.</p>
+          </article>
         </div>
-
-        <div class="item" style="margin-top:10px">
-          <div class="top"><div class="name">Editorial Work</div><div class="meta2">Journals</div></div>
-          <ul class="clean">
-            <li>Guest Editor — Special Issue: Quantum Computing and Quantum Information Processing. <a href="https://www.mdpi.com/journal/entropy/special_issues/Quantum_Computing_Quantum_Information" target="_blank" rel="noreferrer">See Special Issue</a>.</li>
-            <li>Editorial Board Member — Scientific Reports.</li>
-          </ul>
-        </div>
-
-        <div class="item" style="margin-top:10px">
-          <div class="top"><div class="name">Reviewer</div><div class="meta2">Venues</div></div>
-          <ul class="clean">
-            <li>Physical Review Letters/Applied/Research/A</li>
-            <li>PRX Quantum</li>
-            <li>New Journal of Physics; Quantum Science and Technology; JPA; Machine Learning: Science and Technology; European Journal of Physics</li>
-            <li>npj Quantum Information; Scientific Data; Scientific Reports</li>
-            <li>Quantum Information Processing</li>
-            <li>Optica Quantum; Optics Express; Optics Letters</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card anchor" id="projects">
-        <h2>Projects</h2>
-        <div class="list">
-          <div class="item"><div class="top"><div class="name">NSFC Young Scientists Fund</div><div class="meta2">2025–2027 · 300,000 CNY</div></div></div>
-          <div class="item"><div class="top"><div class="name">Lenovo–SJTU Joint Lab Project</div><div class="meta2">2024–2025 · 600,000 CNY</div></div></div>
-          <div class="item"><div class="top"><div class="name">SJTU Young Scholars Project</div><div class="meta2">2023–2026 · 50,000 CNY</div></div></div>
-          <div class="item"><div class="top"><div class="name">CCF–Boson Quantum Innovation Fund</div><div class="meta2">2025.03–2025.08 · 150,000 CNY</div></div></div>
-          <div class="item"><div class="top"><div class="name">National Key Laboratory Open Research Program</div><div class="meta2">2025–2026 · 100,000 CNY</div></div></div>
-        </div>
-      </section>
+      </div>
     </section>
 
-    <section class="grid">
-      <section class="card anchor" id="teaching">
-        <h2>Teaching</h2>
-        <div class="item">
-          <div class="top"><div class="name">Engineering Practice and Technological Innovation II (EE0503)</div><div class="meta2">Spring 2025</div></div>
-          <div class="meta2">An Introduction to Quantum Artificial Intelligence · Undergraduate (grade two)</div>
+    <section class="section section-muted" id="selected-publications" aria-labelledby="selected-publications-title">
+      <div class="layout section-grid">
+        <div>
+          <h2 id="selected-publications-title">Selected Publications</h2>
+          <p class="section-note">Representative work from the local publication snapshot.</p>
         </div>
-        <p style="margin:10px 0 0; color:var(--muted)">Learning materials: <a href="LM/Understanding Quantum Information and Computation.pdf">Understanding Quantum Information and Computation (PDF)</a>.</p>
-      </section>
-
-      <section class="card anchor" id="education">
-        <h2>Education</h2>
-        <div class="item">
-          <div class="top"><div class="name">B.E., Communication Engineering</div><div class="meta2">Central South University · 06.2018</div></div>
-          <ul class="clean">
-            <li>National Scholarship, 2017</li>
-            <li>Exemplary Outstanding Student, 2017</li>
-            <li>Hunan Provincial Outstanding Graduate, 2018</li>
-          </ul>
-        </div>
-        <div class="item" style="margin-top:10px">
-          <div class="top"><div class="name">Ph.D., Information and Communication Engineering</div><div class="meta2">Shanghai Jiao Tong University · 06.2023</div></div>
-          <ul class="clean">
-            <li>Yangjiachi Scholarship, 2019</li>
-            <li>National Second Prize, CCF Sinan Cup, 2021</li>
-            <li>First-class Scholarship of SKL (Photonics and communications), 2022</li>
-            <li>National First Prize, CCF Sinan Cup, 2022</li>
-            <li>Outstanding Graduate, 2023</li>
-            <li>CCF Outstanding Doctoral Dissertation in Quantum Computing, 2024</li>
-          </ul>
-        </div>
-      </section>
+        <ol class="publication-list selected-list" id="selectedPublications">
+          <li>
+            <p class="paper-title">Toward Heisenberg Limit without Critical Slowing Down via Quantum Reinforcement Learning.</p>
+            <p class="paper-meta">Hang Xu, <strong>Tailong Xiao</strong>, Jingzheng Huang, et al. <em>Physical Review Letters</em>, 2025.</p>
+          </li>
+          <li>
+            <p class="paper-title">Quantum neural compressive sensing for ghost imaging.</p>
+            <p class="paper-meta">Xinliang Zhai, <strong>Tailong Xiao</strong>, Jingzheng Huang, Jianping Fan, Guihua Zeng. <em>Physical Review Applied</em>, 2025.</p>
+          </li>
+          <li>
+            <p class="paper-title">Quantum deep generative prior with programmable quantum circuits.</p>
+            <p class="paper-meta"><strong>Tailong Xiao</strong>, Xinliang Zhai, Jingzheng Huang, Jianping Fan, Guihua Zeng. <em>Communications Physics</em>, 2024.</p>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <footer>
-      <div>© <span id="y"></span> Xiao Tailong · Built on GitHub Pages</div>
-      <div class="badge"><span class="mono">Updated</span> <span id="updatedAt" class="mono"></span> · <a href="#top" style="text-decoration:none">Back to top</a></div>
-    </footer>
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <div class="layout section-grid">
+        <div>
+          <h2 id="publications-title">Publications</h2>
+          <p class="section-note">
+            Full list from <a href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
+            and the local Semantic Scholar snapshot.
+          </p>
+          <div class="metric-row" aria-label="Publication metrics">
+            <span><strong id="pubCount">--</strong> listed publications</span>
+            <span><strong id="citationCount">--</strong> citations in snapshot</span>
+            <span>Updated <strong id="publicationUpdated">--</strong></span>
+          </div>
+        </div>
+        <ol class="publication-list" id="publicationList">
+          <li>
+            <p class="paper-title">Loading publication data...</p>
+            <p class="paper-meta">If this remains visible, view the site through a local web server rather than file://.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="teaching" aria-labelledby="teaching-title">
+      <div class="layout section-grid">
+        <h2 id="teaching-title">Teaching</h2>
+        <div class="prose">
+          <p>
+            <strong>Engineering Practice and Technological Innovation II (EE0503)</strong>,
+            Spring 2025. Topic: An Introduction to Quantum Artificial Intelligence
+            for second-year undergraduates.
+          </p>
+          <p>
+            Learning material:
+            <a href="LM/Understanding Quantum Information and Computation.pdf">Understanding Quantum Information and Computation (PDF)</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service" aria-labelledby="service-title">
+      <div class="layout section-grid">
+        <h2 id="service-title">Academic Service</h2>
+        <div class="service-grid">
+          <article>
+            <h3>Roles</h3>
+            <p>Executive Committee Member, CCF Technical Committee on Quantum Computing.</p>
+          </article>
+          <article>
+            <h3>Editorial Work</h3>
+            <p>Guest Editor, Special Issue on Quantum Computing and Quantum Information Processing, <em>Entropy</em>. Editorial Board Member, <em>Scientific Reports</em>.</p>
+          </article>
+          <article>
+            <h3>Reviewer</h3>
+            <p>Physical Review journals, PRX Quantum, New Journal of Physics, Quantum Science and Technology, npj Quantum Information, Scientific Data, Scientific Reports, Optica Quantum, Optics Express, and related venues.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="education" aria-labelledby="education-title">
+      <div class="layout section-grid">
+        <h2 id="education-title">Education</h2>
+        <ul class="compact-list">
+          <li><strong>Ph.D., Information and Communication Engineering</strong><span>Shanghai Jiao Tong University · 06.2023</span></li>
+          <li><strong>B.E., Communication Engineering</strong><span>Central South University · 06.2018</span></li>
+        </ul>
+        <p class="section-note achievements">
+          Honors include CCF Outstanding Doctoral Dissertation in Quantum Computing (2024),
+          Outstanding Graduate (2023), SKL First-class Scholarship (2022),
+          National prizes in the CCF Sinan Cup (2021, 2022), Yangjiachi Scholarship (2019),
+          National Scholarship (2017), and Hunan Provincial Outstanding Graduate (2018).
+        </p>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="layout footer-inner">
+      <span>© <span id="year"></span> Xiao Tailong · Built on GitHub Pages</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
 
   <script>
     (function(){
-      const root = document.documentElement;
-      const saved = localStorage.getItem('theme');
-      const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-      const initial = saved || (prefersLight ? 'light' : 'dark');
-      root.setAttribute('data-theme', initial);
+      const year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
 
-      const btn = document.getElementById('themeBtn');
-      if (btn){
-        btn.addEventListener('click', () => {
-          const cur = root.getAttribute('data-theme') || 'dark';
-          const next = (cur === 'dark') ? 'light' : 'dark';
-          root.setAttribute('data-theme', next);
-          localStorage.setItem('theme', next);
-        });
-      }
-
-      // Mobile menu
-      const navBtn = document.getElementById('navBtn');
-      const navMenu = document.getElementById('navMenu');
-      const toggleMenu = () => {
-        if (!navMenu) return;
-        navMenu.classList.toggle('open');
-      };
-      if (navBtn){
-        navBtn.addEventListener('click', toggleMenu);
-      }
-      if (navMenu){
-        navMenu.addEventListener('click', (e) => {
-          const t = e.target;
-          if (t && t.tagName === 'A' && navMenu.classList.contains('open')) {
-            navMenu.classList.remove('open');
-          }
-        });
-      }
-      document.addEventListener('click', (e) => {
-        if (!navMenu || !navMenu.classList.contains('open')) return;
-        const within = navMenu.contains(e.target) || (navBtn && navBtn.contains(e.target));
-        if (!within) navMenu.classList.remove('open');
-      });
-
-      const y = document.getElementById('y');
-      if (y) y.textContent = new Date().getFullYear();
-
-      const updatedAtEl = document.getElementById('updatedAt');
-      const pad = (n) => String(n).padStart(2, '0');
-      const todayStr = () => {
-        const d = new Date();
-        return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
-      };
-      const setUpdatedAt = (s) => {
-        if (updatedAtEl) updatedAtEl.textContent = s || todayStr();
-      };
-      setUpdatedAt(todayStr());
-
-      const escapeHtml = (s) => String(s || '')
+      const escapeHtml = (value) => String(value || '')
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;');
 
-      const isISODate = (s) => (typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s));
-      const maxDate = (a, b) => (a && (!b || a > b)) ? a : b;
+      const isISODate = (value) => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}/.test(value);
+
+      const formatDate = (value) => {
+        if (!isISODate(value)) return '';
+        const date = new Date(value.slice(0, 10) + 'T00:00:00');
+        return new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'short', day: 'numeric' }).format(date);
+      };
+
+      const highlightAuthor = (authors) => escapeHtml(authors)
+        .replace(/Tailong Xiao/g, '<strong>Tailong Xiao</strong>')
+        .replace(/Xiao T\*/g, '<strong>Xiao T*</strong>')
+        .replace(/Xiao T/g, '<strong>Xiao T</strong>');
+
+      const normalizeDoi = (doi) => String(doi || '')
+        .trim()
+        .replace(/^https?:\/\/doi\.org\//i, '')
+        .replace(/^doi:/i, '')
+        .trim()
+        .toLowerCase();
 
       async function fetchJson(path){
         try {
-          const r = await fetch(path, { cache: 'no-store' });
-          if (!r.ok) return null;
-          return await r.json();
-        } catch (e) {
+          const response = await fetch(path, { cache: 'no-store' });
+          if (!response.ok) return null;
+          return await response.json();
+        } catch (error) {
           return null;
         }
       }
 
-      const fmtDate = (iso) => {
-        if (!isISODate(iso)) return '';
-        const d = new Date(`${iso}T00:00:00`);
+      async function fetchText(path){
         try {
-          return d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
-        } catch (e) {
-          return iso;
+          const response = await fetch(path, { cache: 'no-store' });
+          if (!response.ok) return '';
+          return await response.text();
+        } catch (error) {
+          return '';
         }
-      };
-
-      function renderNews(items){
-        const box = document.getElementById('newsList');
-        if (!box || !Array.isArray(items) || items.length === 0) return;
-
-        const sorted = [...items].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
-        const head = sorted.slice(0, 3);
-        const rest = sorted.slice(3);
-
-        const renderOne = (it) => {
-          const title = escapeHtml(it.title || '');
-          const type = escapeHtml(it.type || '');
-          const date = fmtDate(it.date);
-          const note = escapeHtml(it.note || '');
-          const link = it.url ? `<a href="${escapeHtml(it.url)}" target="_blank" rel="noreferrer" style="text-decoration:none">${title}</a>` : title;
-          const meta = [type, date].filter(Boolean).join(' · ');
-          return `
-            <div class="item"><div class="top"><div class="name">${link}</div><div class="meta2">${escapeHtml(meta)}</div></div>${note ? `<div class=\"meta2\">${note}</div>` : ''}</div>
-          `;
-        };
-
-        let html = head.map(renderOne).join('');
-        if (rest.length > 0) {
-          html += `
-            <details style="margin-top:6px">
-              <summary>News archive</summary>
-              <div class="list" style="margin-top:10px">
-                ${rest.map(renderOne).join('')}
-              </div>
-            </details>
-          `;
-        }
-        box.innerHTML = html;
       }
 
-      function renderPubs(items){
-        const selectedEl = document.getElementById('pubSelected');
-        const allEl = document.getElementById('pubAll');
-        if (!selectedEl || !allEl || !Array.isArray(items) || items.length === 0) return;
+      function parseSelectedDois(text){
+        return new Set(String(text || '')
+          .split(/\r?\n/)
+          .map((line) => line.trim())
+          .filter((line) => line && !line.startsWith('#'))
+          .map(normalizeDoi));
+      }
 
-        const sorted = [...items].sort((a, b) => {
-          const ay = Number(a.year || 0);
-          const by = Number(b.year || 0);
-          if (by !== ay) return by - ay;
-          const ac = Number(a.citationCount || 0);
-          const bc = Number(b.citationCount || 0);
-          return bc - ac;
+      function renderPublication(publication){
+        const title = escapeHtml(publication.title || 'Untitled');
+        const authors = highlightAuthor(publication.authors || '');
+        const venue = escapeHtml(publication.venue || 'Preprint');
+        const year = escapeHtml(publication.year || '');
+        const url = publication.url ? escapeHtml(publication.url) : '';
+        const doi = publication.doi ? escapeHtml(publication.doi) : '';
+        const citations = Number.isFinite(Number(publication.citationCount)) ? Number(publication.citationCount) : null;
+        const linkedTitle = url ? `<a href="${url}" target="_blank" rel="noreferrer">${title}</a>` : title;
+        const doiHtml = doi ? ` <a class="paper-link" href="https://doi.org/${doi}" target="_blank" rel="noreferrer">DOI</a>` : '';
+        const citationHtml = citations !== null ? `<span>${citations} citations</span>` : '';
+
+        return `
+          <li>
+            <p class="paper-title">${linkedTitle}</p>
+            <p class="paper-meta">${authors}. <em>${venue}</em>${year ? `, ${year}` : ''}.${doiHtml}</p>
+            <p class="paper-tags">${citationHtml}</p>
+          </li>
+        `;
+      }
+
+      function renderPublications(data, selectedDoiSet){
+        if (!data || !Array.isArray(data.items) || data.items.length === 0) return;
+
+        const sorted = [...data.items].sort((a, b) => {
+          const by = Number(b.year || 0) - Number(a.year || 0);
+          if (by !== 0) return by;
+          return String(b.publicationDate || '').localeCompare(String(a.publicationDate || ''));
         });
+        const selected = sorted.filter((publication) => (
+          publication.selected === true || selectedDoiSet.has(normalizeDoi(publication.doi))
+        ));
+        const selectedItems = selected.length > 0 ? selected : sorted.slice(0, 3);
+        const citationTotal = sorted.reduce((sum, publication) => sum + Number(publication.citationCount || 0), 0);
 
-        const chosen = sorted.filter(p => p.selected === true).slice(0, 6);
-        const selected = chosen.length ? chosen : sorted.slice(0, 3);
+        const selectedEl = document.getElementById('selectedPublications');
+        const allEl = document.getElementById('publicationList');
+        const countEl = document.getElementById('pubCount');
+        const citationEl = document.getElementById('citationCount');
+        const updatedEl = document.getElementById('publicationUpdated');
 
-        const renderLi = (p) => {
-          const title = escapeHtml(p.title || '');
-          const authors = escapeHtml(p.authors || '');
-          const venue = escapeHtml(p.venue || '');
-          const year = escapeHtml(p.year || '');
-          const doi = escapeHtml(p.doi || '');
-          const url = p.url || '';
-          const cite = (p.citationCount != null) ? ` · cites: ${escapeHtml(p.citationCount)}` : '';
-          const titleHtml = url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${title}</a>` : title;
-          const tail = [venue, year].filter(Boolean).join(', ');
-          const doiHtml = doi ? ` · DOI: ${doi}` : '';
-          return `<li>${authors}. ${titleHtml}. <i>${escapeHtml(tail)}</i>${cite}${doiHtml}.</li>`;
-        };
-
-        selectedEl.innerHTML = selected.map(renderLi).join('');
-        allEl.innerHTML = sorted.map(renderLi).join('');
+        if (selectedEl) selectedEl.innerHTML = selectedItems.map(renderPublication).join('');
+        if (allEl) allEl.innerHTML = sorted.map(renderPublication).join('');
+        if (countEl) countEl.textContent = String(sorted.length);
+        if (citationEl) citationEl.textContent = String(citationTotal);
+        if (updatedEl) updatedEl.textContent = data.updatedAt || 'local snapshot';
       }
 
-      (async () => {
-        const [pub, news] = await Promise.all([
-          fetchJson('data/publications.json'),
-          fetchJson('data/news.json')
-        ]);
+      function renderNews(data){
+        if (!data || !Array.isArray(data.items) || data.items.length === 0) return;
 
-        const pubUpdated = (pub && isISODate(pub.updatedAt)) ? pub.updatedAt : '';
-        const newsUpdated = (news && isISODate(news.updatedAt)) ? news.updatedAt : '';
-        setUpdatedAt(maxDate(pubUpdated, newsUpdated) || todayStr());
+        const items = [...data.items].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+        const newsEl = document.getElementById('newsList');
+        if (!newsEl) return;
 
-        if (news && Array.isArray(news.items)) renderNews(news.items);
-        if (pub && Array.isArray(pub.items)) renderPubs(pub.items);
-      })();
+        newsEl.innerHTML = items.map((item) => {
+          const date = escapeHtml(item.date || '');
+          const title = escapeHtml(item.title || '');
+          const type = escapeHtml(item.type || '');
+          const note = escapeHtml(item.note || '');
+          const url = item.url ? escapeHtml(item.url) : '';
+          const titleHtml = url ? `<a href="${url}" target="_blank" rel="noreferrer">${title}</a>` : title;
+
+          return `
+            <li>
+              <time datetime="${date}">${formatDate(date) || date}</time>
+              <p><strong>${titleHtml}</strong><span>${[type, note].filter(Boolean).join(' · ')}</span></p>
+            </li>
+          `;
+        }).join('');
+      }
+
+      Promise.all([
+        fetchJson('data/publications.json'),
+        fetchJson('data/news.json'),
+        fetchText('data/selected_dois.txt')
+      ]).then(([publications, news, selectedDoiText]) => {
+        renderPublications(publications, parseSelectedDois(selectedDoiText));
+        renderNews(news);
+      });
     })();
   </script>
 </body>

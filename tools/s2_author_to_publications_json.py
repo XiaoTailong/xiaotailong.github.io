@@ -30,6 +30,9 @@ def norm_doi(s: str) -> str:
         s = s[4:].strip()
     return s
 
+def doi_key(s: str) -> str:
+    return norm_doi(s).lower()
+
 def safe_get(p: Any, key: str, default: Any = None) -> Any:
     if p is None:
         return default
@@ -70,7 +73,7 @@ def load_selected_dois(path: Optional[str]) -> set[str]:
             line = line.strip()
             if not line or line.startswith("#"):
                 continue
-            out.add(norm_doi(line))
+            out.add(doi_key(line))
     return out
 
 def iter_author_papers(client: SemanticScholar, author_id: str, limit: int) -> Iterable[Any]:
@@ -123,7 +126,7 @@ def main() -> None:
             "citationCount": safe_get(p, "citationCount", None),
             "publicationDate": safe_get(p, "publicationDate", "") or "",
             "publicationTypes": safe_get(p, "publicationTypes", None) or [],
-            "selected": (doi in selected) if doi else False,
+            "selected": (doi_key(doi) in selected) if doi else False,
         })
 
     def y(x):

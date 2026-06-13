@@ -1,0 +1,7 @@
+# Representative publications shown in the Selected Publications section.
+# This file is read by the homepage and by tools/s2_author_to_publications_json.py.
+10.1103/physrevlett.134.120803
+10.1103/PhysRevApplied.23.014018
+10.1038/s42005-024-01765-9
+10.1038/s42005-023-01290-1
+10.1038/s41534-021-00513-z

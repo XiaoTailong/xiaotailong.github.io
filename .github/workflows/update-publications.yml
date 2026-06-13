@@ -23,6 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install semanticscholar
 
+      - name: Check generator behavior
+        run: python tools/test_publications_generator.py
+
       - name: Build publications.json
         env:
           # API key is optional. If not set, the script will proceed without auth and may be rate-limited.

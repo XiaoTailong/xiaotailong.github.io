@@ -1,0 +1,65 @@
+{
+  "updatedAt": "2025-12-23",
+  "items": [
+    {
+      "date": "2025-09-21",
+      "title": "2025 Quantum Technology Frontier Summit",
+      "type": "Academic Committee",
+      "note": "Oral presentation"
+    },
+    {
+      "date": "2025-08-12",
+      "title": "The 4th Youth Symposium on Quantum Computing",
+      "type": "Talk",
+      "note": "Oral presentation"
+    },
+    {
+      "date": "2025-07-22",
+      "title": "CCF Quantum Computing Conference 2025",
+      "type": "Invited talk",
+      "note": ""
+    },
+    {
+      "date": "2025-06-06",
+      "title": "Global Artificial Intelligence Technology Conference 2025",
+      "type": "Invited talk",
+      "note": ""
+    },
+    {
+      "date": "2025-04-19",
+      "title": "Fourth National Conference on Electronic Information Materials and Devices",
+      "type": "Talk",
+      "note": "Oral presentation"
+    },
+    {
+      "date": "2024-11-27",
+      "title": "CCF Quantum Computing Doctoral Forum and Rising Star Young Scholars Forum",
+      "type": "Talk",
+      "note": "Oral presentation"
+    },
+    {
+      "date": "2024-11-01",
+      "title": "Advanced Photonics Forum: Intelligent Photonics",
+      "type": "Invited talk",
+      "note": ""
+    },
+    {
+      "date": "2024-09-01",
+      "title": "Shandong University, Baoqing Sun Group",
+      "type": "Invited talk",
+      "note": "Research on Quantum Machine Learning Algorithms and Their Advantages"
+    },
+    {
+      "date": "2024-05-20",
+      "title": "Hangzhou Fuyang First International Conference on Optoelectronic Integration Technology",
+      "type": "Invited talk",
+      "note": "Machine Learning Ghost Imaging and Practical Advantages"
+    },
+    {
+      "date": "2024-05-01",
+      "title": "Nanjing University of Information Science and Technology, Wenjie Liu Group",
+      "type": "Invited talk",
+      "note": "Quantum Machine Learning Algorithms and Applications"
+    }
+  ]
+}
