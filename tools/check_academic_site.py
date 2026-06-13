@@ -90,7 +90,6 @@ def main() -> int:
         "news",
         "research",
         "selected-publications",
-        "publications",
         "teaching",
         "service",
         "education",
@@ -100,12 +99,15 @@ def main() -> int:
     expect(parser.inline_styles == 0, "site styling should live in jemdoc.css, not a large inline style block", failures)
     expect(section_order_contains(parser.section_ids, expected_sections), f"sections should appear in academic order: {expected_sections}", failures)
     expect("projects" not in parser.section_ids and 'href="#projects"' not in html, "projects should be removed from the homepage navigation and sections", failures)
+    expect("publications" not in parser.section_ids and 'href="#publications"' not in html, "complete publications list should be removed from the homepage", failures)
+    expect('id="publicationList"' not in html and 'id="pubCount"' not in html and 'id="citationCount"' not in html, "homepage should not render complete publication metrics or list", failures)
     expect("themeBtn" not in parser.button_ids, "academic homepage should not include a theme toggle button", failures)
     expect("localStorage" not in html and "data-theme" not in html, "theme persistence code should be removed", failures)
     expect("radial-gradient" not in combined and "#9b7bff" not in combined and "#5b8cff" not in combined, "remove portfolio-style gradients and purple/blue brand colors", failures)
     expect(not re.search(r"border-radius\s*:\s*(1[0-9]|[2-9][0-9])px", css), "card radii should stay 8px or below", failures)
     expect("Open positions" in visible_text or "Prospective students" in visible_text, "hero should include a clear academic recruiting/contact signal", failures)
     expect("data/selected_dois.txt" in html, "homepage should read representative-paper DOIs from data/selected_dois.txt instead of relying on manual edits to generated JSON", failures)
+    expect("For the complete and automatically updated publication list" in visible_text and "Google Scholar" in visible_text, "Selected Publications should include a Google Scholar note for the full publication list", failures)
 
     try:
         news = load_json(NEWS)

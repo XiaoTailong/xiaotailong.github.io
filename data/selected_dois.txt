@@ -1,7 +1,16 @@
-# Representative publications shown in the Selected Publications section.
-# This file is read by the homepage and by tools/s2_author_to_publications_json.py.
+# CAS Q1 / top-tier journal papers shown in the Selected Publications section.
+# The homepage reads this file at runtime; the publication JSON remains auto-generated.
+10.1103/9mjc-nhxx
 10.1103/physrevlett.134.120803
 10.1103/PhysRevApplied.23.014018
 10.1038/s42005-024-01765-9
+10.1038/s41534-026-01269-0
 10.1038/s42005-023-01290-1
+10.1103/physrevapplied.20.044020
+10.1103/physrevapplied.20.064002
 10.1038/s41534-021-00513-z
+10.1038/s41534-022-00649-6
+10.1364/prj.581675
+10.1364/PRJ.473699
+10.1103/physrevapplied.18.044031
+10.1103/physrevapplied.18.034077

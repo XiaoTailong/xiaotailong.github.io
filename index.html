@@ -32,7 +32,6 @@
         <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#selected-publications">Selected</a>
-        <a href="#publications">Publications</a>
         <a href="#teaching">Teaching</a>
         <a href="#service">Service</a>
       </nav>
@@ -153,7 +152,11 @@
       <div class="layout section-grid">
         <div>
           <h2 id="selected-publications-title">Selected Publications</h2>
-          <p class="section-note">Representative work from the local publication snapshot.</p>
+          <p class="section-note">
+            Selected CAS Q1 journal papers. For the complete and automatically updated publication list,
+            please visit my
+            <a href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>.
+          </p>
         </div>
         <ol class="publication-list selected-list" id="selectedPublications">
           <li>
@@ -172,30 +175,7 @@
       </div>
     </section>
 
-    <section class="section" id="publications" aria-labelledby="publications-title">
-      <div class="layout section-grid">
-        <div>
-          <h2 id="publications-title">Publications</h2>
-          <p class="section-note">
-            Full list from <a href="https://scholar.google.com/citations?user=qo67_eUAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
-            and the local Semantic Scholar snapshot.
-          </p>
-          <div class="metric-row" aria-label="Publication metrics">
-            <span><strong id="pubCount">--</strong> listed publications</span>
-            <span><strong id="citationCount">--</strong> citations in snapshot</span>
-            <span>Updated <strong id="publicationUpdated">--</strong></span>
-          </div>
-        </div>
-        <ol class="publication-list" id="publicationList">
-          <li>
-            <p class="paper-title">Loading publication data...</p>
-            <p class="paper-meta">If this remains visible, view the site through a local web server rather than file://.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section section-muted" id="teaching" aria-labelledby="teaching-title">
+    <section class="section" id="teaching" aria-labelledby="teaching-title">
       <div class="layout section-grid">
         <h2 id="teaching-title">Teaching</h2>
         <div class="prose">
@@ -349,19 +329,10 @@
           publication.selected === true || selectedDoiSet.has(normalizeDoi(publication.doi))
         ));
         const selectedItems = selected.length > 0 ? selected : sorted.slice(0, 3);
-        const citationTotal = sorted.reduce((sum, publication) => sum + Number(publication.citationCount || 0), 0);
 
         const selectedEl = document.getElementById('selectedPublications');
-        const allEl = document.getElementById('publicationList');
-        const countEl = document.getElementById('pubCount');
-        const citationEl = document.getElementById('citationCount');
-        const updatedEl = document.getElementById('publicationUpdated');
 
         if (selectedEl) selectedEl.innerHTML = selectedItems.map(renderPublication).join('');
-        if (allEl) allEl.innerHTML = sorted.map(renderPublication).join('');
-        if (countEl) countEl.textContent = String(sorted.length);
-        if (citationEl) citationEl.textContent = String(citationTotal);
-        if (updatedEl) updatedEl.textContent = data.updatedAt || 'local snapshot';
       }
 
       function renderNews(data){
