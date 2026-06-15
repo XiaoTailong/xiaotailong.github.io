@@ -1,11 +1,17 @@
 {
-  "updatedAt": "2026-06-14",
+  "updatedAt": "2026-06-15",
   "items": [
     {
       "date": "2026-06-13",
       "title": "Congratulations to Dr. Yuegang Li on his PhD graduation",
       "type": "News",
       "note": "PhD graduation"
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Congratulations to Dr. Hang Xu: his PRL paper has been accepted",
+      "type": "News",
+      "note": "PRL paper accepted"
     },
     {
       "date": "2026-01-17",

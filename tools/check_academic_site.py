@@ -146,6 +146,16 @@ def main() -> int:
                 "news should include Dr. Yuegang Li's PhD graduation",
                 failures,
             )
+            expect(
+                any("Hang Xu" in str(item.get("title", "")) and "PRL" in str(item.get("title", "")) and "accepted" in str(item.get("title", "")).lower() for item in news_items if isinstance(item, dict)),
+                "news should include Dr. Hang Xu's accepted PRL paper",
+                failures,
+            )
+            expect(
+                any(item.get("date") == "2026-06-07" and "Hang Xu" in str(item.get("title", "")) for item in news_items if isinstance(item, dict)),
+                "Dr. Hang Xu PRL news should use the June 7, 2026 date",
+                failures,
+            )
             required_news = [
                 "Quantum Artificial Intelligence Academic Workshop 2026",
                 "19th Challenge Cup Special Competition",
