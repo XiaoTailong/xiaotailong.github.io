@@ -109,6 +109,8 @@ def main() -> int:
     expect("every spring semester" in visible_text.lower(), "teaching section should state that the course is offered every spring", failures)
     expect("data/selected_dois.txt" in html, "homepage should read representative-paper DOIs from data/selected_dois.txt instead of relying on manual edits to generated JSON", failures)
     expect("For the complete and automatically updated publication list" in visible_text and "Google Scholar" in visible_text, "Selected Publications should include a Google Scholar note for the full publication list", failures)
+    expect('class="publication-list selected-list publication-scroll"' in html, "Selected Publications should use a compact scrollable list", failures)
+    expect(".publication-scroll" in css and "max-height: 560px" in css and "overflow-y: auto" in css, "Selected Publications should not consume excessive vertical space", failures)
     expect('id="newsList"' in html and 'class="timeline feed-scroll"' in html, "news and talks should render as one compact scrollable timeline", failures)
     expect("const NEWS_TALK_LIMIT = 20" in html and ".slice(0, NEWS_TALK_LIMIT)" in html, "news and talks feeds should be limited to 20 latest items", failures)
     expect("function renderTalkSentence" in html and "I presented" in html, "talk entries should render as complete first-person sentences", failures)

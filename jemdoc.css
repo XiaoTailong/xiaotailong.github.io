@@ -329,6 +329,13 @@ h3 {
   counter-reset: publication;
 }
 
+.publication-scroll {
+  max-height: 560px;
+  overflow-y: auto;
+  padding-right: 14px;
+  scrollbar-gutter: stable;
+}
+
 .publication-list li {
   display: grid;
   grid-template-columns: 2.9rem minmax(0, 1fr);
@@ -336,6 +343,11 @@ h3 {
   border-top: 1px solid var(--line);
   padding: 17px 0;
   counter-increment: publication;
+}
+
+.publication-scroll li {
+  gap: 3px 18px;
+  padding: 12px 0;
 }
 
 .publication-list li::before {
@@ -373,11 +385,21 @@ h3 {
   color: var(--ink);
 }
 
+.publication-scroll .paper-title {
+  font-size: 1rem;
+  line-height: 1.32;
+}
+
 .paper-meta,
 .paper-tags {
   margin: 0;
   color: var(--muted);
   font-size: 0.93rem;
+}
+
+.publication-scroll .paper-meta,
+.publication-scroll .paper-tags {
+  font-size: 0.9rem;
 }
 
 .paper-tags {
