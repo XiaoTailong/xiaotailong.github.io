@@ -149,6 +149,18 @@ def main() -> int:
                 failures,
             )
             expect(
+                any(
+                    item.get("date") == "2026-01-03"
+                    and "Yuegang Li" in str(item.get("title", ""))
+                    and "Photonics Research" in str(item.get("title", ""))
+                    and "accepted" in str(item.get("title", "")).lower()
+                    for item in news_items
+                    if isinstance(item, dict)
+                ),
+                "news should include Dr. Yuegang Li's Photonics Research acceptance on January 3, 2026",
+                failures,
+            )
+            expect(
                 any("Hang Xu" in str(item.get("title", "")) and "PRL" in str(item.get("title", "")) and "accepted" in str(item.get("title", "")).lower() for item in news_items if isinstance(item, dict)),
                 "news should include Dr. Hang Xu's accepted PRL paper",
                 failures,
@@ -167,6 +179,19 @@ def main() -> int:
                     if isinstance(item, dict)
                 ),
                 "news should include Dr. Hang Xu's first PRL acceptance on April 1, 2025",
+                failures,
+            )
+            expect(
+                any(
+                    item.get("date") == "2026-05-03"
+                    and "Yadong Wu" in str(item.get("title", ""))
+                    and "Controlling Unknown Quantum States via Data-Driven State Representations" in str(item.get("title", ""))
+                    and "npj Quantum Information" in str(item.get("title", ""))
+                    and "accepted" in str(item.get("title", "")).lower()
+                    for item in news_items
+                    if isinstance(item, dict)
+                ),
+                "news should include the npj Quantum Information acceptance with Yadong Wu on May 3, 2026",
                 failures,
             )
             required_news = [
