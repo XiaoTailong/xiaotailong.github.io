@@ -25,7 +25,7 @@ class FakeSemanticScholar:
             {
                 "externalIds": {"DOI": "https://doi.org/10.1234/SELECTED"},
                 "title": "Selected paper",
-                "authors": [{"name": "Tailong Xiao"}, {"name": "A. Collaborator"}],
+                "authors": [{"name": "Tailong Xiao"}, {"name": "Yadong Wu"}],
                 "venue": "Test Journal",
                 "year": 2025,
                 "url": "https://example.test/selected",
@@ -92,6 +92,7 @@ def test_selected_dois_are_applied() -> None:
     selected = [item for item in data["items"] if item["selected"]]
     assert len(data["items"]) == 2
     assert [item["title"] for item in selected] == ["Selected paper"]
+    assert selected[0]["authors"] == "Tailong Xiao, Ya-Dong Wu"
     assert data["source"] == {"name": "Semantic Scholar", "via": "author:test-author"}
 
 

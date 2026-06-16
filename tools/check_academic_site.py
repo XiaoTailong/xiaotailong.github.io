@@ -184,14 +184,14 @@ def main() -> int:
             expect(
                 any(
                     item.get("date") == "2026-05-03"
-                    and "Yadong Wu" in str(item.get("title", ""))
+                    and "Ya-Dong Wu" in str(item.get("title", ""))
                     and "Controlling Unknown Quantum States via Data-Driven State Representations" in str(item.get("title", ""))
                     and "npj Quantum Information" in str(item.get("title", ""))
                     and "accepted" in str(item.get("title", "")).lower()
                     for item in news_items
                     if isinstance(item, dict)
                 ),
-                "news should include the npj Quantum Information acceptance with Yadong Wu on May 3, 2026",
+                "news should include the npj Quantum Information acceptance with Ya-Dong Wu on May 3, 2026",
                 failures,
             )
             required_news = [

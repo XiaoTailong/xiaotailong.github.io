@@ -21,6 +21,10 @@ FIELDS = [
     "citationCount","externalIds","url","paperId",
 ]
 
+AUTHOR_NAME_OVERRIDES = {
+    "Yadong Wu": "Ya-Dong Wu",
+}
+
 def norm_doi(s: str) -> str:
     if not s:
         return ""
@@ -61,7 +65,7 @@ def authors_to_str(authors: Any) -> str:
         else:
             n = (getattr(a, "name", "") or "").strip()
         if n:
-            names.append(n)
+            names.append(AUTHOR_NAME_OVERRIDES.get(n, n))
     return ", ".join(names)
 
 def load_selected_dois(path: Optional[str]) -> set[str]:
