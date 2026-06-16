@@ -158,6 +158,17 @@ def main() -> int:
                 "Dr. Hang Xu PRL news should use the June 7, 2026 date",
                 failures,
             )
+            expect(
+                any(
+                    item.get("date") == "2025-04-01"
+                    and "Hang Xu" in str(item.get("title", ""))
+                    and "first PRL" in str(item.get("title", ""))
+                    for item in news_items
+                    if isinstance(item, dict)
+                ),
+                "news should include Dr. Hang Xu's first PRL acceptance on April 1, 2025",
+                failures,
+            )
             required_news = [
                 "Quantum Artificial Intelligence Academic Workshop 2026",
                 "19th Challenge Cup Special Competition",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15",
+  "updatedAt": "2026-06-16",
   "items": [
     {
       "date": "2026-06-13",
@@ -60,6 +60,12 @@
       "title": "Fourth National Conference on Electronic Information Materials and Devices",
       "type": "Talk",
       "note": "Oral presentation"
+    },
+    {
+      "date": "2025-04-01",
+      "title": "Congratulations to Dr. Hang Xu: his first PRL paper has been accepted",
+      "type": "News",
+      "note": "First PRL paper accepted"
     },
     {
       "date": "2024-11-27",
