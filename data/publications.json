@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-07-08",
+  "updatedAt": "2026-07-09",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 36
+    "total": 37
   },
   "items": [
     {
@@ -49,6 +49,18 @@
         "JournalArticle"
       ],
       "selected": true
+    },
+    {
+      "doi": "",
+      "title": "Learning to Reconstruct Wigner Functions in Phase Space",
+      "authors": "Xinyu Tang, Yi-hsin Lin, Yan Zhu, Tailong Xiao, Yuxuan Du, G. Chiribella, Qiongyi He, Ya-Dong Wu",
+      "venue": "",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/7e0a4fe3642bb98265c6627a5ad8ec50599170f1",
+      "citationCount": 0,
+      "publicationDate": "2026-07-07T00:00:00",
+      "publicationTypes": [],
+      "selected": false
     },
     {
       "doi": "",
