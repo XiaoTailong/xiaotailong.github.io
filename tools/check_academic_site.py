@@ -150,6 +150,18 @@ def main() -> int:
             )
             expect(
                 any(
+                    item.get("date") == "2026-07-12"
+                    and "Ya-Dong Wu" in str(item.get("title", ""))
+                    and "Quantum Systems Learning Workshop" in str(item.get("title", ""))
+                    and "Shanghai Jianguo Hotel" in str(item.get("title", ""))
+                    for item in news_items
+                    if isinstance(item, dict)
+                ),
+                "news should include the Quantum Systems Learning Workshop with Ya-Dong Wu on July 11-12, 2026",
+                failures,
+            )
+            expect(
+                any(
                     item.get("date") == "2026-01-03"
                     and "Yuegang Li" in str(item.get("title", ""))
                     and "Photonics Research" in str(item.get("title", ""))
