@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17",
+  "updatedAt": "2026-07-18",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -351,7 +351,7 @@
       "venue": "Photonics Research",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/9e69c14a7de172b636e632c9a8c0c2ffce5ddb83",
-      "citationCount": 8,
+      "citationCount": 9,
       "publicationDate": "2022-10-14T00:00:00",
       "publicationTypes": [],
       "selected": true
