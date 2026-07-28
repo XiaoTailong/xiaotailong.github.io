@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27",
+  "updatedAt": "2026-07-28",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -38,7 +38,7 @@
     },
     {
       "doi": "10.1103/9mjc-nhxx",
-      "title": "Noise-resilient Heisenberg-limited quantum sensing via indefinite-causal-order error correction",
+      "title": "Noise-Resilient Heisenberg-Limited Quantum Sensing via Indefinite-Causal-Order Error Correction.",
       "authors": "Hang Xu, Xiaoyang Deng, Ze Zheng, Tailong Xiao, Guihua Zeng",
       "venue": "Physical Review Letters",
       "year": 2026,
