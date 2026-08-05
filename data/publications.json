@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04",
+  "updatedAt": "2026-08-05",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -83,7 +83,7 @@
       "venue": "Physical Review Letters",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/261bcda05757a972c224571a75f7c8a06f5d7c88",
-      "citationCount": 27,
+      "citationCount": 28,
       "publicationDate": "2025-03-27T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -339,7 +339,7 @@
       "venue": "npj Quantum Information",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/6867b8e0439c11277e84f0d3fb651dcc8fd5745d",
-      "citationCount": 22,
+      "citationCount": 21,
       "publicationDate": "2022-11-28T00:00:00",
       "publicationTypes": [],
       "selected": true
