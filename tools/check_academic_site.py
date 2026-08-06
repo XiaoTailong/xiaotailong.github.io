@@ -16,6 +16,7 @@ CSS = ROOT / "jemdoc.css"
 NEWS = ROOT / "data" / "news.json"
 PUBLICATIONS = ROOT / "data" / "publications.json"
 SELECTED_DOIS = ROOT / "data" / "selected_dois.txt"
+DEPLOY_PAGES_WORKFLOW = ROOT / ".github" / "workflows" / "deploy-pages.yml"
 
 
 class SiteParser(HTMLParser):
@@ -79,6 +80,7 @@ def main() -> int:
 
     html = INDEX.read_text(encoding="utf-8")
     css = CSS.read_text(encoding="utf-8")
+    deploy_pages = DEPLOY_PAGES_WORKFLOW.read_text(encoding="utf-8") if DEPLOY_PAGES_WORKFLOW.exists() else ""
     combined = f"{html}\n{css}"
 
     parser = SiteParser()
@@ -118,6 +120,9 @@ def main() -> int:
     expect("Intl.DateTimeFormat('en-US'" in html, "news and talks dates should use a stable English date format", failures)
     expect("String(b.date || '').localeCompare(String(a.date || ''))" in html, "news and talks should be sorted newest first", failures)
     expect(".feed-scroll" in css and "overflow-y: auto" in css and "max-height" in css, "news and talks feeds should use compact scrollable containers", failures)
+    expect("actions/deploy-pages@v4" in deploy_pages, "GitHub Pages should deploy through the official deploy-pages action", failures)
+    expect("workflow_run:" in deploy_pages and "Update publications.json (Semantic Scholar Author)" in deploy_pages, "GitHub Pages deployment should also run after the publications update workflow completes", failures)
+    expect("pages: write" in deploy_pages and "id-token: write" in deploy_pages, "GitHub Pages deployment workflow should have pages and OIDC permissions", failures)
     expect(
         ".publication-list li > .paper-title" in css
         and ".publication-list li > .paper-meta" in css
