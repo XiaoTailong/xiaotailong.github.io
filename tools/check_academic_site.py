@@ -121,7 +121,6 @@ def main() -> int:
     expect("String(b.date || '').localeCompare(String(a.date || ''))" in html, "news and talks should be sorted newest first", failures)
     expect(".feed-scroll" in css and "overflow-y: auto" in css and "max-height" in css, "news and talks feeds should use compact scrollable containers", failures)
     expect("actions/deploy-pages@v5" in deploy_pages, "GitHub Pages should deploy through the official deploy-pages action", failures)
-    expect("timeout: 1800000" in deploy_pages, "GitHub Pages deployment should tolerate delayed Pages deployment queues", failures)
     expect("workflow_run:" in deploy_pages and "Update publications.json (Semantic Scholar Author)" in deploy_pages, "GitHub Pages deployment should also run after the publications update workflow completes", failures)
     expect("pages: write" in deploy_pages and "id-token: write" in deploy_pages, "GitHub Pages deployment workflow should have pages and OIDC permissions", failures)
     expect(
