@@ -1,13 +1,27 @@
 {
-  "updatedAt": "2026-08-11",
+  "updatedAt": "2026-08-12",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 37
+    "total": 38
   },
   "items": [
+    {
+      "doi": "10.1103/9mjc-nhxx",
+      "title": "Noise-Resilient Heisenberg-Limited Quantum Sensing via Indefinite-Causal-Order Error Correction.",
+      "authors": "Hang Xu, Xiaoyang Deng, Ze Zheng, Tailong Xiao, Guihua Zeng",
+      "venue": "Physical Review Letters",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/073091b3a49e531866a6012780e88d8caf34c2ca",
+      "citationCount": 1,
+      "publicationDate": "2026-01-04T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": true
+    },
     {
       "doi": "10.1364/prj.581675",
       "title": "Research Article Photonics Research 1 Real-time imaging through moving scattering media enabled by fixed optical modulations",
@@ -23,6 +37,18 @@
       "selected": true
     },
     {
+      "doi": "",
+      "title": "Preserving Heisenberg-Limited Metrological Information during Storage via Correlated-Noise Correction",
+      "authors": "Hang Xu, Xue-ke Song, Jingzheng Huang, Tailong Xiao, G. Zeng",
+      "venue": "",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/0d7f67fdd26d3184e365d8e1ff708e58f6df482c",
+      "citationCount": 0,
+      "publicationDate": "2026-08-08T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
       "doi": "10.3788/col202624.041103",
       "title": "Optical diffraction neural network assisted computational ghost imaging through dynamic scattering media",
       "authors": "Y. Li, Ze Zheng, Junjie Wang, Ming He, Jianping Fan, Tailong Xiao, Guihua Zeng",
@@ -35,20 +61,6 @@
         "JournalArticle"
       ],
       "selected": false
-    },
-    {
-      "doi": "10.1103/9mjc-nhxx",
-      "title": "Noise-Resilient Heisenberg-Limited Quantum Sensing via Indefinite-Causal-Order Error Correction.",
-      "authors": "Hang Xu, Xiaoyang Deng, Ze Zheng, Tailong Xiao, Guihua Zeng",
-      "venue": "Physical Review Letters",
-      "year": 2026,
-      "url": "https://www.semanticscholar.org/paper/073091b3a49e531866a6012780e88d8caf34c2ca",
-      "citationCount": 0,
-      "publicationDate": "2026-01-04T00:00:00",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "selected": true
     },
     {
       "doi": "",
@@ -83,7 +95,7 @@
       "venue": "Physical Review Letters",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/261bcda05757a972c224571a75f7c8a06f5d7c88",
-      "citationCount": 28,
+      "citationCount": 29,
       "publicationDate": "2025-03-27T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -106,6 +118,18 @@
     },
     {
       "doi": "",
+      "title": "Learning to Restore Heisenberg Limit in Noisy Quantum Sensing via Quantum Digital Twin",
+      "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Jianping Fan, G. Zeng",
+      "venue": "",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/69aad9b479dc07b8df5eee5117a639ea6ffa6b72",
+      "citationCount": 3,
+      "publicationDate": "2025-08-15T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "",
       "title": "Real-time imaging through dynamic scattering media enabled by fixed optical modulations",
       "authors": "Y. Li, Junjie Wang, Tailong Xiao, Ze Zheng, Jingzheng Huang, Ming He, Jianping Fan, G. Zeng",
       "venue": "",
@@ -113,18 +137,6 @@
       "url": "https://www.semanticscholar.org/paper/0ac7178f21216c487bd2d30cc3503b50a68c7776",
       "citationCount": 2,
       "publicationDate": "2025-08-21T00:00:00",
-      "publicationTypes": [],
-      "selected": false
-    },
-    {
-      "doi": "",
-      "title": "Learning to Restore Heisenberg Limit in Noisy Quantum Sensing via Quantum Digital Twin",
-      "authors": "Hang Xu, Tailong Xiao, Jingzheng Huang, Jianping Fan, G. Zeng",
-      "venue": "",
-      "year": 2025,
-      "url": "https://www.semanticscholar.org/paper/69aad9b479dc07b8df5eee5117a639ea6ffa6b72",
-      "citationCount": 2,
-      "publicationDate": "2025-08-15T00:00:00",
       "publicationTypes": [],
       "selected": false
     },
@@ -203,7 +215,7 @@
       "venue": "Communications Physics",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/f7addbb67ad073ce79f7dc078379f479c246bb60",
-      "citationCount": 15,
+      "citationCount": 16,
       "publicationDate": "2024-08-15T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -273,7 +285,7 @@
       "venue": "Communications Physics",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/69514c02e9e7fc80409c5d42911ac6e821b8cd48",
-      "citationCount": 46,
+      "citationCount": 47,
       "publicationDate": "2023-07-10T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -327,7 +339,7 @@
       "venue": "npj Quantum Information",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/d9f217cc5a58bdb614c4b4b52f3c50e107d2a1e1",
-      "citationCount": 63,
+      "citationCount": 64,
       "publicationDate": "2022-01-10T00:00:00",
       "publicationTypes": [],
       "selected": true
