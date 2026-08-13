@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-12",
+  "updatedAt": "2026-08-13",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 38
+    "total": 39
   },
   "items": [
     {
@@ -15,12 +15,24 @@
       "venue": "Physical Review Letters",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/073091b3a49e531866a6012780e88d8caf34c2ca",
-      "citationCount": 1,
+      "citationCount": 2,
       "publicationDate": "2026-01-04T00:00:00",
       "publicationTypes": [
         "JournalArticle"
       ],
       "selected": true
+    },
+    {
+      "doi": "",
+      "title": "Simultaneous Heisenberg-Limited Multiparameter Metrology via Indefinite Evolution",
+      "authors": "Hang Xu, Tailong Xiao, Ze Zheng, Xiaoyang Deng, Jinfeng Zheng, Jingzheng Huang, Guihua Zeng",
+      "venue": "",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/6f972953d15819875293d3c8eba349e92693a90e",
+      "citationCount": 0,
+      "publicationDate": "2026-08-11T00:00:00",
+      "publicationTypes": [],
+      "selected": false
     },
     {
       "doi": "10.1364/prj.581675",
@@ -95,7 +107,7 @@
       "venue": "Physical Review Letters",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/261bcda05757a972c224571a75f7c8a06f5d7c88",
-      "citationCount": 29,
+      "citationCount": 30,
       "publicationDate": "2025-03-27T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -123,7 +135,7 @@
       "venue": "",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/69aad9b479dc07b8df5eee5117a639ea6ffa6b72",
-      "citationCount": 3,
+      "citationCount": 4,
       "publicationDate": "2025-08-15T00:00:00",
       "publicationTypes": [],
       "selected": false
@@ -339,7 +351,7 @@
       "venue": "npj Quantum Information",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/d9f217cc5a58bdb614c4b4b52f3c50e107d2a1e1",
-      "citationCount": 64,
+      "citationCount": 65,
       "publicationDate": "2022-01-10T00:00:00",
       "publicationTypes": [],
       "selected": true
