@@ -17,6 +17,7 @@ NEWS = ROOT / "data" / "news.json"
 PUBLICATIONS = ROOT / "data" / "publications.json"
 SELECTED_DOIS = ROOT / "data" / "selected_dois.txt"
 DEPLOY_PAGES_WORKFLOW = ROOT / ".github" / "workflows" / "deploy-pages.yml"
+RESEARCH_MAP = ROOT / "photos" / "research-map.png"
 
 
 class SiteParser(HTMLParser):
@@ -108,6 +109,9 @@ def main() -> int:
     expect("radial-gradient" not in combined and "#9b7bff" not in combined and "#5b8cff" not in combined, "remove portfolio-style gradients and purple/blue brand colors", failures)
     expect(not re.search(r"border-radius\s*:\s*(1[0-9]|[2-9][0-9])px", css), "card radii should stay 8px or below", failures)
     expect("Open positions" in visible_text or "Prospective students" in visible_text, "hero should include a clear academic recruiting/contact signal", failures)
+    expect(RESEARCH_MAP.exists(), "about section research interest map image should exist at photos/research-map.png", failures)
+    expect('class="research-map"' in html and 'src="photos/research-map.png"' in html, "about section should include the research interest map figure", failures)
+    expect(".research-map" in css and "max-width" not in css.split(".research-map", 1)[1].split("}", 1)[0], "research interest map should use responsive CSS instead of a fixed max-width", failures)
     expect("every spring semester" in visible_text.lower(), "teaching section should state that the course is offered every spring", failures)
     expect("data/selected_dois.txt" in html, "homepage should read representative-paper DOIs from data/selected_dois.txt instead of relying on manual edits to generated JSON", failures)
     expect("For the complete and automatically updated publication list" in visible_text and "Google Scholar" in visible_text, "Selected Publications should include a Google Scholar note for the full publication list", failures)
