@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -297,7 +297,7 @@
       "venue": "Communications Physics",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/69514c02e9e7fc80409c5d42911ac6e821b8cd48",
-      "citationCount": 49,
+      "citationCount": 50,
       "publicationDate": "2023-07-10T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -516,7 +516,7 @@
     {
       "doi": "10.1007/978-3-319-71147-8_13",
       "title": "Toward Energy-Efficient and Robust Clustering Algorithm on Mobile Ad Hoc Sensor Networks",
-      "authors": "Huamei Qi, Tailong Xiao, Anfeng Liu, Jiang Su",
+      "authors": "Huamei Qi, Tailong Xiao, Anfeng Liu, Su Jiang",
       "venue": "International Conference on Combinatorial Optimization and Applications",
       "year": 2017,
       "url": "https://www.semanticscholar.org/paper/f85b58caf35b162f170f94fc09c13c44282bf6a6",
