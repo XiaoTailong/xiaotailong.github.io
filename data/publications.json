@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -371,7 +371,7 @@
     {
       "doi": "10.1364/PRJ.473699",
       "title": "Ultrasensitive Measurement of Angular Rotations via Hermite-Gaussian Pointer",
-      "authors": "Binke Xia, Jingzheng Huang, Hongjing Li, Miaomiao Liu, Tailong Xiao, Chen Fang, G. Zeng",
+      "authors": "Jingzheng Huang, Binke Xia, Hongjing Li, Miaomiao Liu, Tailong Xiao, Chen Fang, G. Zeng",
       "venue": "Photonics Research",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/9e69c14a7de172b636e632c9a8c0c2ffce5ddb83",
