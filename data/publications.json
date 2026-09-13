@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-13",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -25,7 +25,7 @@
     {
       "doi": "",
       "title": "Simultaneous Heisenberg-Limited Multiparameter Metrology via Indefinite Evolution",
-      "authors": "Hang Xu, Tailong Xiao, Ze Zheng, Xiaoyang Deng, Jinfeng Zheng, Jingzheng Huang, Guihua Zeng",
+      "authors": "Hang Xu, Tailong Xiao, Ze Zheng, Xiaoyang Deng, Jinfeng Zheng, Jing-Zheng Huang, Guihua Zeng",
       "venue": "",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/6f972953d15819875293d3c8eba349e92693a90e",
@@ -37,7 +37,7 @@
     {
       "doi": "10.1364/prj.581675",
       "title": "Research Article Photonics Research 1 Real-time imaging through moving scattering media enabled by fixed optical modulations",
-      "authors": "Y. Li, Junjie Wang, Tailong Xiao, Ze Zheng, Jing Huang, Ming He, Jianping Fan, Guihua Zeng",
+      "authors": "Yue-Gang Li, Junjie Wang, Tailong Xiao, Ze Zheng, Jing Huang, Ming He, Jianping Fan, Guihua Zeng",
       "venue": "Photonics Research",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/0467b201117cea020ffef3271751ebc5da229f66",
@@ -63,7 +63,7 @@
     {
       "doi": "10.3788/col202624.041103",
       "title": "Optical diffraction neural network assisted computational ghost imaging through dynamic scattering media",
-      "authors": "Y. Li, Ze Zheng, Junjie Wang, Ming He, Jianping Fan, Tailong Xiao, Guihua Zeng",
+      "authors": "Yue-Gang Li, Ze Zheng, Junjie Wang, Ming He, Jianping Fan, Tailong Xiao, Guihua Zeng",
       "venue": "Chinese Optics Letters (COL)",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/74015ac97420ff12a8e2b0bd633ec21fff5aac6e",
@@ -77,7 +77,7 @@
     {
       "doi": "",
       "title": "Learning to Reconstruct Wigner Functions in Phase Space",
-      "authors": "Xinyu Tang, Yi-hsin Lin, Yan Zhu, Tailong Xiao, Yuxuan Du, G. Chiribella, Qiongyi He, Ya-Dong Wu",
+      "authors": "Xinyu Tang, Yi-Hsin Lin, Yan Zhu, Tailong Xiao, Yuxuan Du, G. Chiribella, Qiongyi He, Ya-Dong Wu",
       "venue": "",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/7e0a4fe3642bb98265c6627a5ad8ec50599170f1",
@@ -89,7 +89,7 @@
     {
       "doi": "10.48550/arXiv.2605.23295",
       "title": "Accelerating ground state search of spatial photonic Ising machines with genetic-simulated annealing hybrid algorithm",
-      "authors": "Ze Zheng, Ruhui Ni, Jingyi Zhao, Xiaojia Hu, Wenle Jiang, Y. Li, Hang Xu, Tailong Xiao, G. Zeng",
+      "authors": "Ze Zheng, Ruhui Ni, Jingyi Zhao, Xiao-Jia Hu, Wenle Jiang, Yue-Gang Li, Hang Xu, Tailong Xiao, G. Zeng",
       "venue": "arXiv.org",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/339388de85072710b8b45c7dbd2b17e884c35710",
@@ -143,7 +143,7 @@
     {
       "doi": "",
       "title": "Real-time imaging through dynamic scattering media enabled by fixed optical modulations",
-      "authors": "Y. Li, Junjie Wang, Tailong Xiao, Ze Zheng, Jingzheng Huang, Ming He, Jianping Fan, G. Zeng",
+      "authors": "Yue-Gang Li, Junjie Wang, Tailong Xiao, Ze Zheng, Jing-Zheng Huang, Ming He, Jianping Fan, G. Zeng",
       "venue": "",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/0ac7178f21216c487bd2d30cc3503b50a68c7776",
@@ -183,7 +183,7 @@
     {
       "doi": "10.48550/arXiv.2511.22913",
       "title": "Optical diffraction neural networks assisted computational ghost imaging through dynamic scattering media",
-      "authors": "Y. Li, Ze Zheng, Junjie Wang, Ming He, Jianping Fan, Tailong Xiao, Guihua Zeng",
+      "authors": "Yue-Gang Li, Ze Zheng, Junjie Wang, Ming He, Jianping Fan, Tailong Xiao, Guihua Zeng",
       "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/afe7d77313126fb310ec39322dc895e2a5d385be",
@@ -197,7 +197,7 @@
     {
       "doi": "",
       "title": "Incorporating rank-free coupling and external field via an incoherent modulated spatial photonic Ising machine",
-      "authors": "Ze Zheng, Y. Li, Hang Xu, Jingzheng Huang, Tailong Xiao, G. Zeng",
+      "authors": "Ze Zheng, Yue-Gang Li, Hang Xu, Jing-Zheng Huang, Tailong Xiao, G. Zeng",
       "venue": "",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/6ea438ede0c739b074b8ee247623052163aa46f1",
@@ -209,7 +209,7 @@
     {
       "doi": "10.48550/arXiv.2512.21587",
       "title": "Incorporating rank-free coupling and external field via an amplitude-only modulated spatial photonic Ising machine",
-      "authors": "Ze Zheng, Y. Li, Hang Xu, Jingzheng Huang, Tailong Xiao, G. Zeng",
+      "authors": "Ze Zheng, Yue-Gang Li, Hang Xu, Jing-Zheng Huang, Tailong Xiao, G. Zeng",
       "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/de2cfb3c240622bf63db639919f08fa7504a1d14",
@@ -487,7 +487,7 @@
     {
       "doi": "10.3390/A11080116",
       "title": "A Robust and Energy-Efficient Weighted Clustering Algorithm on Mobile Ad Hoc Sensor Networks",
-      "authors": "Huamei Qi, Fengqi Liu, Tailong Xiao, Jiang Su",
+      "authors": "Huamei Qi, Feng-Qi Liu, Tailong Xiao, Jiang Su",
       "venue": "Algorithms",
       "year": 2018,
       "url": "https://www.semanticscholar.org/paper/1d41ffb613325adeda266d12dad1fca5927435b5",
