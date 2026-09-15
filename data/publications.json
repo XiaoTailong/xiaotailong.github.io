@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 39
+    "total": 40
   },
   "items": [
     {
       "doi": "10.1103/9mjc-nhxx",
       "title": "Noise-Resilient Heisenberg-Limited Quantum Sensing via Indefinite-Causal-Order Error Correction.",
-      "authors": "Hang Xu, Xiaoyang Deng, Ze Zheng, Tailong Xiao, Guihua Zeng",
+      "authors": "Hang Xu, Xiaoyang Deng, Ze Zheng, Tai-Long Xiao, Gui-Hua Zeng",
       "venue": "Physical Review Letters",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/073091b3a49e531866a6012780e88d8caf34c2ca",
-      "citationCount": 2,
+      "citationCount": 3,
       "publicationDate": "2026-01-04T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -25,7 +25,7 @@
     {
       "doi": "",
       "title": "Simultaneous Heisenberg-Limited Multiparameter Metrology via Indefinite Evolution",
-      "authors": "Hang Xu, Tailong Xiao, Ze Zheng, Xiaoyang Deng, Jin-Feng Zheng, Jing-Zheng Huang, Guihua Zeng",
+      "authors": "Hang Xu, Tai-Long Xiao, Ze Zheng, Xiaoyang Deng, Jin-Feng Zheng, Jing-Zheng Huang, Gui-Hua Zeng",
       "venue": "",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/6f972953d15819875293d3c8eba349e92693a90e",
@@ -37,7 +37,7 @@
     {
       "doi": "10.1364/prj.581675",
       "title": "Research Article Photonics Research 1 Real-time imaging through moving scattering media enabled by fixed optical modulations",
-      "authors": "Yue-Gang Li, Junjie Wang, Tai-Long Xiao, Ze Zheng, Jing Huang, Ming He, Jian-Ping Fan, Guihua Zeng",
+      "authors": "Yue-Gang Li, Junjie Wang, Tai-Long Xiao, Ze Zheng, Jing Huang, Ming He, Jian-Ping Fan, Gui-Hua Zeng",
       "venue": "Photonics Research",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/0467b201117cea020ffef3271751ebc5da229f66",
@@ -51,7 +51,7 @@
     {
       "doi": "",
       "title": "Preserving Heisenberg-Limited Metrological Information during Storage via Correlated-Noise Correction",
-      "authors": "Hang Xu, Xue-Ke Song, Jing-Zheng Huang, Tailong Xiao, G. Zeng",
+      "authors": "Hang Xu, Xue-Ke Song, Jing-Zheng Huang, Tai-Long Xiao, G. Zeng",
       "venue": "",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/0d7f67fdd26d3184e365d8e1ff708e58f6df482c",
@@ -63,7 +63,7 @@
     {
       "doi": "10.3788/col202624.041103",
       "title": "Optical diffraction neural network assisted computational ghost imaging through dynamic scattering media",
-      "authors": "Yue-Gang Li, Ze Zheng, Junjie Wang, Ming He, Jian-Ping Fan, Tai-Long Xiao, Guihua Zeng",
+      "authors": "Yue-Gang Li, Ze Zheng, Junjie Wang, Ming He, Jian-Ping Fan, Tai-Long Xiao, Gui-Hua Zeng",
       "venue": "Chinese Optics Letters (COL)",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/74015ac97420ff12a8e2b0bd633ec21fff5aac6e",
@@ -77,7 +77,7 @@
     {
       "doi": "",
       "title": "Learning to Reconstruct Wigner Functions in Phase Space",
-      "authors": "Xinyu Tang, Yi-Hsin Lin, Yan Zhu, Tailong Xiao, Yuxuan Du, G. Chiribella, Qiongyi He, Ya-Dong Wu",
+      "authors": "Xinyu Tang, Yi-Hsin Lin, Yan Zhu, Tai-Long Xiao, Yuxuan Du, G. Chiribella, Qiongyi He, Ya-Dong Wu",
       "venue": "",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/7e0a4fe3642bb98265c6627a5ad8ec50599170f1",
@@ -89,7 +89,7 @@
     {
       "doi": "10.48550/arXiv.2605.23295",
       "title": "Accelerating ground state search of spatial photonic Ising machines with genetic-simulated annealing hybrid algorithm",
-      "authors": "Ze Zheng, Ruhui Ni, Jingyi Zhao, Xiao-Jia Hu, Wenle Jiang, Yue-Gang Li, Hang Xu, Tailong Xiao, G. Zeng",
+      "authors": "Ze Zheng, Ruhui Ni, Jingyi Zhao, Xiao-Jia Hu, Wenle Jiang, Yue-Gang Li, Hang Xu, Tai-Long Xiao, G. Zeng",
       "venue": "arXiv.org",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/339388de85072710b8b45c7dbd2b17e884c35710",
@@ -155,12 +155,26 @@
     {
       "doi": "10.1103/rgy3-z928",
       "title": "Discovering autonomous quantum error correction via deep reinforcement learning",
-      "authors": "Yue Yin, Tai-Long Xiao, Xiaoyang Deng, Ming He, Jian-Ping Fan, Guihua Zeng",
+      "authors": "Yue Yin, Tai-Long Xiao, Xiaoyang Deng, Ming He, Jian-Ping Fan, Gui-Hua Zeng",
       "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/4f0d4a13e871c22347ccc0d6ea0fc77e88e13e85",
       "citationCount": 2,
       "publicationDate": "2025-11-16T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
+      "doi": "10.3788/lop251014",
+      "title": "无透镜计算光学成像的多功能应用及技术进展（特邀）",
+      "authors": "Tai-Long Xiao, Ze Zheng, Gui-Hua Zeng",
+      "venue": "Laser &amp; Optoelectronics Progress",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/2ae5a4de2333d3b827fa649abe1926dadd57e31a",
+      "citationCount": 1,
+      "publicationDate": "",
       "publicationTypes": [
         "JournalArticle"
       ],
@@ -183,7 +197,7 @@
     {
       "doi": "10.48550/arXiv.2511.22913",
       "title": "Optical diffraction neural networks assisted computational ghost imaging through dynamic scattering media",
-      "authors": "Yue-Gang Li, Ze Zheng, Junjie Wang, Ming He, Jian-Ping Fan, Tai-Long Xiao, Guihua Zeng",
+      "authors": "Yue-Gang Li, Ze Zheng, Junjie Wang, Ming He, Jian-Ping Fan, Tai-Long Xiao, Gui-Hua Zeng",
       "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/afe7d77313126fb310ec39322dc895e2a5d385be",
@@ -197,7 +211,7 @@
     {
       "doi": "",
       "title": "Incorporating rank-free coupling and external field via an incoherent modulated spatial photonic Ising machine",
-      "authors": "Ze Zheng, Yue-Gang Li, Hang Xu, Jing-Zheng Huang, Tailong Xiao, G. Zeng",
+      "authors": "Ze Zheng, Yue-Gang Li, Hang Xu, Jing-Zheng Huang, Tai-Long Xiao, G. Zeng",
       "venue": "",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/6ea438ede0c739b074b8ee247623052163aa46f1",
@@ -209,7 +223,7 @@
     {
       "doi": "10.48550/arXiv.2512.21587",
       "title": "Incorporating rank-free coupling and external field via an amplitude-only modulated spatial photonic Ising machine",
-      "authors": "Ze Zheng, Yue-Gang Li, Hang Xu, Jing-Zheng Huang, Tailong Xiao, G. Zeng",
+      "authors": "Ze Zheng, Yue-Gang Li, Hang Xu, Jing-Zheng Huang, Tai-Long Xiao, G. Zeng",
       "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/de2cfb3c240622bf63db639919f08fa7504a1d14",
@@ -237,7 +251,7 @@
     {
       "doi": "",
       "title": "Towards LLM4QPE: Unsupervised Pretraining of Quantum Property Estimation and A Benchmark",
-      "authors": "Yehui Tang, Hao Xiong, Nianzu Yang, Tailong Xiao, Junchi Yan",
+      "authors": "Yehui Tang, Hao Xiong, Nianzu Yang, Tai-Long Xiao, Junchi Yan",
       "venue": "International Conference on Learning Representations",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/4b523a1a888297054e14daf813aa852f5b9437fd",
@@ -251,7 +265,7 @@
     {
       "doi": "10.3390/math12111627",
       "title": "Optimizing Variational Quantum Neural Networks Based on Collective Intelligence",
-      "authors": "Zitong Li, Tailong Xiao, Xiaoyang Deng, G. Zeng, Weimin Li",
+      "authors": "Zitong Li, Tai-Long Xiao, Xiaoyang Deng, G. Zeng, Weimin Li",
       "venue": "Mathematics",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/88eaa3b0dc4150a1ae30ceb8ba153ea174672aa3",
@@ -265,7 +279,7 @@
     {
       "doi": "10.1038/s41534-026-01269-0",
       "title": "Controlling unknown quantum states via data-driven state representations",
-      "authors": "Yan Zhu, Tailong Xiao, G. Zeng, G. Chiribella, Ya-Dong Wu",
+      "authors": "Yan Zhu, Tai-Long Xiao, G. Zeng, G. Chiribella, Ya-Dong Wu",
       "venue": "npj Quantum Information",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/e143eec5f62158668d9a1686dc40f57be11eba7f",
@@ -279,7 +293,7 @@
     {
       "doi": "10.1364/oe.529480",
       "title": "Neural network enhanced time-varying parameter estimation via weak measurement.",
-      "authors": "Yue-Gang Li, Qi Song, Tailong Xiao, Hong-Jing Li, Jian-Ping Fan, G. Zeng",
+      "authors": "Yue-Gang Li, Qi Song, Tai-Long Xiao, Hong-Jing Li, Jian-Ping Fan, G. Zeng",
       "venue": "Optics Express",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/010f7715182911c27c4a58c7953e93ac6d9f16db",
@@ -307,7 +321,7 @@
     {
       "doi": "10.1088/1367-2630/acc605",
       "title": "Quantum generative adversarial imitation learning",
-      "authors": "Tailong Xiao, Jing-Zheng Huang, Hong-Jing Li, Jianping Fan, G. Zeng",
+      "authors": "Tai-Long Xiao, Jing-Zheng Huang, Hong-Jing Li, Jianping Fan, G. Zeng",
       "venue": "New Journal of Physics",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/e537bc614b5a01b088c38d1cb1d153bcba92eb23",
@@ -319,7 +333,7 @@
     {
       "doi": "10.1103/physrevapplied.20.044020",
       "title": "Enhanced sensitivity via polarization switching in fiber-based quantum sensing",
-      "authors": "Xiaorui Tan, Hong-Jing Li, Qi Song, Binke Xia, Tailong Xiao, Shurong Wei, Jing-Zheng Huang, G. Zeng",
+      "authors": "Xiaorui Tan, Hong-Jing Li, Qi Song, Binke Xia, Tai-Long Xiao, Shurong Wei, Jing-Zheng Huang, G. Zeng",
       "venue": "Physical Review Applied",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/da7508196c0b0bef18f9c652160fcc3d786390eb",
@@ -351,7 +365,7 @@
       "venue": "npj Quantum Information",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/d9f217cc5a58bdb614c4b4b52f3c50e107d2a1e1",
-      "citationCount": 66,
+      "citationCount": 67,
       "publicationDate": "2022-01-10T00:00:00",
       "publicationTypes": [],
       "selected": true
@@ -359,7 +373,7 @@
     {
       "doi": "10.1038/s41534-022-00649-6",
       "title": "Intelligent certification for quantum simulators via machine learning",
-      "authors": "Tailong Xiao, Jing-Zheng Huang, Hong-Jing Li, Jian-Ping Fan, G. Zeng",
+      "authors": "Tai-Long Xiao, Jing-Zheng Huang, Hong-Jing Li, Jian-Ping Fan, G. Zeng",
       "venue": "npj Quantum Information",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/6867b8e0439c11277e84f0d3fb651dcc8fd5745d",
@@ -371,7 +385,7 @@
     {
       "doi": "10.1364/PRJ.473699",
       "title": "Ultrasensitive Measurement of Angular Rotations via Hermite-Gaussian Pointer",
-      "authors": "Jing-Zheng Huang, Binke Xia, Hong-Jing Li, Miaomiao Liu, Tailong Xiao, Chen Fang, G. Zeng",
+      "authors": "Jing-Zheng Huang, Binke Xia, Hong-Jing Li, Miaomiao Liu, Tai-Long Xiao, Chen Fang, G. Zeng",
       "venue": "Photonics Research",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/9e69c14a7de172b636e632c9a8c0c2ffce5ddb83",
@@ -395,7 +409,7 @@
     {
       "doi": "10.1103/physrevapplied.18.034077",
       "title": "Surpassing the Nyquist Sampling Limit via Postmodulation",
-      "authors": "Qi Song, Binke Xia, Jing-Zheng Huang, Tailong Xiao, Hong-Jing Li, G. Zeng",
+      "authors": "Qi Song, Binke Xia, Jing-Zheng Huang, Tai-Long Xiao, Hong-Jing Li, G. Zeng",
       "venue": "Physical Review Applied",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/3146b376a89fc86da329850571ec4ab0de6c499a",
@@ -407,7 +421,7 @@
     {
       "doi": "10.1364/oe.438658",
       "title": "Adaptive correction of phase estimation with time based on weak measurement.",
-      "authors": "Gongling Wang, Hong-Jing Li, Tailong Xiao, Jing-Zheng Huang, Guihua Zeng",
+      "authors": "Gongling Wang, Hong-Jing Li, Tai-Long Xiao, Jing-Zheng Huang, Guihua Zeng",
       "venue": "Optics Express",
       "year": 2021,
       "url": "https://www.semanticscholar.org/paper/2c4eb8d2e43571a71d30dfd36a6fe0d8e85e83e0",
@@ -421,7 +435,7 @@
     {
       "doi": "10.1364/OE.441981",
       "title": "Type of non-reciprocity in a fiber Sagnac interferometer induced by geometric phases.",
-      "authors": "Dong-Zi Zhao, Jing-Zheng Huang, Tailong Xiao, Hong-Jing Li, Xiao-Yan Wu, G. Zeng",
+      "authors": "Dong-Zi Zhao, Jing-Zheng Huang, Tai-Long Xiao, Hong-Jing Li, Xiao-Yan Wu, G. Zeng",
       "venue": "Optics Express",
       "year": 2021,
       "url": "https://www.semanticscholar.org/paper/1e870b35578c60865c5f4440c966ad0a49f38b54",
@@ -487,7 +501,7 @@
     {
       "doi": "10.3390/A11080116",
       "title": "A Robust and Energy-Efficient Weighted Clustering Algorithm on Mobile Ad Hoc Sensor Networks",
-      "authors": "Huamei Qi, Feng-Qi Liu, Tailong Xiao, Jiang Su",
+      "authors": "Huamei Qi, Feng-Qi Liu, Tai-Long Xiao, Jiang Su",
       "venue": "Algorithms",
       "year": 2018,
       "url": "https://www.semanticscholar.org/paper/1d41ffb613325adeda266d12dad1fca5927435b5",
@@ -501,7 +515,7 @@
     {
       "doi": "10.1109/ISPA/IUCC.2017.00216",
       "title": "Graph-Based Quantum Parallel Teleportation in Quantum Wireless Multi-Hop Networks",
-      "authors": "Huamei Qi, Tailong Xiao, Ying Guo",
+      "authors": "Huamei Qi, Tai-Long Xiao, Ying Guo",
       "venue": "2017 IEEE International Symposium on Parallel and Distributed Processing with Applications and 2017 IEEE International Conference on Ubiquitous Computing and Communications (ISPA/IUCC)",
       "year": 2017,
       "url": "https://www.semanticscholar.org/paper/49ad1794ee305e7f76172a60e144c6e88e23d74b",
@@ -516,7 +530,7 @@
     {
       "doi": "10.1007/978-3-319-71147-8_13",
       "title": "Toward Energy-Efficient and Robust Clustering Algorithm on Mobile Ad Hoc Sensor Networks",
-      "authors": "Huamei Qi, Tailong Xiao, Anfeng Liu, Su Jiang",
+      "authors": "Huamei Qi, Tai-Long Xiao, Anfeng Liu, Su Jiang",
       "venue": "International Conference on Combinatorial Optimization and Applications",
       "year": 2017,
       "url": "https://www.semanticscholar.org/paper/f85b58caf35b162f170f94fc09c13c44282bf6a6",
