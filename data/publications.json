@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -269,7 +269,7 @@
       "venue": "Mathematics",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/88eaa3b0dc4150a1ae30ceb8ba153ea174672aa3",
-      "citationCount": 5,
+      "citationCount": 6,
       "publicationDate": "2024-05-22T00:00:00",
       "publicationTypes": [
         "JournalArticle"
