@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26",
+  "updatedAt": "2026-09-27",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -321,7 +321,7 @@
     {
       "doi": "10.1088/1367-2630/acc605",
       "title": "Quantum generative adversarial imitation learning",
-      "authors": "Tai-Long Xiao, Jing-Zheng Huang, Hong-Jing Li, Jianping Fan, G. Zeng",
+      "authors": "Tai-Long Xiao, Jing-Zheng Huang, Hong-Jing Li, Jian-Ping Fan, G. Zeng",
       "venue": "New Journal of Physics",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/e537bc614b5a01b088c38d1cb1d153bcba92eb23",
@@ -361,7 +361,7 @@
     {
       "doi": "10.1038/s41534-021-00513-z",
       "title": "Parameter estimation in quantum sensing based on deep reinforcement learning",
-      "authors": "Tai-Long Xiao, Jianping Fan, Guihua Zeng",
+      "authors": "Tai-Long Xiao, Jian-Ping Fan, Guihua Zeng",
       "venue": "npj Quantum Information",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/d9f217cc5a58bdb614c4b4b52f3c50e107d2a1e1",
@@ -461,7 +461,7 @@
     {
       "doi": "10.1103/physreva.101.032304",
       "title": "Quantum Boltzmann machine algorithm with dimension-expanded equivalent Hamiltonian",
-      "authors": "Tai-Long Xiao, Dongyun Bai, Jianping Fan, Guihua Zeng",
+      "authors": "Tai-Long Xiao, Dongyun Bai, Jian-Ping Fan, Guihua Zeng",
       "venue": "",
       "year": 2020,
       "url": "https://www.semanticscholar.org/paper/093e6b07dcb970e26d3abda797a3a348398ba1ed",
@@ -487,7 +487,7 @@
     {
       "doi": "10.1038/s41598-019-48551-0",
       "title": "Continuous-variable Quantum Phase Estimation based on Machine Learning",
-      "authors": "Tai-Long Xiao, Jing-Zheng Huang, Jianping Fan, Guihua Zeng",
+      "authors": "Tai-Long Xiao, Jing-Zheng Huang, Jian-Ping Fan, Guihua Zeng",
       "venue": "Scientific Reports",
       "year": 2019,
       "url": "https://www.semanticscholar.org/paper/68b9527a6a08586914e5d3452610f126af27fc0a",
