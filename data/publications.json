@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-12",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -337,7 +337,7 @@
       "venue": "Physical Review Applied",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/da7508196c0b0bef18f9c652160fcc3d786390eb",
-      "citationCount": 2,
+      "citationCount": 3,
       "publicationDate": "2023-10-06T00:00:00",
       "publicationTypes": [
         "JournalArticle"
