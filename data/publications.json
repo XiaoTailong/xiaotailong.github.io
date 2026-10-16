@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-10-16",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 40
+    "total": 41
   },
   "items": [
     {
@@ -83,6 +83,18 @@
       "url": "https://www.semanticscholar.org/paper/7e0a4fe3642bb98265c6627a5ad8ec50599170f1",
       "citationCount": 0,
       "publicationDate": "2026-07-07T00:00:00",
+      "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "",
+      "title": "Computational compressive imaging reconstruction with a simulated-annealing-based Ising solver",
+      "authors": "Ze Zheng, Xiao-Yan Wu, Hang Xu, Jing-Zheng Huang, Tai-Long Xiao, G. Zeng",
+      "venue": "",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/fece7f31354531438662933f324e9e6a996a674a",
+      "citationCount": 0,
+      "publicationDate": "2026-10-14T00:00:00",
       "publicationTypes": [],
       "selected": false
     },
@@ -347,7 +359,7 @@
     {
       "doi": "10.1103/physrevapplied.20.064002",
       "title": "Robust superresolution computational imaging with diffuser-refined illumination",
-      "authors": "Xin-Liang Zhai, Xiao-Yan Wu, Tai-Long Xiao, Jian-Qing Shi, G. Zeng",
+      "authors": "Xin-Liang Zhai, Xiao-Yan Wu, Tai-Long Xiao, Jianohng Shi, G. Zeng",
       "venue": "Physical Review Applied",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/8e38d6208aac0acd0b22566bf0f000b903639549",
