@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -23,6 +23,20 @@
       "selected": true
     },
     {
+      "doi": "10.1364/prj.581675",
+      "title": "Research Article Photonics Research 1 Real-time imaging through moving scattering media enabled by fixed optical modulations",
+      "authors": "Yue-Gang Li, Junjie Wang, Tai-Long Xiao, Ze Zheng, Jing Huang, Ming He, Jian-Ping Fan, Gui-Hua Zeng",
+      "venue": "Photonics Research",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/0467b201117cea020ffef3271751ebc5da229f66",
+      "citationCount": 1,
+      "publicationDate": "2026-01-02T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": true
+    },
+    {
       "doi": "",
       "title": "Simultaneous Heisenberg-Limited Multiparameter Metrology via Indefinite Evolution",
       "authors": "Hang Xu, Tai-Long Xiao, Ze Zheng, Xiaoyang Deng, Jin-Feng Zheng, Jing-Zheng Huang, Gui-Hua Zeng",
@@ -33,20 +47,6 @@
       "publicationDate": "2026-08-11T00:00:00",
       "publicationTypes": [],
       "selected": false
-    },
-    {
-      "doi": "10.1364/prj.581675",
-      "title": "Research Article Photonics Research 1 Real-time imaging through moving scattering media enabled by fixed optical modulations",
-      "authors": "Yue-Gang Li, Junjie Wang, Tai-Long Xiao, Ze Zheng, Jing Huang, Ming He, Jian-Ping Fan, Gui-Hua Zeng",
-      "venue": "Photonics Research",
-      "year": 2026,
-      "url": "https://www.semanticscholar.org/paper/0467b201117cea020ffef3271751ebc5da229f66",
-      "citationCount": 0,
-      "publicationDate": "2026-01-02T00:00:00",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "selected": true
     },
     {
       "doi": "",
