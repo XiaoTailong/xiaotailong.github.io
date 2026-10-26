@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-10-26",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
   },
   "counts": {
-    "total": 41
+    "total": 42
   },
   "items": [
     {
       "doi": "10.1103/9mjc-nhxx",
       "title": "Noise-Resilient Heisenberg-Limited Quantum Sensing via Indefinite-Causal-Order Error Correction.",
-      "authors": "Hang Xu, Xiaoyang Deng, Ze Zheng, Tai-Long Xiao, Gui-Hua Zeng",
+      "authors": "Hang Xu, Xiao-Yang Deng, Ze Zheng, Tai-Long Xiao, Gui-Hua Zeng",
       "venue": "Physical Review Letters",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/073091b3a49e531866a6012780e88d8caf34c2ca",
@@ -39,7 +39,7 @@
     {
       "doi": "",
       "title": "Simultaneous Heisenberg-Limited Multiparameter Metrology via Indefinite Evolution",
-      "authors": "Hang Xu, Tai-Long Xiao, Ze Zheng, Xiaoyang Deng, Jin-Feng Zheng, Jing-Zheng Huang, Gui-Hua Zeng",
+      "authors": "Hang Xu, Tai-Long Xiao, Ze Zheng, Xiao-Yang Deng, Jin-Feng Zheng, Jing-Zheng Huang, Gui-Hua Zeng",
       "venue": "",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/6f972953d15819875293d3c8eba349e92693a90e",
@@ -84,6 +84,20 @@
       "citationCount": 0,
       "publicationDate": "2026-07-07T00:00:00",
       "publicationTypes": [],
+      "selected": false
+    },
+    {
+      "doi": "10.3390/e28111166",
+      "title": "Error Attribution and Capability Boundaries in Object-Routed Power Equipment Defect Recognition with a Simulated PQC",
+      "authors": "Yi-Wei Sun, Yi Yang, Jin-Feng Zheng, Xiao-Yang Deng, Tai-Long Xiao",
+      "venue": "Entropy",
+      "year": 2026,
+      "url": "https://www.semanticscholar.org/paper/6eba08e90901a7cf0ab80e383d943029ce17d9a0",
+      "citationCount": 0,
+      "publicationDate": "2026-10-22T00:00:00",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
       "selected": false
     },
     {
@@ -133,7 +147,7 @@
       "venue": "Physical Review Applied",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/87c61c52175bb197989f859c9cc015af9322decf",
-      "citationCount": 8,
+      "citationCount": 9,
       "publicationDate": "2025-01-07T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -167,7 +181,7 @@
     {
       "doi": "10.1103/rgy3-z928",
       "title": "Discovering autonomous quantum error correction via deep reinforcement learning",
-      "authors": "Yue Yin, Tai-Long Xiao, Xiaoyang Deng, Ming He, Jian-Ping Fan, Gui-Hua Zeng",
+      "authors": "Yue Yin, Tai-Long Xiao, Xiao-Yang Deng, Ming He, Jian-Ping Fan, Gui-Hua Zeng",
       "venue": "arXiv.org",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/4f0d4a13e871c22347ccc0d6ea0fc77e88e13e85",
@@ -253,7 +267,7 @@
       "venue": "Communications Physics",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/f7addbb67ad073ce79f7dc078379f479c246bb60",
-      "citationCount": 19,
+      "citationCount": 20,
       "publicationDate": "2024-08-15T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -277,11 +291,11 @@
     {
       "doi": "10.3390/math12111627",
       "title": "Optimizing Variational Quantum Neural Networks Based on Collective Intelligence",
-      "authors": "Zitong Li, Tai-Long Xiao, Xiaoyang Deng, G. Zeng, Weimin Li",
+      "authors": "Zitong Li, Tai-Long Xiao, Xiao-Yang Deng, G. Zeng, Weimin Li",
       "venue": "Mathematics",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/88eaa3b0dc4150a1ae30ceb8ba153ea174672aa3",
-      "citationCount": 6,
+      "citationCount": 7,
       "publicationDate": "2024-05-22T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -323,7 +337,7 @@
       "venue": "Communications Physics",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/69514c02e9e7fc80409c5d42911ac6e821b8cd48",
-      "citationCount": 57,
+      "citationCount": 58,
       "publicationDate": "2023-07-10T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -337,7 +351,7 @@
       "venue": "New Journal of Physics",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/e537bc614b5a01b088c38d1cb1d153bcba92eb23",
-      "citationCount": 9,
+      "citationCount": 10,
       "publicationDate": "2023-03-21T00:00:00",
       "publicationTypes": [],
       "selected": false
