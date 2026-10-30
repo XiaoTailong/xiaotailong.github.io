@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29",
+  "updatedAt": "2026-10-30",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -359,7 +359,7 @@
     {
       "doi": "10.1103/physrevapplied.20.044020",
       "title": "Enhanced sensitivity via polarization switching in fiber-based quantum sensing",
-      "authors": "Xiaorui Tan, Hong-Jing Li, Qi Song, Binke Xia, Tai-Long Xiao, Shurong Wei, Jing-Zheng Huang, G. Zeng",
+      "authors": "Xiaorui Tan, Hong-Jing Li, Qi Song, Bin-Ke Xia, Tai-Long Xiao, Shurong Wei, Jing-Zheng Huang, G. Zeng",
       "venue": "Physical Review Applied",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/da7508196c0b0bef18f9c652160fcc3d786390eb",
@@ -411,7 +411,7 @@
     {
       "doi": "10.1364/PRJ.473699",
       "title": "Ultrasensitive Measurement of Angular Rotations via Hermite-Gaussian Pointer",
-      "authors": "Jing-Zheng Huang, Binke Xia, Hong-Jing Li, Miao-Miao Liu, Tai-Long Xiao, Chen Fang, G. Zeng",
+      "authors": "Jing-Zheng Huang, Bin-Ke Xia, Hong-Jing Li, Miao-Miao Liu, Tai-Long Xiao, Chen Fang, G. Zeng",
       "venue": "Photonics Research",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/9e69c14a7de172b636e632c9a8c0c2ffce5ddb83",
@@ -423,7 +423,7 @@
     {
       "doi": "10.1103/physrevapplied.18.044031",
       "title": "Adaptive Time-Varying Parameter Estimation via Weak Measurement",
-      "authors": "Qi Song, Hong-Jing Li, Jing-Zheng Huang, Tai-Long Xiao, Xiao-Rui Tan, Binke Xia, G. Zeng",
+      "authors": "Qi Song, Hong-Jing Li, Jing-Zheng Huang, Tai-Long Xiao, Xiao-Rui Tan, Bin-Ke Xia, G. Zeng",
       "venue": "Physical Review Applied",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/3044e569fa03d463bfd99159c71f68d7168c0e0b",
@@ -435,7 +435,7 @@
     {
       "doi": "10.1103/physrevapplied.18.034077",
       "title": "Surpassing the Nyquist Sampling Limit via Postmodulation",
-      "authors": "Qi Song, Binke Xia, Jing-Zheng Huang, Tai-Long Xiao, Hong-Jing Li, G. Zeng",
+      "authors": "Qi Song, Bin-Ke Xia, Jing-Zheng Huang, Tai-Long Xiao, Hong-Jing Li, G. Zeng",
       "venue": "Physical Review Applied",
       "year": 2022,
       "url": "https://www.semanticscholar.org/paper/3146b376a89fc86da329850571ec4ab0de6c499a",
@@ -475,7 +475,7 @@
     {
       "doi": "10.1088/1361-6455/abe5c7",
       "title": "Hamiltonian estimation based on adaptive weak value amplification",
-      "authors": "Chen Fang, Binke Xia, Jing-Zheng Huang, Tai-Long Xiao, Yang Yu, Hong-Jing Li, G. Zeng",
+      "authors": "Chen Fang, Bin-Ke Xia, Jing-Zheng Huang, Tai-Long Xiao, Yang Yu, Hong-Jing Li, G. Zeng",
       "venue": "Journal of Physics B: Atomic, Molecular and Optical Physics",
       "year": 2021,
       "url": "https://www.semanticscholar.org/paper/38e8645696a9be6333a42b467d9b0ce2aef8e159",
