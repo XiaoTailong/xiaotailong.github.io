@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-04",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -167,6 +167,20 @@
       "selected": false
     },
     {
+      "doi": "10.3788/lop251014",
+      "title": "无透镜计算光学成像的多功能应用及技术进展（特邀）",
+      "authors": "Tai-Long Xiao, Ze Zheng, Gui-Hua Zeng",
+      "venue": "Laser &amp; Optoelectronics Progress",
+      "year": 2025,
+      "url": "https://www.semanticscholar.org/paper/2ae5a4de2333d3b827fa649abe1926dadd57e31a",
+      "citationCount": 3,
+      "publicationDate": "",
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "selected": false
+    },
+    {
       "doi": "",
       "title": "Real-time imaging through dynamic scattering media enabled by fixed optical modulations",
       "authors": "Yue-Gang Li, Junjie Wang, Tai-Long Xiao, Ze Zheng, Jing-Zheng Huang, Ming He, Jian-Ping Fan, G. Zeng",
@@ -187,20 +201,6 @@
       "url": "https://www.semanticscholar.org/paper/4f0d4a13e871c22347ccc0d6ea0fc77e88e13e85",
       "citationCount": 2,
       "publicationDate": "2025-11-16T00:00:00",
-      "publicationTypes": [
-        "JournalArticle"
-      ],
-      "selected": false
-    },
-    {
-      "doi": "10.3788/lop251014",
-      "title": "无透镜计算光学成像的多功能应用及技术进展（特邀）",
-      "authors": "Tai-Long Xiao, Ze Zheng, Gui-Hua Zeng",
-      "venue": "Laser &amp; Optoelectronics Progress",
-      "year": 2025,
-      "url": "https://www.semanticscholar.org/paper/2ae5a4de2333d3b827fa649abe1926dadd57e31a",
-      "citationCount": 1,
-      "publicationDate": "",
       "publicationTypes": [
         "JournalArticle"
       ],
