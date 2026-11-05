@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -147,7 +147,7 @@
       "venue": "Physical Review Applied",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/87c61c52175bb197989f859c9cc015af9322decf",
-      "citationCount": 9,
+      "citationCount": 10,
       "publicationDate": "2025-01-07T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -277,7 +277,7 @@
     {
       "doi": "",
       "title": "Towards LLM4QPE: Unsupervised Pretraining of Quantum Property Estimation and A Benchmark",
-      "authors": "Ye-Hui Tang, Hao Xiong, Nianzu Yang, Tai-Long Xiao, Junchi Yan",
+      "authors": "Ye-Hui Tang, Hao Xiong, Nian-Zu Yang, Tai-Long Xiao, Junchi Yan",
       "venue": "International Conference on Learning Representations",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/4b523a1a888297054e14daf813aa852f5b9437fd",
