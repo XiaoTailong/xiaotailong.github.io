@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -281,7 +281,7 @@
       "venue": "International Conference on Learning Representations",
       "year": 2024,
       "url": "https://www.semanticscholar.org/paper/4b523a1a888297054e14daf813aa852f5b9437fd",
-      "citationCount": 8,
+      "citationCount": 7,
       "publicationDate": "",
       "publicationTypes": [
         "JournalArticle"
@@ -487,7 +487,7 @@
     {
       "doi": "10.1103/physreva.101.032304",
       "title": "Quantum Boltzmann machine algorithm with dimension-expanded equivalent Hamiltonian",
-      "authors": "Tai-Long Xiao, Dong-Yun Bai, Jian-Ping Fan, Guihua Zeng",
+      "authors": "Tai-Long Xiao, D. Bai, Jian-Ping Fan, Guihua Zeng",
       "venue": "",
       "year": 2020,
       "url": "https://www.semanticscholar.org/paper/093e6b07dcb970e26d3abda797a3a348398ba1ed",
@@ -499,7 +499,7 @@
     {
       "doi": "10.1088/1361-6455/ab0b2a",
       "title": "Passive-state preparation in continuous-variable measurement-device-independent quantum key distribution",
-      "authors": "Dong-Yun Bai, Peng Huang, Yiqun Zhu, Hongxin Ma, Tai-Long Xiao, Tao Wang, Guihua Zeng",
+      "authors": "D. Bai, Peng Huang, Yiqun Zhu, Hongxin Ma, Tai-Long Xiao, Tao Wang, Guihua Zeng",
       "venue": "Quantum Information Processing",
       "year": 2019,
       "url": "https://www.semanticscholar.org/paper/f475fc9df65a9e36380e9eaa41c92b20fc5da846",
