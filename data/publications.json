@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-14",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -15,7 +15,7 @@
       "venue": "Physical Review Letters",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/073091b3a49e531866a6012780e88d8caf34c2ca",
-      "citationCount": 3,
+      "citationCount": 4,
       "publicationDate": "2026-01-04T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -133,7 +133,7 @@
       "venue": "Physical Review Letters",
       "year": 2025,
       "url": "https://www.semanticscholar.org/paper/261bcda05757a972c224571a75f7c8a06f5d7c88",
-      "citationCount": 37,
+      "citationCount": 38,
       "publicationDate": "2025-03-27T00:00:00",
       "publicationTypes": [
         "JournalArticle"
@@ -351,7 +351,7 @@
       "venue": "New Journal of Physics",
       "year": 2023,
       "url": "https://www.semanticscholar.org/paper/e537bc614b5a01b088c38d1cb1d153bcba92eb23",
-      "citationCount": 10,
+      "citationCount": 11,
       "publicationDate": "2023-03-21T00:00:00",
       "publicationTypes": [],
       "selected": false
