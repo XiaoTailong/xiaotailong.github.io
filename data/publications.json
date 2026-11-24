@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "source": {
     "name": "Semantic Scholar",
     "via": "author:30425271"
@@ -115,7 +115,7 @@
     {
       "doi": "10.48550/arXiv.2605.23295",
       "title": "Accelerating ground state search of spatial photonic Ising machines with genetic-simulated annealing hybrid algorithm",
-      "authors": "Ze Zheng, Ruhui Ni, Jingyi Zhao, Xiao-Jia Hu, Wenle Jiang, Yue-Gang Li, Hang Xu, Tai-Long Xiao, G. Zeng",
+      "authors": "Ze Zheng, Ruhui Ni, Jing-Yi Zhao, Xiao-Jia Hu, Wenle Jiang, Yue-Gang Li, Hang Xu, Tai-Long Xiao, G. Zeng",
       "venue": "arXiv.org",
       "year": 2026,
       "url": "https://www.semanticscholar.org/paper/339388de85072710b8b45c7dbd2b17e884c35710",
